@@ -25,3 +25,7 @@ email to go here    </td>
 
   </tr>
 </table>
+
+## Outcomes
+
+**Amy Hayes** and **Christa SD** will be your outcome coaches for this cohort. They instruct you just the same as your instructional staff; they are who will be helping you get a job.

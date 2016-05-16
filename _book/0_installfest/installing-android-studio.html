@@ -5,7 +5,7 @@
         <!-- head:start -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Recommended Materials | ADI Chicago #1: Mudkipz</title>
+        <title>Installing Android Studio | ADI Chicago #1: Mudkipz</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -41,10 +41,10 @@
         
     
     
-    <link rel="next" href="../01_intro/index.html" />
+    <link rel="next" href="../0_installfest/enabling-usb-debugging.html" />
     
     
-    <link rel="prev" href="../0_onboarding/schedule.html" />
+    <link rel="prev" href="../0_installfest/installing-java.html" />
     
 
         <!-- head:end -->
@@ -53,9 +53,9 @@
         <!-- body:start -->
         
     <div class="book"
-        data-level="0.10"
-        data-chapter-title="Recommended Materials"
-        data-filepath="0_onboarding/required_reading.md"
+        data-level="1.1.3"
+        data-chapter-title="Installing Android Studio"
+        data-filepath="0_installfest/installing-android-studio.md"
         data-basepath=".."
         data-revision="Mon May 16 2016 12:59:02 GMT-0500 (CDT)"
         data-innerlanguage="">
@@ -222,7 +222,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="0.10" data-path="0_onboarding/required_reading.html">
+        <li class="chapter " data-level="0.10" data-path="0_onboarding/required_reading.html">
             
                 
                     <a href="../0_onboarding/required_reading.html">
@@ -304,7 +304,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.1.3" data-path="0_installfest/installing-android-studio.html">
+        <li class="chapter active" data-level="1.1.3" data-path="0_installfest/installing-android-studio.html">
             
                 
                     <a href="../0_installfest/installing-android-studio.html">
@@ -473,14 +473,28 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h2 id="recommend-materials">Recommend Materials</h2>
-<p>We do not require you to purchase any books for this cohort. However, your instructional staff recommends the following supplementary materials for this course:</p>
-<ul>
-<li><a href="http://shop.oreilly.com/product/0636920029045.do" target="_blank">Head First Android Development</a> is a fantastic book that introduces you to the Android environment. It is aimed at students who are new to Android. <a href="http://shop.oreilly.com/category/deals/general-assembly.do?cmp=ex-na-books-videos-lp-promo_general_assembly" target="_blank">GA Students receive 50% off ebooks and 40% off print books from O&apos;Reilly</a>.</li>
-<li><a href="http://shop.oreilly.com/product/0636920033318.do" target="_blank">Java 8 Pocket Guide</a> is a small book to carry around for reference on the Java language. <a href="http://shop.oreilly.com/category/deals/general-assembly.do?cmp=ex-na-books-videos-lp-promo_general_assembly" target="_blank">GA Students receive 50% off ebooks and 40% off print books from O&apos;Reilly</a>.</li>
-<li><a href="https://prod-edx-mktg-edit.edx.org/course/introduction-programming-java-part-1-uc3mx-it-1-1x-0" target="_blank">Introduction to Programming with Java Part 1: Starting to Code with Java</a> is a free, self-paced online course from edx to introduce you to Java.</li>
-<li><a href="https://www.edx.org/course/introduction-programming-java-part-2-uc3mx-it-1-2x" target="_blank">Introduction to Programming with Java Part 2: Writing Good Code</a> is a free, self-paced online course from edx to introduce you to Java.</li>
+                        <h1 id="installing-android-studio">Installing Android Studio</h1>
+<p>Please take the time to follow these steps to get Android Studio up and running on your computer. Some of these steps can take some time (a few students have averaged up to an hour depending on their internet connection).</p>
+<ol>
+<li>Download the latest version of Android Studio: <a href="http://tools.android.com/download/studio/builds/1-5-1" target="_blank">http://tools.android.com/download/studio/builds/1-5-1</a> - be warned that you may be required to install the JVM (Java Virtual Machine) first! Android Studio will warn you if so. Follow the on-screen prompts to complete this step if required.</li>
+<li>Once you have downloaded <strong>Android Studio</strong>, you should then proceed to install it.</li>
+<li>After you have completed installation you will be prompted to import settings. Select <em>I do not have a previous version of Studio</em>...</li>
+<li>You&apos;ll now be walked through the <em>welcome</em> wizard. Select <strong>next</strong>.</li>
+<li>The next screen prompts you to locate the <strong>Java Development Kit (JDK)</strong>. If you do not have the JDK (you should if you followed this guide correctly), you&apos;ll need to download and install it to continue. You can find the <strong>JDK Version 7.x here</strong>: <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html" target="_blank">http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html</a> - If you <em>need to install the JDK</em>, take note of where it is installed. Below are a few of the default locations. The <strong>Detect</strong> button works rather well, but it isn&apos;t a bad idea to play it safe and take note.<ul>
+<li>Mac OS X Location: <code>/Library/Java/JavaVirtualMachines/jdk1.7.0_65.jdk/Contents/Home</code></li>
+<li>Windows Location: <code>C:\Program Files\Java\jdk1.7.0_65</code></li>
 </ul>
+</li>
+<li>Select the <strong>Standard</strong> installation type. Then select <strong>Next</strong>.</li>
+<li>Review the changes that are about to be made to your computer. Once you&apos;re sure everything looks good, select <strong>Finish</strong>.</li>
+<li>Ironically, we selected finish but now <strong>Android Studio</strong> needs to download support files. This can take some time.</li>
+<li>You may also be asked permission to install the <strong>Intel HAXM</strong> software. If so, allow the installation and continue.</li>
+<li>Once everything is completed, you should see the following message:<pre><code>Android SDK is up to date.
+Running Intel&#xAE; HAXM installer
+</code></pre></li>
+<li>Select <strong>Finish</strong>. You&apos;ll be greeted with a <em>Welcome to Android Studio</em> window!</li>
+<li>That&apos;s all you have to do to get prepared for our workshop. If you run into any problems, please note the step you are currently on as well as what happened. Reach out to us and we&apos;ll do our best to assist!</li>
+</ol>
 
                     
                     </section>
@@ -491,10 +505,10 @@
         </div>
 
         
-        <a href="../0_onboarding/schedule.html" class="navigation navigation-prev " aria-label="Previous page: Weekly Schedule"><i class="fa fa-angle-left"></i></a>
+        <a href="../0_installfest/installing-java.html" class="navigation navigation-prev " aria-label="Previous page: Installing Java"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../01_intro/index.html" class="navigation navigation-next " aria-label="Next page: Intro to Programming"><i class="fa fa-angle-right"></i></a>
+        <a href="../0_installfest/enabling-usb-debugging.html" class="navigation navigation-next " aria-label="Next page: Enabling USB Debugging"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

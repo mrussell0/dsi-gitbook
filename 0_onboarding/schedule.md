@@ -1,3 +1,3 @@
 ## Weekly Schedule
 
-![schedule.png](schedule.png)
+![shedule.png](shedule.png)
