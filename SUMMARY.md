@@ -10,7 +10,7 @@
 * [Weekly Schedules](0_onboarding/schedule.md)
   * [Week 1: 31/5/16](00-weekly-schedules/week-1.md)
 * [Homework](0_onboarding/homework_submission.md)
-  * [Week 1: 31/5/16](00_homework/week-1.md)
+  * [Week 1: 31/5/16](0_homework/week-1.md)
 * [Installfest](0_installfest/README.md)
   * [Why Android?](0_installfest/why_android.md)
   * [Installing Java](0_installfest/installing-java.md)
