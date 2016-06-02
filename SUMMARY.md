@@ -22,6 +22,7 @@
     * [Terminal Cheat Sheet](01_intro/d01-termina-cheat-sheet.md)
     * [Intro to OS X](01_intro/intro_to_osx.md)
     * [Basic Terminal & Navigating the Filesystem](01_intro/basic_terminal.md)
+  * [Data Types & Logic](01_intro/02-conditional-logic.md)
 * [Project: Rock Paper Scissors](project-rps/readme.md)
   * [Rubric](project-rps/rubric.md)
 * [XML](02-xml/readme.md)

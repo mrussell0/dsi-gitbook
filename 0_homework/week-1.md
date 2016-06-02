@@ -13,6 +13,7 @@
 #### Thursday
 
 * Java in a Nutshell - pages 47-67 (stop at Methods)
+* Self-study!
 
 #### Weekend
 
