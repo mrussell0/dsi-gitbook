@@ -24,6 +24,7 @@
     * [Basic Terminal & Navigating the Filesystem](01_intro/basic_terminal.md)
   * [1.2 Data Types & Logic](01_intro/02-conditional-logic.md)
   * [1.3 Functions, Logic, & Arrays](01_intro/03-logic-in-depth.md)
+    * [Git Workflow](01_intro/03-git-workflow.md)
     * [If / Else](01_intro/03-ifelse.md)
     * [For Loop & Arrays](01_intro/03-loops.md)
     * [Switch](01_intro/03-switch.md)
