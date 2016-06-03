@@ -1,5 +1,14 @@
 ## Conditional Logic
 
+#### Your first Java class
+
+![1st class](first-class.jpg)
+
+
+#### User Story
+
+![user Story](user-story.jpg)
+
 #### Data Types
 
 Java has a lot of built-in data types. Let's review some of the more common ones that new developers will encounter.

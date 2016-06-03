@@ -28,6 +28,7 @@
     * [For Loop & Arrays](01_intro/03-loops.md)
     * [Switch](01_intro/03-switch.md)
   * [1.4 Methods & Android Intro](01_intro/04-methods.md)
+    * [Meaning of Life Lab](01_intro/04-challenge.md)
 * [2. Project: Rock Paper Scissors](project-rps/readme.md)
   * [Rubric](project-rps/rubric.md)
 * [3. XML](02-xml/readme.md)
