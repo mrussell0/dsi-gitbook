@@ -67,3 +67,4 @@ if (name.length >= 12) {
 } else {
   // password length not long enough; tell user
 }
+```
