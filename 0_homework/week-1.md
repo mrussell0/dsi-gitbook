@@ -19,3 +19,4 @@
 
 * Java in a Nutshell - pages 67-95
   - Instructor note: You may skip over the paragraph about **Lambdas** for now; these will only be supported with Android N+.
+* [Method Madness](https://github.com/ga-adi/method-madness-homework)
