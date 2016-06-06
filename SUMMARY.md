@@ -34,6 +34,8 @@
     * [Meaning of Life Lab](01_intro/04-challenge.md)
   * [1.5 Collections](01_intro/05-collections.md)
     * [ArrayList & HashMap](01_intro/05-collection-overview.md)
+    * [ArrayList Examples](01_intro/05-array-lists.md)
+    * [Lab](01_intro/05-list-lab.md)
 * [2. Project: Rock Paper Scissors](project-rps/readme.md)
   * [Rubric](project-rps/rubric.md)
 * [3. XML](02-xml/readme.md)
