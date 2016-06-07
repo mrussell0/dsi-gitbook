@@ -15,10 +15,20 @@ This lab is broken into **3** group assignments. The first will have you use the
 - Post your question to GAQA!
 - Your instructional staff will provide feedback to your question.
 
-**Stack Overflow (10 minutes)**
+#### 2. Stack Overflow (10 minutes)
 
 In the past two weeks, you have likely run into a problem:
 
 - Brainstorm common problems or errors that you and your group mates have encountered so far in class
 - Research them on Stack Overflow
 - Upvote answers and comments that you find helpful or insightful
+
+#### 3. StringBuilder
+
+- it is time for you to learn something _new_ again!
+- Research the `StringBuilder` class and use it to create a `String`
+- StringBuilder is designed to build strings; instead of having to _concatenate by hand_, you can use this instead
+- _When_ you run into a problem, you should use documentation to aid you!
+- **If** you find that you have a _unique_ question, **you should post it!**
+- **Otherwise** feel free to comment and upvote answers that you find helpful!
+- Bonus: Build a script that uses StringBuilder! Push it to GitHub!
