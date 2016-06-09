@@ -8,7 +8,7 @@
 
 #### Tuesday
 
-* Java in a Nutshell - Ch. 4; pages 135-154 
+* Java in a Nutshell - Ch. 4; pages 135-154
 * Work on Project 0: Rock, Paper, Scissors
 
 #### Wednesday
@@ -18,6 +18,7 @@
 #### Thursday
 
 * Java in a Nutshell - Ch 8; pages 239-258 (ignore the section on _Lambda Expressions_), page 266
+* https://github.com/ga-adi/animals-real-or-myth-lab
 
 #### Weekend
 
