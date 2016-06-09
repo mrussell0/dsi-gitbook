@@ -18,7 +18,8 @@
 #### Thursday
 
 * Java in a Nutshell - Ch 8; pages 239-258 (ignore the section on _Lambda Expressions_), page 266
-* https://github.com/ga-adi/animals-real-or-myth-lab
+* https://github.com/ga-adi/xml-homework (due Monday)
+* https://github.com/ga-adi/animals-real-or-myth-lab (due Monday)
 
 #### Weekend
 

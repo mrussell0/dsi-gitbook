@@ -137,17 +137,6 @@ Look at the following code/file and answer the questions below:
 3. Name parent and children elements.
 4. Find and name empty elements (the ones that do not have content).
 
+#### Homework Submission
 
-## One more Exercise
-
-Imagine you are a data specialist for a movie theater. You have been asked to store the information about the movies you show in an XML file for the office manager. The file must meet particular criteria so read below for guidance on creating your data file.   
-
-#### Requirements  
-- Create a new git repository called `movies-xml` and publish/sync changes when finished.
-- create a file called `movies.xml`
-- the parent of the file should be "movie_collection" with the prefix "collection" and the namespace "http://movies.com"
-- the XML file must have at least 4 movies
-- a movie must have an id attribute
-- a movie must have a title and description
-- a movie must have a child element called "showtimes", and it contains at least 3 showtime elements
-- a movie should have 2 empty elements.  
+https://github.com/ga-adi/xml-homework
