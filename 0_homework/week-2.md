@@ -25,6 +25,7 @@
 
 * Java in a Nutshell - Ch. 5; pages 177 - 196
 
-#### Weekly Bonus Reading
+#### Weekly Bonus
 
+* https://github.com/ga-adi/class-madness (optional)
 * Java in a Nutshell - Ch. 10 pages 289-294. This covers Files, Input, & Output
