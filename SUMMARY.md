@@ -55,6 +55,7 @@
     * [Views](03-activities-views/01-views.md)
     * [View Methods](03-activities-views/01-view-methods.md)
   * [3.2 Intents, Layouts, & FAB](03-activities-views/d02-intents-layouts.md)
+    * [Intents and Changing Activities](03-activities-views/02-intent-to-goto-activity.md)
 * [4. SQL](04-sql/readme.md)
 * [5. Testing](05-testing/readme.md)
 * [6. Material Design](06-material-design/readme.md)
