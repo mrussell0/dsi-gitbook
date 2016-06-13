@@ -57,6 +57,7 @@
   * [3.2 Intents, Layouts, & FAB](03-activities-views/d02-intents-layouts.md)
     * [Intents and Changing Activities](03-activities-views/02-intent-to-goto-activity.md)
     * [Sending Data Between Activities](03-activities-views/02-get-put-extras.md)
+    * [Lab: Active Calculator](03-activities-views/d02-calc-lab.md)
 * [4. SQL](04-sql/readme.md)
 * [5. Testing](05-testing/readme.md)
 * [6. Material Design](06-material-design/readme.md)
