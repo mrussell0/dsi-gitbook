@@ -7,8 +7,7 @@
 
 #### Tuesday
 
-* Java in a Nutshell - Ch. 4; pages 135-154
-* Work on Project 0: Rock, Paper, Scissors
+* Review ListViews and ListAdapters
 
 #### Wednesday
 
