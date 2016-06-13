@@ -52,3 +52,30 @@ public class SecondActivity extends AppCompatActivity {
     }
 }
 ```
+
+#### Sending Data to Main (and protecting against errors)
+
+```java
+Intent fromSecondActivity = getIntent();
+if (fromSecondActivity != null) {
+    String msgFromPartyActivity;
+    try {
+        msgFromPartyActivity = fromSecondActivity.getStringExtra("MSG");
+        txtHiThere.setText(msgFromPartyActivity);
+    } catch (Exception ex) {
+        ex.printStackTrace();
+    }
+}
+```
+
+#### Using Intents to Send SMS (example)
+
+```java
+private void sharePoem(String poem) {
+    Intent sendTextIntent = new Intent();
+    sendTextIntent.setAction(Intent.ACTION_SEND);
+    sendTextIntent.putExtra(Intent.EXTRA_TEXT, poem);
+    sendTextIntent.setType("text/plain");
+    startActivity(sendTextIntent);
+}
+```
