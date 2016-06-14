@@ -60,6 +60,7 @@
     * [Lab: Active Calculator](03-activities-views/d02-calc-lab.md)
   * [3.3 ListViews and ArrayAdapters](03-activities-views/03-lists-arrayadapters.md)
     * [Step by Step: Adding a ListView](03-activities-views/03-step-by-step.md)
+    * [Challenge: Fix This Code](03-activities-views/03-listview-challenge.md)
 * [4. SQL](04-sql/readme.md)
 * [5. Testing](05-testing/readme.md)
 * [6. Material Design](06-material-design/readme.md)
