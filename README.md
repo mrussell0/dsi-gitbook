@@ -1,6 +1,6 @@
 # ADI Seattle #1:
 
-![Mudkipz](adi-sea.png)
+![ADISEA](adi-sea.png)
 
 ## Welcome!
 

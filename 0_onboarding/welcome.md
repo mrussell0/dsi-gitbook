@@ -1,4 +1,4 @@
-![adi-sea.png](adi-sea.png)
+![ADISEA](adi-sea.png)
 
 ## Welcome from your instructors
 
