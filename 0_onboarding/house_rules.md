@@ -1,8 +1,8 @@
 ## House Rules
 
 * Follow Wheaton’s Law in this class.
-* **Your points of contact are Angie, James, Spoorthi, and Kevin**.
-* **Kristan Saloky** is our **Campus Commander**. She runs the house.
+* **Your points of contact are Beth, Larry, Jenna, and Sarah**.
+* **Maria Sengle** is our **Campus Commander**. She runs the house.
 * Treat everyone with respect - your fellow students, front lines staff, instructors, and everyone.
 * Always have your laptop ready to be used.
 * Clean up after yourselves (don’t leave glasses and coffee mugs out; place dirty dishes in the dishwasher or sink).

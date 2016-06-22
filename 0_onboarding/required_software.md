@@ -6,18 +6,23 @@ ADI requires specific software to use in class. We do this so each student is us
 
 If you run into any problems installing this software, please alert an instructor or your producer.
 
-#### Atom Text Editor
+#### Intellij Editor
 
-* **What**: A modern day, open source text editor.
-* **Why**: It was created by the team at Github, is open source, it is free, and is a fantastic text editor for multiple languages.
-* **Instructions**: Visit https://atom.io/ to download Atom. Drag/drop the application to your Mac application folder (and pin it to your dock). We use this every single day in WDI.
+* **What**: One of the best IDEs available.
+* **Why**: There is an extensive plugin library available and Intellij is hands down awesome.
+* **Instructions**: Navigate to: https://www.jetbrains.com/idea/download/, download and install the software.
 
-#### Sublime Text Editor
+#### Android Studios
 
-* **What**: One of the best paid text editors available.
-* **Why**: There is an extensive plugin library available and Sublime is hands down awesome.
-* **Instructions**: Sublime is installed with the InstallFest Script. In terminal, run `subl filename.txt` to open a file.
+* **What**: Used to design Android Applications.
+* **Why**: Because this is a class where we are going to design Android applications.
+* **Instructions**: Navigate to: https://developer.android.com/studio/index.html, download and install the software.
 
+#### Genymotion
+
+* **What**: Used to simulate different Android phones.
+* **Why**: Because we don't want to have our own phones plugged in all the time.
+* **Instructions**: Navigate to: https://www.genymotion.com/thank-you-freemium/, download and install the software.
 
 #### Slack Chat
 

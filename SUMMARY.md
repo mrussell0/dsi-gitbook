@@ -3,7 +3,6 @@
   * [Student Holidays](0_onboarding/holidays.md)
   * [Attendance Policy](0_onboarding/attendance_policy.md)
   * [House Rules](0_onboarding/house_rules.md)
-  * [Class Library](0_onboarding/class_library.md)
   * [Required Software](0_onboarding/required_software.md)
   * [Course Outline](0_onboarding/course_outline.md)
   * [Recommended Materials](0_onboarding/required_reading.md)
