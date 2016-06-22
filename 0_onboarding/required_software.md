@@ -12,12 +12,6 @@ If you run into any problems installing this software, please alert an instructo
 * **Why**: There is an extensive plugin library available and Intellij is hands down awesome.
 * **Instructions**: Navigate to: https://www.jetbrains.com/idea/download/, download and install the software.
 
-#### Android Studios
-
-* **What**: Used to design Android Applications.
-* **Why**: Because this is a class where we are going to design Android applications.
-* **Instructions**: Navigate to: https://developer.android.com/studio/index.html, download and install the software.
-
 #### Genymotion
 
 * **What**: Used to simulate different Android phones.
