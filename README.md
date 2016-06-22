@@ -1,6 +1,6 @@
 # ADI Chicago #1: *Mudkipz*
 
-![Mudkipz](adi-mudkipz.png)
+![Mudkipz](adi-sea.png)
 
 ## Welcome!
 
