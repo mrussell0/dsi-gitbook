@@ -1,4 +1,4 @@
-![adi-mudkipz.png](adi-mudkipz.png)
+![adi-sea.png](adi-sea.png)
 
 ## Welcome from your instructors
 
