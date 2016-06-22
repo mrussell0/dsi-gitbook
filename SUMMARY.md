@@ -10,7 +10,7 @@
 * [ii. Weekly Schedules](0_onboarding/schedule.md)
   * [Week 1: 6/27/16](https://trello.com/b/wSFwrlYX/week-01-java-fundamentals)
   * [Week 2: 7/4/16](https://trello.com/b/uC91vpLj/week-02-intro-to-android)
-  * [Week 3: 7/11/16](https://trello.com/b/smfPnqUM/week-03-project-1-to-do-list-app)
+  * [Week 3: 7/11/16](https://trello.com/b/ippZf5WF/week-03-project-1-to-do-list-app)
   * [Week 4: 7/18/16](https://trello.com/b/Cj5igDRN/week-04-databases)
   * [Week 5: 7/25/16](https://trello.com/b/mTUhYMNw/week-05-more-ui)
   * [Week 6: 8/1/16](https://trello.com/b/JmSAADJW/week-06-project-2)
