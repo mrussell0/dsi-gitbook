@@ -28,7 +28,7 @@
   * [Why Android?](0_installfest/why_android.md)
   * [Installing Java](0_installfest/installing-java.md)
   * [Installing Android Studio](0_installfest/installing-android-studio.md)
-  * [Installing Required Software](0_onboarding/required_software.md)
+  * [Installing Required Software](0_installfest/required_software.md)
   * [Enabling USB Debugging](0_installfest/enabling-usb-debugging.md)
 * [1. Java, Command Line, & Git](01_intro/README.md)
   * [1.1 Your First Day](01_intro/d01.md)
