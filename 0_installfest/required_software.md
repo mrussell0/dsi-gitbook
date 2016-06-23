@@ -24,6 +24,19 @@ If you run into any problems installing this software, please alert an instructo
 * **Why**: GA as a company uses Slack to communicate with staff and students.
 * **Instructions**: Browse to https://slack.com/apps and download/install Slack. Sign in to the **ga-students** team that you have been invited to.
 
+#### ZSH
+
+* **What**: A shell configuration package called [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh)
+* **Why**: This supes-up our terminal by adding colors to our terminal prompts,
+adding timestamps and showing us what branch we're on if we're in a git directory.
+Zoh-my-gosh it's awesome.
+* **Instructions**: To install, open the Terminal application, copy and paste
+the following and press enter:
+
+```
+curl -L http://install.ohmyz.sh | sh
+```
+
 ## Required Chrome Extensions
 
 #### Postman
