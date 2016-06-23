@@ -6,6 +6,7 @@
   * [Class Library](0_onboarding/class_library.md)
   * [Required Software](0_onboarding/required_software.md)
   * [Course Outline](0_onboarding/course_outline.md)
+  * [Required Pre-Work](0_onboarding/prework.md)
   * [Recommended Materials](0_onboarding/required_reading.md)
 * [ii. Weekly Schedules](0_onboarding/schedule.md)
   * [Week 1: 6/27/16](https://trello.com/b/wSFwrlYX/week-01-java-fundamentals)
