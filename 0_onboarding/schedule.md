@@ -1,6 +1,6 @@
 ## Weekly Schedules
 
-Weekly schedules are poted on Trello. Follow these links to access each week:
+Weekly schedules are posted on Trello. Follow these links to access each week:
 
 * [Week 1: 6/27/16](https://trello.com/b/wSFwrlYX/week-01-java-fundamentals) Java Fundamentals
 * [Week 2: 7/4/16](https://trello.com/b/uC91vpLj/week-02-intro-to-android) Intro to Android
