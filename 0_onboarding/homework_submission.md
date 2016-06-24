@@ -23,3 +23,7 @@ That's all! We will practice this workflow during class repeatedly to get you co
 - For each project you will be provided written feedback on your application from your instructors.
 - Students will present their project in a presentation and perform an in-class peer code review.
 - Presentations will be recorded if requested.
+
+#### Office Hours
+
+- Available by request
