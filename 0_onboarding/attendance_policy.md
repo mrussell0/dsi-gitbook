@@ -1,8 +1,8 @@
 ## Attendance Policy
 During the cohort, General Assembly enforces a strict attendance policy.
 
-* You may only miss two (2) days of class.
-* You may only be late three (3) days to class.
+* You may only miss three (3) days of class.
+* You may only be late three (3) days to class before it is counted as an absence.
 
 #### Daily Checkin
 
