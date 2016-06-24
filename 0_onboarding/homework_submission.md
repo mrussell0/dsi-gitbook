@@ -2,8 +2,8 @@
 
 - Students will be provided feedback **only** for on-time homework submissions.
 - **Homework must be submitted via pull request no later than Midnight CST.** Any work submitted past this deadline will *not* be counted.
-- Students will be provided feedback through the [Garnet](https://garnet.wdidc.org/cohorts/18) program for homework assignments.
-- If you run into an error or problem when submitting homework, you may [create an issue](https://github.com/ga-chicago/adi-mudkipz/issues) and we will answer it.
+- Students will be provided feedback through the [Github](https://github.com) repository for homework assignments. We will leave a comment on the pull requests.
+- If you run into an error or problem when submitting homework, you may [create an issue](https://github.com/BradZzz/adi-mudkipz/issues) and we will answer it.
 
 #### Homework Submission
 
@@ -26,6 +26,4 @@ That's all! We will practice this workflow during class repeatedly to get you co
 
 #### Office Hours
 
-- Once a week, each instructors will be available from 5pm until 6pm after class.
-- These will be split between two evenings; such as: Monday and Wednesday from 5-6pm or Tuesday and Thursday from 5-6pm.
-- Each student will receive a 20 minute 1:1s with an instructor each week. This may be used to to discuss homework, performance, code review, project ideas, or anything else academic in the course.
+- Available by request
