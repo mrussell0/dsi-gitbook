@@ -2,7 +2,7 @@
 
 - Students will be provided feedback **only** for on-time homework submissions.
 - **Homework must be submitted via pull request no later than Midnight CST.** Any work submitted past this deadline will *not* be counted.
-- Students will be provided feedback through the [Github](https://github.com) program for homework assignments. We will leave a comment on the pull requests.
+- Students will be provided feedback through the [Github](https://github.com) repository for homework assignments. We will leave a comment on the pull requests.
 - If you run into an error or problem when submitting homework, you may [create an issue](https://github.com/BradZzz/adi-mudkipz/issues) and we will answer it.
 
 #### Homework Submission
