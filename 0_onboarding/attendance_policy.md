@@ -29,4 +29,4 @@ If a student finds work as an apprentice or intern, they may discuss the opportu
 
 * Approved absences do not count against your total missed days.
 * These are reserved for emergencies, doctor's appointments, and other important things.
-* Chat with an instructor if something comes up. We only share information amongst ourselves and Angie.
+* Chat with an instructor if something comes up. We only share information amongst ourselves and Maria.
