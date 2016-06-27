@@ -31,6 +31,7 @@
 * [1. Java, Command Line, & Git](01_intro/README.md)
   * [1.1 Your First Day](01_intro/d01.md)
     * [Mac Cheat Sheet](01_intro/d01-mac-cheat-sheet.md)
+    * [Into to Terminal](01_intro/d01-intro-to-terminal.md)
     * [Terminal Cheat Sheet](01_intro/d01-termina-cheat-sheet.md)
     * [Intro to OS X](01_intro/intro_to_osx.md)
     * [Basic Terminal & Navigating the Filesystem](01_intro/basic_terminal.md)
