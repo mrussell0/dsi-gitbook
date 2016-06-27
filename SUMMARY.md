@@ -38,8 +38,6 @@
     * [Terminal Cheat Sheet](01_intro/d01-terminal-cheat-sheet.md)
   * [1.3 Git and GitHub](01_intro/01-git-github-lesson.md)
   * [1.4 Data Types & Logic](01_intro/04-data-types-and-variables.md)
-    * [Conditional Logic](01_intro/02-conditional-logic.md)
-    * [Data Types & Variables](01_intro/04-data-types-and-variables.md)
   * [1.5 Functions, Logic, & Arrays](01_intro/03-logic-in-depth.md)
     * [Git Workflow](01_intro/03-git-workflow.md)
     * [If / Else](01_intro/03-ifelse.md)
