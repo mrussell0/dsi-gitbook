@@ -43,6 +43,7 @@
     * [If / Else](01_intro/03-ifelse.md)
     * [For Loop & Arrays](01_intro/03-loops.md)
     * [Switch](01_intro/03-switch.md)
+    * [Functions](01_intro/03-functions.md)
   * [1.6 Methods & Android Intro](01_intro/04-methods.md)
     * [Meaning of Life Lab](01_intro/04-challenge.md)
   * [1.7 Collections](01_intro/05-collections.md)
