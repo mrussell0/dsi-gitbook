@@ -104,7 +104,7 @@ Schema From [git-scm.com](https://git-scm.com/book/en/v2/Git-Basics-Recording-Ch
 
 There are 4 main stages of Git version controlled file:
 
-1. **Untracked**: The file will not be added in the next commit
+1. **Untracked**: The file will not be added in the next commit.
 2. **Staged**: Staged files have not yet been committed to memory but they are "on deck" so to speak for your next commit
 3. **Unmodified**: The file has already been committed and has not changed since the last commit
 4. **Modified**: You have changes in the file since it was last committed, you will need to stage them again for the changes to be added in the next commit
@@ -400,9 +400,8 @@ The goal is to get the work from [this](https://github.com/ga-students/forking-e
 Remember, before you can open a pull request from your fork, you must commit new code to your local clone of your fork, and push that code to your fork on GitHub.  Now, to create a pull request:
 
 1. Visit the repository you pushed to
-2. Click the "Compare, review, create a pull request" button in the repository ![pr](https://cloud.githubusercontent.com/assets/40461/8229344/d344aa8e-15ad-11e5-8578-08893bcee335.jpg)
-
-3. You'll land right onto the compare page - you can click Edit at the top to pick a new branch to merge in, using the Head Branch dropdown.
+2. Click the "New pull request" button in the repository
+3. You'll land right onto the compare page - you can click "compare across forks" at the top to pick a new branch to merge in, using the Head Fork dropdown.
 4. Select the target branch your branch should be merged to, using the Base Branch dropdown
 5. Review your proposed change
 6. Click "Click to create a pull request" for this comparison
