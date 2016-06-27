@@ -40,6 +40,7 @@
   * [1.4 Data Types & Logic](01_intro/04-data-types-and-variables.md)
   * [1.5 Functions, Logic, & Arrays](01_intro/03-logic-in-depth.md)
     * [Git Workflow](01_intro/03-git-workflow.md)
+    * [Control Flow Lesson](01_intro/03-control-flow.md)
     * [If / Else](01_intro/03-ifelse.md)
     * [For Loop & Arrays](01_intro/03-loops.md)
     * [Switch](01_intro/03-switch.md)
