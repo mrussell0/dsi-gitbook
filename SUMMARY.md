@@ -31,10 +31,11 @@
 * [1. Java, Command Line, & Git](01_intro/README.md)
   * [1.1 Your First Day](01_intro/d01.md)
     * [Mac Cheat Sheet](01_intro/d01-mac-cheat-sheet.md)
-    * [Into to Terminal](01_intro/d01-intro-to-terminal.md)
+    * [Intro to Terminal](01_intro/d01-intro-to-terminal.md)
     * [Terminal Cheat Sheet](01_intro/d01-termina-cheat-sheet.md)
     * [Intro to OS X](01_intro/intro_to_osx.md)
     * [Basic Terminal & Navigating the Filesystem](01_intro/basic_terminal.md)
+  * [1.2 Terminal]
   * [1.2 Data Types & Logic](01_intro/02-conditional-logic.md)
   * [1.3 Functions, Logic, & Arrays](01_intro/03-logic-in-depth.md)
     * [Git Workflow](01_intro/03-git-workflow.md)
