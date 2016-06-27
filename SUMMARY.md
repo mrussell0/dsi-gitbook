@@ -32,7 +32,7 @@
   * [1.1 Your First Day](01_intro/d01.md)
     * [Mac Cheat Sheet](01_intro/d01-mac-cheat-sheet.md)
     * [Intro to OS X](01_intro/intro_to_osx.md)
-  * [1.2 Terminal](d01-terminal-cheat-sheet.md)
+  * [1.2 Terminal](01_intro/d01-terminal-cheat-sheet.md)
     * [Intro to Terminal](01_intro/d01-intro-to-terminal.md)
     * [Basic Terminal & Navigating the Filesystem](01_intro/basic_terminal.md)
     * [Terminal Cheat Sheet](01_intro/d01-terminal-cheat-sheet.md)
