@@ -48,6 +48,7 @@
   * [1.6 Methods & Android Intro](01_intro/04-methods.md)
     * [Meaning of Life Lab](01_intro/04-challenge.md)
   * [1.7 Collections](01_intro/05-collections.md)
+    * [Collection Basics](01_intro/03-collection-basics.md)
     * [ArrayList & HashMap](01_intro/05-collection-overview.md)
     * [ArrayList Examples](01_intro/05-array-lists.md)
     * [HashMaps Example](01_intro/05-hashmaps.md)
