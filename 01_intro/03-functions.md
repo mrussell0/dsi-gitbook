@@ -322,7 +322,11 @@ These are principles all programmers need to live by. Don't worry! They are supe
 
 `D`ont `R`epeat `Y`ourself : Make sure that if you have a line of code, you aren't typing that same code twice. This is the most important of the three. Seriously. 
 
+#### KISS
+
 `K`eep `I`t `S`imple `S`tupid : Don't make things complicated when it doesn't have to be. Readability matters. Other programmers will thank you when they are trying to figure out what you are doing.
+
+#### SOLID
 
 `SOLID` :
 `S`ingle responsibility: Make sure that each function/method has one clearly defined task.
@@ -362,7 +366,7 @@ Let's add a method that creates a gets user input and responds.
 public static void askAQuestion() {
     Scanner input = new Scanner(System.in);
     String userInput = input.nextLine();
-    if (userString.equals("who")) {
+    if (userInput.equals("who")) {
         System.out.println("We're the ADI class.");
     }
 }
@@ -372,7 +376,7 @@ Actually, let's allow the user to put in a more complicated question, such as 'W
 
 ```java
 ...
-if (userString.contains("who")) {
+if (userInput.contains("who")) {
   ...
 }
 ```
