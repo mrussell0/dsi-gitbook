@@ -24,13 +24,6 @@ creator:
 - Assign a variable in Java (`int a = 1;`)
 - Describe Objects in Java
 
-### INSTRUCTOR PREP
-
-*Before this lesson, instructors will need to:*
-- Open and run the starter and solution code
-- Modify sections and checks as needed
-
----
 <a name="opening"></a>
 ## Opening (5 min)
 
@@ -209,60 +202,59 @@ int range = Math.abs(max - min) + 1;
 
 >Check: Who provides the Math object? Where do you think you might be able to find more information?  ([Oracle Math Documentation](https://docs.oracle.com/javase/7/docs/api/java/lang/Math.html))
 
-## Introduction: Primitives vs. Objects (10 mins)
+#### Boolean Values
 
-Before we get into Strings, let's take a step back. Have you noticed that all the data types we've used so far are lowercase? What do you notice about the `String` data type?
+Java has a special way of storing values that represent `true` and `false`.
+These values are stored in the `boolean` datatype. A variable of type `boolean`
+can only be `true` or `false`.
 
-What is the difference?  Do you notice that it is capitalized?  This is a naming convention that is used to distinguish between primitive and Object data types.
+Boolean values are very useful when programming. They can store simple values
+to keep track of whether a game is over, and they can store the result of an
+evaluation of a logical expression. Notice below how the the variable `isOver21`
+stores the `true` or `false` result of comparing 19 to 21.
 
-**Primitive data types**: are a piece of data and are **pass-by-value**.  This means: Using a primitive as a parameter is like writing a number on a post-it note and handing it off. `int a = 1; ` is a *copy* of the number data, not a reference to where the data is stored;
-
-**Object data types**: contain attributes and methods, and start with a capital letter. These are **pass-by-reference**.
-
-In other words: Using an object is like using a dewi decimal system in the library. A variable assigned to an Object is given a number that references where a book can be found in the computer's library but is not a copy of the book itself. `Person a = new Person(Nancy, Drew); ` is a reference to the data Object that contains all info and methods in the class of that object.
-
-> Check: Discuss withe person next to you: What does a primitive contain? What does an object contain?  What's one easy way to tell the difference between an Object and a primitive data type? Be ready to share out!
-
-#### Words: char and Strings
-
-With that basic introduction to the two larger sorts of data types, primitives and Objects, lets talk about words.
-
-A `char` is a primitive data type.  What is an example of a `char`?
-
-A String is capitalized because a String is an Object.
-
-> Check: Discuss with the person next to you: What is an object? Be ready to share out!
-
-Strings are collections of letters and symbols known as *characters*, and we use them to deal with words and text.
-
-Strings are special - String is actually a array of 'char' data:
-
-``` java
-String str = "abc";
-// is actually
-char data[] = {'a', 'b', 'c'};
+```java
+boolean isGameOver = false;
+boolean isUserLoggedIn = true;
+boolean isOver21 = 19 > 21; // store the value false
 ```
 
-## Demo: Creating a new string (15 mins)
 
-Strings are a weird type of Object.
+#### Chars
 
-Try this with me.  You can instantiate (or create an instance) a String in a few ways:
+Chars are the data type for single letters. Single letters and multiple letters
+are treated differently in Java. Notice that chars differentiate between being
+uppercase and lowercase. A lowercase `a` is not considered equal to an uppercase
+`A`.
 
-``` java
-//variable can be assigned like a primitive
-String a = "I'm a string."
+```java
+char foo = 'a';
+char bar = 'b';
+
+char baz = 'A';
+char qux = 'B';
+
+boolean bool1 = foo == foo; // stores true. 'a' is equal to 'a'
+boolean bool2 = foo == bar; // stores false. 'a' is not equal to 'b'
+boolean bool3 = foo == baz; // stores false. 'a' is not equal to 'A'
 ```
 
-Which is really short for:
+#### Strings
+
+A string stores a bunched of characters all "stringed" together. The `String`
+datatype is different than the `char` datatype. The `char` datatype can only
+ever store one letter at a time. The `String` datatype can store store an
+unlimited amount of characters in a row at once.
+
 ``` java
-//variable assigned like an Object
-String a = new String("I'm a string too!")
+String name = "Henry";
+String sentence = "Today I woke up and had a heartful bowl of cheerios.";
 ```
 
 #### String helper methods
 
-Because a String is an Object, it has pre-defined methods we can use.
+Strings are special. Because they are more complicated than the `char` datatype
+they come with pre-defined methods we can use.
 
 To find the length of a string, use it's `length` property:
 
@@ -305,8 +297,6 @@ Or concatenate (add together) using + :
 String twoStringsTogether = "Hello" + " World";
 => "Hello World"
 ```
-
-> Instructor Note: Introduce other methods as seen fit.  May want to explain when concatenation might be used.
 
 ##### A special note on Equality among Strings:
 
