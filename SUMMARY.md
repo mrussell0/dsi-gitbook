@@ -50,6 +50,7 @@
   * [1.7 Collections](01_intro/05-collections.md)
     * [Arrays](01_intro/03-array-basics.md)
     * [Collection Basics](01_intro/03-collection-basics.md)
+    * [Iterating Over Arrays](01_intro/05_iterating_over_arrays.md)
     * [ArrayList & HashMap](01_intro/05-collection-overview.md)
     * [ArrayList Examples](01_intro/05-array-lists.md)
     * [HashMaps Example](01_intro/05-hashmaps.md)
