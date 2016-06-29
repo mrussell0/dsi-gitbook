@@ -218,3 +218,77 @@ for (int i = 0; i < a.length; i++) {
   return true;
 }
 ```
+
+## Mousetrap
+A mousetrap (these are made up names) is something that snaps closed once
+an never opens again. 
+
+```java
+public static boolean isUnique(int[] a)  {
+  boolean isUnique = true;
+
+  for (int i = 0; i < a.length; i++) {
+    for (int j = 0; j < a.length; j++) {
+      if (j != i) {
+        if (a[i] == a[j]) {
+          isUnique = false;
+        }
+      }
+    }
+  }
+
+  return isUnique;
+}
+```
+
+## Item Tally
+
+Write a function called `election` that accepts an array of Strings
+representing candidate
+in an array. You may assume the array is sorted.
+
+["bush", "bush", "bush", "hedge", "hedge", "hedge", "hedge", "tree", "tree"];
+
+public static String election(String[] a) {
+  if (a.length == 0) {
+    return null;
+  }
+
+  String winner = a[0];
+  int mostVotes = 1;
+
+  String item = a[0];
+  int tally = 1;
+
+  for (int i = 0; i < a.length; i++) {
+    // tally up votes for the current candidate
+    if (a[i].equals(item)) {
+      tally++;
+    } else {
+      if (tally > mostVotes) {
+        mostVotes = tally;
+        winner = item;
+      }
+
+      tally = 1;
+      item = a[i];
+    }
+
+  }
+
+  return winner;
+}
+
+## Building Up Strings
+
+Write a function that accepts a string and returns a compressed version of the
+string encoding the 
+
+compress("aaaaabbbabbbaaabbbbbaaa") // returns "5a3b1a3b3a5b3a"
+
+public static String compress(String text) {
+  String result = "";
+  for () {
+    result += count + letter
+  }
+}
