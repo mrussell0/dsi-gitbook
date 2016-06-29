@@ -178,3 +178,43 @@ end of the function. We compare each value in the array to the value and rewrite
 the value of `largest` if we ever see something in the array larger than it.
 
 Think of this as a one-way valve that only ever goes up.
+
+## Backwards For Loops
+
+It's totally possible to run a for loop backwards. We need to do three things:
+
+1. Instead of starting i at zero
+simply start it at `int i = a.length - 1`. We have to subtract one from the length
+of the array to access the index of the last element to account for zero-based
+indexing.
+2. Change the test condition to run the for loop while `i >= 0`
+3. Change the step instruction to `i--`
+
+```java
+for (int i = a.length - 1; i >= 0; i--) {
+  System.out.println(a[i]);
+}
+```
+
+## Double For Loops / Nested For Loops
+
+Sometimes it's useful to nest a for loop inside a for loop. This code tests to
+see if an array contains unique elements by comparing each item in the array
+to every other item. 
+
+Use another variable name other than `i` for the second for loop. `i, j, k, n`
+are common for loop variable names.
+
+```java
+for (int i = 0; i < a.length; i++) {
+  for (int j = 0; j < a.length; j++) {
+    if (j != i) {
+      if (a[i] == a[j]) {
+        return false;
+      }
+    }
+  }
+  
+  return true;
+}
+```
