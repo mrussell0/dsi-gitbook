@@ -78,7 +78,103 @@ for (int i = 0; i < 4; i++) {
 }
 ```
 
-This code 
+This code produces a fence like this: `|=|=|=|=` without the last fence post at
+the end.
+
+The proper way to deal with a "fence post" scenario is to place one post before
+or after the for loop.
 
 
-##
+```java
+placePost();
+for (int i = 0; i < 4; i++) {
+  placeFence();
+  placePost();
+}
+```
+
+This code properly produces a fence with posts on each end, and fence pieces
+between each post, like this: `|=|=|=|=|`.
+
+### A Classic Fence Post Problem
+
+Write a function called `printArray` that accepts an array of integers and prints
+out each of the integers with a comma between each item. If the array is empty,
+the function should print nothing. If there is only one item
+in the array the function should just print the one item without any commas, like
+this `42`. An array with more items should be printed like this: `42,12,97,8'.
+
+Try to code this on your own before looking at the solution.
+
+```java
+public static void printArray(int[] a) {
+  // Deal with the fence post by printing the first item in the array
+  // without a comma and only when we're it is a non-empty array!
+  if (a.length > 0) {
+    System.out.print(a[0]);
+  }
+
+  // Deal with each piece of the fence by printing a comma, then the
+  // value of the array at each index. Start the for loop at `i = 1`
+  // to account for the fact that the first item was already printed.
+  for (int i = 1; i < a.length; i++) {
+    System.out.print("," + a[i]);
+  }
+
+  // Include an empty println statement at the end to make the output
+  // produce a newline character at the end.
+  System.out.println();
+}
+```
+
+You may find it more natural to deal with the fence post after the for loop.
+You can do this too.
+
+```java
+public static void printArray(int[] a) {
+  // Don't print anything when the array is empty. Simply return to exit
+  // the function.
+  if (a.length === 0) {
+    return;
+  }
+
+  // Start i at zero and print each element in the array followed by a comma.
+  // Set the for loop to end before `a.length - 1` to leave one element left
+  // for the fence post at the end after the for loop.
+  for (int i = 0; i < a.length - 1; i++) {
+    System.out.print(a[i] + ",");
+  }
+
+  // Print the final element at the end of the list without a comma.
+  System.out.println(a[a.length - 1]);
+}
+```
+
+## One-Way Gates
+
+Write a function called `max` that accepts an array of integers and returns the
+largest value in the array.
+
+This problem requires us to create varaibles to store extra information outside
+the for loop. We'll use if statements inside the for loop to update these variables
+when certain conditions are met.
+
+```java
+public static void max(int[] a) {
+  int largest = 0;
+
+  for (int i = 0; i < a.length; i++) {
+    if (a[i] > largest) {
+      largest = a[i];
+    }
+  }
+
+  return largest;
+}
+```
+
+Notice that we initialize `largest` outside of the for loop and return it at the
+end of the function. We compare each value in the array to the value and rewrite
+the value of `largest` if we ever see something in the array larger than it.
+
+Think of this as a one-way valve that only ever goes up.
