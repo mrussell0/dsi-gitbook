@@ -229,6 +229,8 @@ class Main {
 
 > Instructor Note: Give an example of when it is appropriate to use a return type, and another example when a global variable is more appropriate.
 
+> Check: Why doesn't the function above work properly?
+
 ## Independent Practice: Discuss (10 mins)
 
 Take 5 minutes, and discuss these questions with the person next to you:
@@ -312,6 +314,27 @@ In java, if a method declares a parameter, that *parameter* is required to be se
 
 This is where the main functionality of your method will be called.
 
+## Principles of Object Oriented Design (5 mins)
+
+These are principles all programmers need to live by. Don't worry! They are super simple and easy to remember!
+
+#### DRY
+
+`D`ont `R`epeat `Y`ourself : Make sure that if you have a line of code, you aren't typing that same code twice. This is the most important of the three. Seriously. 
+
+#### KISS
+
+`K`eep `I`t `S`imple `S`tupid : Don't make things complicated when it doesn't have to be. Readability matters. Other programmers will thank you when they are trying to figure out what you are doing.
+
+#### SOLID
+
+`SOLID` :
+`S`ingle responsibility: Make sure that each function/method has one clearly defined task.
+`O`pen/Closed Principle: Code should be open to extension, but closed to modification.
+`L`iskov substitution principle: Objects should be replaceable with instances of their subtypes without altering the correctness of that program. Basically classes that inherit from classes shouldn't alter their parent's properties.
+`I`nterface segregation principle: Many specific interfaces will always be better than one overarching interface.
+`D`ependency inversion principle: Depend upon Abstractions. Do not depend upon concretions. Basically this means that high level code should not be dependent on low level code.
+
 
 ## Guided Practice: Writing Functions (15 mins)
 
@@ -343,7 +366,7 @@ Let's add a method that creates a gets user input and responds.
 public static void askAQuestion() {
     Scanner input = new Scanner(System.in);
     String userInput = input.nextLine();
-    if (userString.equals("who")) {
+    if (userInput.equals("who")) {
         System.out.println("We're the ADI class.");
     }
 }
@@ -353,7 +376,7 @@ Actually, let's allow the user to put in a more complicated question, such as 'W
 
 ```java
 ...
-if (userString.contains("who")) {
+if (userInput.contains("who")) {
   ...
 }
 ```
