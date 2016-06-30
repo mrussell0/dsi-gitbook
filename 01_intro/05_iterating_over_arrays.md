@@ -44,6 +44,23 @@ for (int i = 0; i < a.length; i++) {
 }
 ```
 
+## Backwards For Loops
+
+It's totally possible to run a for loop backwards. We need to do three things:
+
+1. Instead of starting i at zero
+simply start it at `int i = a.length - 1`. We have to subtract one from the length
+of the array to access the index of the last element to account for zero-based
+indexing.
+2. Change the test condition to run the for loop while `i >= 0`
+3. Change the step instruction to `i--`
+
+```java
+for (int i = a.length - 1; i >= 0; i--) {
+  System.out.println(a[i]);
+}
+```
+
 ## Fencepost Problems
 
 Sometimes we need to do special things at the beginning or end of when we're
@@ -177,24 +194,20 @@ Notice that we initialize `largest` outside of the for loop and return it at the
 end of the function. We compare each value in the array to the value and rewrite
 the value of `largest` if we ever see something in the array larger than it.
 
-Think of this as a one-way valve that only ever goes up.
-
-## Backwards For Loops
-
-It's totally possible to run a for loop backwards. We need to do three things:
-
-1. Instead of starting i at zero
-simply start it at `int i = a.length - 1`. We have to subtract one from the length
-of the array to access the index of the last element to account for zero-based
-indexing.
-2. Change the test condition to run the for loop while `i >= 0`
-3. Change the step instruction to `i--`
+There's a problem with initlializing `largest` to zero. Imagine passing an array
+of negative numbers to this function. If the largest number in the collection
+were `-12` this function would incorrectly return zero!
 
 ```java
-for (int i = a.length - 1; i >= 0; i--) {
-  System.out.println(a[i]);
+// make sure the array isn't empty
+if (a.length > 0) {
+  // set the 
+  int largest = a[0];
 }
 ```
+
+
+Think of this as a one-way valve that only ever goes up.
 
 ## Double For Loops / Nested For Loops
 
@@ -241,13 +254,37 @@ public static boolean isUnique(int[] a)  {
 }
 ```
 
-## Item Tally
+## Counting One Item in an Array
+
+Write a function called `inventory` that accepts an array of strings representing
+a store inventory and accepts a string representing a product. Return the total
+number of times the product occurs in the array.
+
+```java
+public static int inventory(String[] inventory, String product) {
+  int tally = 0;
+
+  for (int i = 0; i < inventory.length; i++) {
+    if (inventory[i].equals(product) {
+      tally++;
+    }
+  }
+
+  return tally;
+}
+```
+
+
+## Determining an Election
 
 Write a function called `election` that accepts an array of Strings
-representing candidate
-in an array. You may assume the array is sorted.
+representing candidate votes. The function should return the one
+String that occurs the most in the array. You may assume the array is sorted
+and there will be no ties for the winner.
 
-["bush", "bush", "bush", "hedge", "hedge", "hedge", "hedge", "tree", "tree"];
+This array should return `"hedge"`
+
+`["bush", "bush", "bush", "hedge", "hedge", "hedge", "hedge", "tree", "tree"];`
 
 public static String election(String[] a) {
   if (a.length == 0) {
@@ -258,7 +295,7 @@ public static String election(String[] a) {
   int mostVotes = 1;
 
   String item = a[0];
-  int tally = 1;
+  int tally = 0;
 
   for (int i = 0; i < a.length; i++) {
     // tally up votes for the current candidate
@@ -273,7 +310,11 @@ public static String election(String[] a) {
       tally = 1;
       item = a[i];
     }
+  }
 
+  if (tally > mostVotes) {
+    mostVotes = tally;
+    winner = item;
   }
 
   return winner;
