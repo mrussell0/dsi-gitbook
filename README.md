@@ -1,4 +1,4 @@
-# ADI Seattle #1:
+# ADI Seattle #1: Churro
 
 ![ADISEA](adi-sea.png)
 
