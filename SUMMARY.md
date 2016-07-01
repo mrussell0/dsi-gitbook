@@ -56,7 +56,6 @@
     * [HashMaps Example](01_intro/05-hashmaps.md)
     * [Collections Lab](01_intro/05-list-lab.md)
   * [1.8 Using Dev Docs](01_intro/09-documentation.md)
-    * [Using Developer Docs](01_intro/09-documentation.md)
   * [1.9 Review](01_intro/06-review.md)
     * [Lab: Using Documentation](01_intro/06-lab.md)
     * [All 1.x Videos](01_intro/06-videos.md)
