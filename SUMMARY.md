@@ -75,6 +75,7 @@
     * [Views](03-activities-views/01-views.md)
     * [View Methods](03-activities-views/01-view-methods.md)
   * [3.2 Intents, Layouts, & FAB](03-activities-views/d02-intents-layouts.md)
+    * [Layouts 101](03-activities-views/03-layouts.md)
     * [Intents and Changing Activities](03-activities-views/02-intent-to-goto-activity.md)
     * [Sending Data Between Activities](03-activities-views/02-get-put-extras.md)
     * [Lab: Active Calculator](03-activities-views/d02-calc-lab.md)
