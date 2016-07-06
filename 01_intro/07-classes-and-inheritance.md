@@ -146,6 +146,53 @@ Take five minutes to finish getting `mAge` from your object.
 
 > Check: Ask students to review their solution with a partner. What issues are people having?
 
+### toString()
+Every object in Java has a method called `toString` that returns a String representing
+the state of the object. This method is called when the object is printed.
+
+```
+Point p1 = new Point(3, 0);
+Point p2 = new Point(3, 4);
+
+System.out.println(p1);
+System.out.println(p2);
+```
+
+If we don't write our own `toString()` method then Java uses a default implementation
+of the method and prints out it's own custom String. Here we see a string that tells us
+we have a `Point` object at a certain memory location in the Java virutal machine.
+
+```
+Point@6d06d69c
+Point@7852e922
+```
+
+We can overwrite this default behavior to print out much more useful information.
+
+Writing our own `toString()` method makes the program print out way more helpful
+information. Here we construct and return our own custom String that includes
+the point's `this.x` and `this.y` values:
+
+```
+public String toString() {
+  return "(" + this.x + "," + this.y + ")";
+}  
+```
+
+With this new method the program now prints out points as we're used to seeing them.
+
+```
+Point p1 = new Point(3, 0);
+Point p2 = new Point(3, 4);
+
+System.out.println(p1);
+System.out.println(p2);
+```
+
+```
+(3,0)
+(3,4)
+```
 
 ### Introduction: Anonymous Classes (5 mins)
 
