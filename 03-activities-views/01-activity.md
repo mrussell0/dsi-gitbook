@@ -18,6 +18,39 @@ The Activity Life Cycle is a critical concept to understand when designing any A
 * A layout is made of elements defined in XML.
 * **Activities** are the Java implementation and management of the **Layout** you define in XML.
 
+# A Basic Activity
+
+The definition of an activity is something that is done for a particular purpose.
+
+Think about the activity that the user is doing on a screen. If you are looking
+at a screen whose purpose is to log in the user, for example, it should be called
+the Login Activity. If the activity shows a user's social network profile , it
+should be called the User Profile Activity.
+
+An activity is a plain ol' Java class. We can create our own activities by creating
+a new class that extends from the `Activity` class.
+
+Our activity here overrides the `onCreate` method that is called when the Activity
+is created and it does two things:
+
+1. It calls `super.onCreate` and passes `savedInstanceState` to it's inherited parent
+   super constructor. This allows the parent class to set up everything as it wants
+   correctly.
+1. It uses `setContentView` to define what layout is associated with this activity.
+
+This is the simplest Activity you can create in Android!
+
+```java
+public class MainActivity extends Activity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+}
+```
+
 ## Stages of the Activity Life Cycle
 
 The Activity Life Cycle is split into six distinct states that are triggered in a specific order when your activities are changing. The image below shows the six states and the order they happen in.
