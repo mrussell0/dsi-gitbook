@@ -57,6 +57,7 @@
     * [Collections Lab](01_intro/05-list-lab.md)
   * [1.8 Using Dev Docs](01_intro/09-documentation.md)
   * [1.9 Classes & Inheritance](01_intro/07-classes-and-inheritance.md)
+    * [Subclassing](01_intro/07-subclassing.md)
   * [1.10 Review](01_intro/06-review.md)
     * [Lab: Using Documentation](01_intro/06-lab.md)
     * [All 1.x Videos](01_intro/06-videos.md)
