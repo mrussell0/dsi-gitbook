@@ -217,10 +217,31 @@ We must define our `.equals()` method that manually compares the `x` and `y`
 values of two points to one another. Notice that we accept another Point object
 as a parameter here.
 
+In addition, Java allows us to compare any object to any other object in the
+equals method. We must type the parameter always as `Object` so anything can
+be compared. Then, we have to check to see if it's null, and we must use the
+`instanceof` operator to guarantee the object being passed in is actually the
+same class that we're in.
+
+Finally, once we've tested against all the edge cases we can assume the `other`
+object is of type `Point` so we can cast it using `Point p2 = (Point) other;`.
+
+There's a lot of chores involved in creating an equals method testing for all
+of these edge cases. You should understand why these tests are necessary, but
+you don't need to try to memorize them all.
+
+Also, IntelliJ has a nice "Generate..." menu option that will help you
+automatically generate these basic tests. Right click inside the file of
+a class and choose "Generate > equals and hash code".
+
 ```
-public boolean equals(Point p2) {
-  // consider points equal if and only if their x and y values are the same.
-  return this.x == p2.x && this.y == p2.y;
+public boolean equals(Object other) {
+  if (other == null) return false;
+  if (other == this) return true;
+  if (!(other instanceof Point))return false;
+
+  Point p2 = (Point) other;
+  return (this.x == p2.x) && (this.y == p2.y);
 }
 ```
 
