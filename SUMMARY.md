@@ -71,6 +71,7 @@
     * [Views 101](03-activities-views/00-views-101.md)
     * [Views 102](03-activities-views/00-views-102.md)
     * [Classes & Activites](03-activities-views/01-activity.md)
+    * [Subclassing](03-activities-views/03-subclassing.md)
     * [Views](03-activities-views/01-views.md)
     * [View Methods](03-activities-views/01-view-methods.md)
   * [3.2 Intents, Layouts, & FAB](03-activities-views/d02-intents-layouts.md)
