@@ -21,7 +21,7 @@ creator:
 - Explain how subclassing works in Java
 - Extend a class using Java
 
-### STUDENT PRE-WORK
+### STUDENT **PRE-WORK**
 *Before this lesson, you should already be able to:*
 - Create a basic class with getters and setters
 - Instantiate a user-defined class
