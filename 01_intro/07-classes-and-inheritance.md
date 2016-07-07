@@ -113,7 +113,7 @@ Inside of this method, instantiate a Person object with a child:
 
 >Instructor Note: Students might have trouble with this because of the `null` needed. Good to pause, explain the next section and let them try again.
 
-### Introduction: Getters and setters (5 minutes)
+### Getters and setters (5 minutes)
 In Java, there is a convention used called _getters and setters_. It is not a good idea to make _member variables_ public and so instead methods are defined to expose access.
 
 By definition, getters "get" or return stored information from an instance of a class; setters assign information / data to an instance of a class.
@@ -146,8 +146,159 @@ Take five minutes to finish getting `mAge` from your object.
 
 > Check: Ask students to review their solution with a partner. What issues are people having?
 
+### toString()
+Every object in Java has a method called `toString` that returns a String representing
+the state of the object. This method is called when the object is printed.
 
-### Introduction: Anonymous Classes (5 mins)
+```
+Point p1 = new Point(3, 0);
+Point p2 = new Point(3, 4);
+
+System.out.println(p1);
+System.out.println(p2);
+```
+
+If we don't write our own `toString()` method then Java uses a default implementation
+of the method and prints out it's own custom String. Here we see a string that tells us
+we have a `Point` object at a certain memory location in the Java virutal machine.
+
+```
+Point@6d06d69c
+Point@7852e922
+```
+
+We can overwrite this default behavior to print out much more useful information.
+
+Writing our own `toString()` method makes the program print out way more helpful
+information. Here we construct and return our own custom String that includes
+the point's `this.x` and `this.y` values:
+
+```
+public String toString() {
+  return "(" + this.x + "," + this.y + ")";
+}  
+```
+
+With this new method the program now prints out points as we're used to seeing them.
+
+```
+Point p1 = new Point(3, 0);
+Point p2 = new Point(3, 4);
+
+System.out.println(p1);
+System.out.println(p2);
+```
+
+```
+(3,0)
+(3,4)
+```
+
+### Equality
+
+Remember the `.equals()` method we have to use when comparing Strings? Turns out
+`.equals()` is another method all objects have! 
+
+```
+Point a1 = new Point(7, 7);
+Point a2 = new Point(7, 7);
+Point bb = new Point(8, 8);
+
+System.out.println("a1 == a1? " + (a1 == a1)); // true
+System.out.println("a1 == a2? " + (a1 == a2)); // false
+System.out.println("a1 == bb? " + (a1 == bb)); // false
+
+System.out.println("a1.equals(a1)? " + a1.equals(a1)); // true
+System.out.println("a1.equals(a2)? " + a1.equals(a2)); // false
+System.out.println("a1.equals(bb)? " + a1.equals(bb)); // false  
+```
+
+We must define our `.equals()` method that manually compares the `x` and `y`
+values of two points to one another. Notice that we accept another Point object
+as a parameter here.
+
+In addition, Java allows us to compare any object to any other object in the
+equals method. We must type the parameter always as `Object` so anything can
+be compared. Then, we have to check to see if it's null, and we must use the
+`instanceof` operator to guarantee the object being passed in is actually the
+same class that we're in.
+
+Finally, once we've tested against all the edge cases we can assume the `other`
+object is of type `Point` so we can cast it using `Point p2 = (Point) other;`.
+
+There's a lot of chores involved in creating an equals method testing for all
+of these edge cases. You should understand why these tests are necessary, but
+you don't need to try to memorize them all.
+
+Also, IntelliJ has a nice "Generate..." menu option that will help you
+automatically generate these basic tests. Right click inside the file of
+a class and choose "Generate > equals and hash code".
+
+```
+public boolean equals(Object other) {
+  if (other == null) return false;
+  if (other == this) return true;
+  if (!(other instanceof Point))return false;
+
+  Point p2 = (Point) other;
+  return (this.x == p2.x) && (this.y == p2.y);
+}
+```
+
+Consider the differences in results after adding the new `.equals()` method.
+Pay special attention to how `a3` refers to `a1` by being set equal to it without
+creating it's own new Point object.
+
+```
+Point a1 = new Point(7, 7);
+Point a2 = new Point(7, 7);
+Point a3 = a1; // we say a3 "references" the same Point as a1
+
+System.out.println("a1 == a1? " + (a1 == a1)); // true
+System.out.println("a1 == a2? " + (a1 == a2)); // false
+System.out.println("a1 == a3? " + (a1 == a3)); // true
+
+System.out.println("a1.equals(a1)? " + a1.equals(a1)); // true
+System.out.println("a1.equals(a2)? " + a1.equals(a2)); // true
+System.out.println("a1.equals(a3)? " + a1.equals(a3)); // true
+```
+
+After adding the new `.equals()` method notice that the code behaves differently.
+Our new equals method compares the x and y values of each of these points and reports
+they are all the same.
+
+The points a1 and a2 are still not "strictly equal" to each other using the `==`
+operator, but now our custom `.equals()` method returns true. Objects will only
+ever be strictly equal to each other with the `==` operator if they have a reference
+to literally the same object.
+
+Notice that a1 is strictly equal to a3 becuase they both **refer** to the exact same
+Point object.
+
+### Practice Writing Classes (20 mins)
+
+Work by yourself to implement the following classes:
+
+#### Rectangle Class
+Write a `Rectangle` class with the following methods:
+- a constructor that accepts two integers representing `width` a `length`
+- an `area` method that returns an int
+- a `perimeter` method that returns an int the total perimeter
+- an `equals` method that considers rectangles equal if their width and length
+  are the same (or if their width/length and length/width are the same!)
+- a method `isSquare` that returns true if the width and length are the same.
+- a `toString` method that prints out an ASCII representation of the rectangle.
+
+```
+Rectangle r = new Rectangle(4, 1);
+System.out.println(r);
+
++----+
+|    |
++----+
+```
+
+### Anonymous Classes (5 mins)
 
 Java has a feature that allows interfaces to be implemented "on the fly". This is called anonymous classes.
 
