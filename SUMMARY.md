@@ -101,5 +101,5 @@
 * [11. Job Hunt Prep](11-job-hunt/readme.md)
 * [Project: Rock Paper Scissors](project-rps/readme.md)
   * [Rubric](project-rps/rubric.md)
-* [Project: Todo List](project-todo-list/readme.md)
-  * [Rubric](project-todo-list/rubric.md)
+* [Project: List App](project-list-app/readme.md)
+  * [Rubric](project-list-app/rubric.md)
