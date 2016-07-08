@@ -1,8 +1,8 @@
-Project #1: List App
+# Project #1: List App
 
 ---
 
-# Overview
+## Overview
 It's time to create your very first Android app that runs on a real Android device!
 You will learn the basic Android UI building blocks, and how they fit together to
 make a fully functional app.
