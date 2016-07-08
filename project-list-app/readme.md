@@ -30,7 +30,8 @@ create them. Don't wait until the end!
 #Requirements:
 - Implement a paper prototype for your app.
 - Your app must contain a ListView and/or GridView
-- Your project must implement at least two Activities
+- Your app should be able to show a list of lists
+- Your app must implement at least two Activities
 - Data must be passed from one activity to another
 - Data changes in one Activity must appear in all other Activities.
 - Persist data while your app is open using a **singleton** (taught during project week)
@@ -40,6 +41,19 @@ create them. Don't wait until the end!
 - Create custom Java classes to model your data (see below)
 - Display correctly in both landscape and portrait orientations
 - Show error messages if invalid input is given
+
+---
+
+#### List of Lists
+Your app should be able to hold a collection of lists. For example: 
+
+- A Pokemon app could have a list of Pokemon Types, then a list of specific Pokemon inside that type.
+- A library app could have a list of authors, then a list of books the author has written.
+- A bus app could have a list of bus routes, then a list of stops and arrivals.
+- A To-Do list app could have a list categories, and things to do inside each category.
+
+You're app must have a list of lists somewhere!! Ask the instructors if you're not sure if
+your app meets this requirement.
 
 ---
 
