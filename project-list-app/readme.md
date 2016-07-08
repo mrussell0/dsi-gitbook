@@ -29,7 +29,7 @@ create them. Don't wait until the end!
 
 #Requirements:
 - Implement a paper prototype for your app.
-- Your app must contain a ListView and/or GridView
+- Your app must contain a ListView and/or GridView in two activities
 - Your app should be able to show a list of lists
 - Your app must implement at least two Activities
 - Data must be passed from one activity to another
