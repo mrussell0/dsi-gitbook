@@ -91,7 +91,7 @@
 * [4. SQL](04-sql/readme.md)
 * [5. Testing](05-testing/readme.md)
     * [Testing Fundamentals 101](05-testing/05-debugging-101.md)
-    * [Testing Fundamentals 102](03-testing/05-debugging-102.md)
+    * [Testing Fundamentals 102](05-testing/05-debugging-102.md)
 * [6. Material Design](06-material-design/readme.md)
 * [7. HTTP, REST, & JSON](07-http/readme.md)
 * [8. UX & Research](08-ux/readme.md)
