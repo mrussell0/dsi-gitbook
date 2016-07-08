@@ -90,6 +90,7 @@
 * [6. Material Design](06-material-design/readme.md)
 * [7. HTTP, REST, & JSON](07-http/readme.md)
 * [8. UX & Research](08-ux/readme.md)
+    * [Paper Prototyping](08-ux/01-paper-prototyping.md)
 * [9. Content Providers & Google Play](09-content-providers/readme.md)
 * [10. Computer Science](10-cs/readme.md)
 * [11. Job Hunt Prep](11-job-hunt/readme.md)
