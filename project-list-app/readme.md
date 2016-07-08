@@ -34,7 +34,7 @@ create them. Don't wait until the end!
 - Your app must implement at least two Activities
 - Data must be passed from one activity to another
 - Data changes in one Activity must appear in all other Activities.
-- Persist data while your app is open using a **singleton** (taught during project week)
+- Persist data while your app is open using a **singleton** (or other, better, ways)
 - Users can add new items to each list
 - Users can edit items in each list
 - Users can delete items in each list
