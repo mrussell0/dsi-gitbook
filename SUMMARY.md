@@ -1,5 +1,6 @@
 * [i. Introduction & Syllabus](README.md)
   * [Welcome](0_onboarding/welcome.md)
+  * [Code of Conduct](0_onboarding/code-of-conduct.md)
   * [Student Holidays](0_onboarding/holidays.md)
   * [Attendance Policy](0_onboarding/attendance_policy.md)
   * [House Rules](0_onboarding/house_rules.md)
