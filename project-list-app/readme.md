@@ -83,7 +83,7 @@ will be covered thoroughly in a small lecture and lab during project week.
 #### Code of Conduct
 
 As always, your app must adhere to General Assembly's
-[student code of conduct guidelines](../../../resources/guidelines/code-of-conduct.md).
+[student code of conduct guidelines](../0_onboarding/code-of-conduct.md).
 
 If you have questions about whether or not your work adheres to these guidelines,
 please speak with a member of your instructional team.
