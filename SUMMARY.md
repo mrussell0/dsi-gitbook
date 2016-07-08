@@ -60,6 +60,7 @@
     * [Classes](01_intro/07-classes-and-inheritance.md)
     * [Point Class Example](01_intro/07-point-class-example.md)
     * [Subclassing](01_intro/07-subclassing.md)
+  * [1.11 Whiteboard Interviews](01_intro/10-whiteboard-interviews.md)
   * [1.10 Review](01_intro/06-review.md)
     * [Lab: Using Documentation](01_intro/06-lab.md)
     * [All 1.x Videos](01_intro/06-videos.md)
