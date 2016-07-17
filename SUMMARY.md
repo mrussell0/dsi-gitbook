@@ -93,6 +93,8 @@
   * [Intro to Databases](04-sql/00-intro-to-databases.md)
   * [Intro to SQL](04-sql/01-intro-to-sql.md)
   * [Intro to Cursors](04-sql/02-intro-to-cursors.md)
+  * [SQLite in Android](04-sql/03-sqlite-in-android.md)
+  * [Cursor Adapters](04-sql/04-cursor-adapters.md)
 * [5. Testing](05-testing/readme.md)
     * [Testing Fundamentals 101](05-testing/05-debugging-101.md)
     * [Testing Fundamentals 102](05-testing/05-debugging-102.md)
