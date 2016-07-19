@@ -129,7 +129,7 @@ The returned data includes information about EMP_ID, NAME and DEPT.
 
 ## Guided Practice: Inner Joins in Android (20 mins)
 
-Import the project [starter-code](relationships-between-tables-lesson/starter-code). Discuss with the instructor the way both table are created (methods: `getInstance(Context context)`, `onCreate(SQLiteDatabase db)`, `insertRow(Employee employee)`,`insertRowDepartment(Department department)`) in the class Helper. Discuss why in Main Activity class the data gets put in the database in the AsyncTask and the text view gets updated on the UI thread.
+Import the project [starter-code](https://github.com/ga-students/android-joins-starter). Discuss with the instructor the way both table are created (methods: `getInstance(Context context)`, `onCreate(SQLiteDatabase db)`, `insertRow(Employee employee)`,`insertRowDepartment(Department department)`) in the class Helper. Discuss why in Main Activity class the data gets put in the database in the AsyncTask and the text view gets updated on the UI thread.
 
 
 In Android, using just SQL queries is not enough to get information from the database. As you might remember from your database lesson, you call `getWritableDatabase()` to get a SQLiteDatabase object, on which you call  `rawQuery() ` passing the query string. As a result you get a cursor object that returns entries:  
