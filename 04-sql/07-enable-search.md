@@ -269,6 +269,57 @@ Now you will perform a search on a different database. This database also contai
 
 ***
 
+## Live Updating and Clearing
+
+You may want to configure your search view to update the results live as users type.
+You can do this by attaching a `OnQueryTextListener` to the search view. The listener
+has methods that listen to each keypress, and it listens to a submission event for when
+text is fully submitted.
+
+You can configure the listener to perform a search every time the query is updated.
+Include some extra logic to detect when the query string is an empty string and
+return the full table results instead of performing another search.
+
+```java
+@Override
+public boolean onCreateOptionsMenu(Menu menu) {
+    MenuInflater inflater = getMenuInflater();
+    inflater.inflate(R.menu.main_menu, menu);
+
+    SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+    SearchView searchView = (SearchView) menu.findItem(R.id.search).getActionView();
+    searchView.setSearchableInfo( searchManager.getSearchableInfo(getComponentName()));
+
+    searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+        @Override
+        public boolean onQueryTextChange(String newText) {
+            ShoppingSQLiteOpenHelper sql = new ShoppingSQLiteOpenHelper(getApplicationContext());
+            Cursor cursor;
+
+            if (newText.equals("")) {
+                // get the full list if the user deletes their entire query.
+                cursor = sql.getShoppingList();
+            } else {
+                // otherwise, always perform a search with the new text
+                cursor = sql.search(newText);
+            }
+
+            mCursorAdapter.swapCursor(cursor);
+
+            return false;
+        }
+
+        @Override
+        public boolean onQueryTextSubmit(String query) {
+            return false;
+        }
+    });
+
+    return true;
+}
+```
+
+
 <a name="conclusion"></a>
 ## Conclusion (5 mins)
 
