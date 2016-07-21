@@ -99,6 +99,7 @@
   * [Cursor Adapters](04-sql/04-cursor-adapters.md)
   * [Table Joins](04-sql/05-joins.md)
   * [Database Relationships](04-sql/06-database-relationships.md)
+  * [Enable Search](04-sql/07-enable-search.md)
   * [Content Providers](04-sql/02-content-providers.md)
 * [5. Testing](05-testing/readme.md)
     * [Testing Fundamentals 101](05-testing/05-debugging-101.md)
