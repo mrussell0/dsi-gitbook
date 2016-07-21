@@ -114,6 +114,7 @@
 * [10. Computer Science](10-cs/readme.md)
   * [Intro to Recursion](10-cs/recursion.md)
   * [Recursion Solutions](10-cs/recursion-solutions.md)
+  * [Big-O Algorithm Complexity](10-cs/big-o-algorithm-complexity.md)
 * [11. Job Hunt Prep](11-job-hunt/readme.md)
 * [Project: Rock Paper Scissors](project-rps/readme.md)
   * [Rubric](project-rps/rubric.md)
