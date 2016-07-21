@@ -39,9 +39,9 @@ recursion basically means, "a function that calls itself."
 Here's some pictures that we could say are **recursive** and exhibit properties
 of **recursion**:
 
-![Mona Lisa holding her own painting](recursion_mona_lisa.jpg)
-![Hulk Hogan's beard growing his own face](recursion_hulk_hogan.jpg)
-![Droste branding](recursion_droste.jpg)
+![Mona Lisa holding her own painting](screenshots/recursion_mona_lisa.jpg)
+![Hulk Hogan's beard growing his own face](screenshots/recursion_hulk_hogan.jpg)
+![Droste branding](screenshots/recursion_droste.jpg)
 
 ## Joke Dictionary Definition
 **Recursion:** see definition of recursion
@@ -263,7 +263,7 @@ Single-character Strings are a base case. The algorithm hits the base
 case and returns `true`. We can see `true` return from each function
 until it returns all the way to the top of the first function call.
 
-![call stack visualization of palindrome](call-stack-palindrome.png)
+![call stack visualization of palindrome](screenshots/call-stack-palindrome.png)
 
 ```java
 public static boolean isPalindrome(String ss) {
@@ -337,7 +337,7 @@ public static String reverse(String ss) {
 }
 ```
 
-![call stack visualization of reverse](call-stack-reverse.png)
+![call stack visualization of reverse](screenshots/call-stack-reverse.png)
 
 
 ### Fibonacci Solution
@@ -355,4 +355,4 @@ public static int fib(int n) {
 }
 ```
 
-![call stack visualization of fib](call-stack-fibonacci.png)
+![call stack visualization of fib](screenshots/call-stack-fibonacci.png)
