@@ -104,6 +104,7 @@
 * [5. Testing](05-testing/readme.md)
     * [Testing Fundamentals 101](05-testing/05-debugging-101.md)
     * [Testing Fundamentals 102](05-testing/05-debugging-102.md)
+    * [User Stories](05-testing/05-testing-user-stories.md)
     * [JUnit](05-testing/05-junit-lesson.md)
 * [6. Material Design](06-material-design/readme.md)
 * [7. HTTP, REST, & JSON](07-http/readme.md)
