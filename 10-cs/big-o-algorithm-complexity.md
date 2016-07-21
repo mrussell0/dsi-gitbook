@@ -72,9 +72,9 @@ An algorithm that is O(1), is said to be "Big O of 1" or **constant**, and does 
 depending on the size of the input. This is good. This is fast even for very large values
 of n.
 
-```js
-function constantRuntime(x) {
-  var result = x * 2;
+```java
+public static int constantRuntime(int x) {
+  int result = x * 2;
   return result;
 }
 ```
@@ -85,10 +85,10 @@ An algorithm that is O(n), is said to be "Big O of n" or **linear**, and this in
 that the resources required grow proportionally to the size of the input. This is reasonable
 performance.
 
-```js
-function linearRuntime(x) {
-  for (var i = 0; i < x; i++) {
-    console.log(i);
+```java
+public static void linearRuntime(int x) {
+  for (int i = 0; i < x; i++) {
+    System.out.println(i);
   }
 }
 ```
@@ -100,11 +100,11 @@ and it means the resources grow in proportion to the square of the input. This i
 **slow**. Think of really big numbers and then think of them squared.
 
 
-```js
-function quadraticRuntime(x) {
-  for (var i = 0; i < x; i++) {
-    for (var j = 0; j < x; j++) {
-      console.log(i * j);
+```java
+public static void quadraticRuntime(int x) {
+  for (int i = 0; i < x; i++) {
+    for (int j = 0; j < x; j++) {
+      System.out.println(i * j);
     }
   }
 }
@@ -163,24 +163,25 @@ the amount of pages left to look through goes down:
 Here's an actual implementation of using binary search to look for things
 efficiently in an array in JavaScript:
 
-```js
-function binarySearch(arr, search) {
-  var min = 0;
-  var max = arr.length - 1;
-  var index;
-  var elem;
+```java
+public static int binarySearch(int[] haystack, int needle) {
+  // min and max represent the bounds of the array we're
+  // searching withing. We start this equal to the entire array.
+  int min = 0;
+  int max = haystack.length - 1;
+
+  int index;
+  int value;
 
   while (min <= max) {
-    index = Math.floor((min + max) / 2);
-    elem = arr[index];
+    int index = (int) Math.floor((min + max) / 2);
+    int value = haystack[index];
 
-    if (elem < search) {
+    if (value < needle) {
       min = index + 1;
-    }
-    else if (elem > search) {
+    } else if (value > needle) {
       max = index - 1;
-    }
-    else {
+    } else {
       return index;
     }
   }
