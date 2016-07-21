@@ -107,6 +107,7 @@
     * [User Stories](05-testing/05-testing-user-stories.md)
     * [JUnit](05-testing/05-junit-lesson.md)
 * [6. Material Design](06-material-design/readme.md)
+  * [Intro to Material Design](06-material-design/intro-to-material-design.md)
 * [7. HTTP, REST, & JSON](07-http/readme.md)
 * [8. UX & Research](08-ux/readme.md)
     * [Paper Prototyping](08-ux/01-paper-prototyping.md)
