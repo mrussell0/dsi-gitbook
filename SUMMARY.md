@@ -110,6 +110,7 @@
     * [Paper Prototyping](08-ux/01-paper-prototyping.md)
 * [9. Content Providers & Google Play](09-content-providers/readme.md)
 * [10. Computer Science](10-cs/readme.md)
+  * [Recursion](/Users/moonmayor/GA/ADI-SEA-01/adi-mudkipz/10-cs/recursion-lesson/readme.md)
 * [11. Job Hunt Prep](11-job-hunt/readme.md)
 * [Project: Rock Paper Scissors](project-rps/readme.md)
   * [Rubric](project-rps/rubric.md)
