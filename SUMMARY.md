@@ -101,7 +101,7 @@
   * [Database Relationships](04-sql/06-database-relationships.md)
   * [Enable Search](04-sql/07-enable-search.md)
   * [Content Providers](04-sql/02-content-providers.md)
-  * [Detail Views](/Users/moonmayor/GA/ADI-SEA-01/adi-mudkipz/04-sql/08-detail-views.md)
+  * [Detail Views](04-sql/08-detail-views.md)
 * [5. Testing](05-testing/readme.md)
     * [Testing Fundamentals 101](05-testing/05-debugging-101.md)
     * [Testing Fundamentals 102](05-testing/05-debugging-102.md)
