@@ -107,6 +107,7 @@
     * [JUnit](05-testing/05-junit-lesson.md)
 * [6. Material Design](06-material-design/readme.md)
 * [7. HTTP, REST, & JSON](07-http/readme.md)
+    * [Async & Handlers](07-http/07-async-handlers-lesson.md)
 * [8. UX & Research](08-ux/readme.md)
     * [Paper Prototyping](08-ux/01-paper-prototyping.md)
 * [9. Content Providers & Google Play](09-content-providers/readme.md)
