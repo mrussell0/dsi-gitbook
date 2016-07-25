@@ -91,6 +91,8 @@
     * [Challenge: Fix This Code](03-activities-views/03-listview-challenge.md)
   * [3.4 Singletons](03-activities-views/03-lists-arrayadapters.md)
     * [The Case Against](03-activities-views/04-singletons-against.md)
+  * [View Life Cycle I](03-activities-views/05-view-lifecycle-1.md)
+  * [View Life Cycle II](03-activities-views/05-view-lifecycle-2.md)
 * [4. SQL Databases](04-sql/readme.md)
   * [Intro to Databases](04-sql/00-intro-to-databases.md)
   * [Intro to SQL](04-sql/01-intro-to-sql.md)
