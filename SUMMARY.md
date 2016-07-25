@@ -94,6 +94,8 @@
     * [The Case Against](03-activities-views/04-singletons-against.md)
   * [View Life Cycle I](03-activities-views/05-view-lifecycle-1.md)
   * [View Life Cycle II](03-activities-views/05-view-lifecycle-2.md)
+  * [Fragments Part I](03-activities-views/06-fragments-part-1.md)
+  * [Fragments Part II](03-activities-views/06-fragments-part-2.md)
 * [4. SQL Databases](04-sql/readme.md)
   * [Intro to Databases](04-sql/00-intro-to-databases.md)
   * [Intro to SQL](04-sql/01-intro-to-sql.md)
