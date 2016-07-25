@@ -79,6 +79,7 @@
     * [Activity Lifecycle](03-activities-views/01-activity.md)
     * [Views](03-activities-views/01-views.md)
     * [View Methods](03-activities-views/01-view-methods.md)
+    * [Designing Multiple Devices](03-activities-views/05-designing-multiple-devices.md)
   * [3.2 Intents, Layouts, & FAB](03-activities-views/d02-intents-layouts.md)
     * [Layouts 101](03-activities-views/03-layouts.md)
     * [Intents and Changing Activities](03-activities-views/02-intent-to-goto-activity.md)
