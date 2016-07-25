@@ -122,6 +122,37 @@ To do this, we will be using a `Dialog`, which brings a popup over the screen, c
 
 We are going to be making a basic countdown timer app that is only timing while the initial activity is running. When we switch to another activity, we will pause the time until we return to the first activity.
 
+Create a `CountDownTimer` using `mTimeLeft` and an interval of 1000 milliseconds. The timer has
+an `onTick` method, an `onFinish` method and you can cancel it by calling `timer.cancel()`.
+
+Have the timer updare a textview with the time left on each tick, and have it replace the 
+text with the string "done!" when the timer finishes.
+
+```
+@Override
+protected void onPause() {
+    super.onPause();
+    mCountDownTimer.cancel();
+}
+
+@Override
+protected void onResume() {
+    super.onResume();
+    mCountDownTimer = new CountDownTimer(mTimeLeft, 1000) {
+
+        public void onTick(long millisUntilFinished) {
+            mTimeLeftTextView.setText("seconds remaining: " + millisUntilFinished / 1000);
+            mTimeLeft = millisUntilFinished;
+        }
+
+        public void onFinish() {
+            mTimeLeft = 0;
+            mTimeLeftTextView.setText("done!");
+        }
+    }.start();
+}
+```
+
 > Instructor Note: Starter code can be found in the [CountdownApp](https://github.com/ga-students/view-life-cycle-2-starter-code/tree/master/CountdownApp) project. Solution code in the appropriate [solution code](solution-code/CountdownApp)
 
 ***
