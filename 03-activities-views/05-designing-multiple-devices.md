@@ -1,316 +1,262 @@
----
-title: Introduction to Material Design
-type: lesson
-duration: "1:35"
-creator: James Davis (NYC)
+
 ---
 
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Introduction to Material Design
+| Title | Duration | Name | City |
+| --- | --- | --- | --- |
+| Designing for multiple devices | 3:00 | Yuliya Kaleda | NYC |
+
+<!--  OUTSTANDING:
+1. Checks
+-->
+
+
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Designing for multiple devices
 
 ### LEARNING OBJECTIVES
-*After this lesson, students will be able to:*
-
-- Describe the concept of tangible surfaces as they relate to material design
-- Describe how themes, primary/secondary colors, etc apply to styling an application
-- Explore material design assets and libraries
-- Relate how animation and meaningful motion connects to user interfaces and interaction
+*After this lesson, you will be able to:*
+- Describe the ways in which user behaviors respond differently to unique screen sizes (mobile vs. tablet)
+- Describe how to support portrait and landscape configurations
+- Create an application that can be launched in different languages
+- Create an application that can support devices of different screen sizes and screen density
 
 
 ### STUDENT PRE-WORK
-*Before this lesson, students should already be able to:*
+*Before this lesson, you should already:*
+- Get familiar with a general project structure in Android Studio
+- Get flexible with creating different layouts (Relative, Linear, Frame, Grid, Coordinate)
 
-- Create XML layouts
+### INSTRUCTOR PREP
+*Before this lesson, instructors will need to:*
+- Open and test the provided MultipleDevices app
 
----
-
+---  
 ## Opening (5 mins)
+Android devices come in many shapes and sizes all around the world. With a wide range of device types, you have an opportunity to reach
+a huge audience with your app. In order to be as successful as possible on Android, your app needs to adapt to various device
+configurations. Some of the important variations that you should consider include different languages, screen sizes, and versions of the
+Android platform.
 
-Before we talk about Material Design, take 5 minutes to answer the following question:
+Let's go over some vocabulary important to this lesson:
 
-Why is it called *material* design?
+*Drawable* - a general abstraction for "something that can be drawn." Most often you will deal with Drawable as the type of resource retrieved for drawing things to the screen. Unlike a View, a Drawable does not have any facility to receive events or otherwise interact with the user.
 
-## Introduction: Material Design (5 mins)
+## Introduction: What is an API Level? Supporting Different API Levels (25 mins)
 
-Material Design is a newer design specification, developed by Google, that defines guidelines for apps to be bold yet simply designed.
+API Level is an integer value that uniquely identifies the framework API revision offered by a version of the Android platform. The API Level identifier serves a key role in ensuring the best possible experience for users and application developers:
 
-These guidelines are meant to unify the interfaces of multiple apps across multiple platforms. Although they are not designed exactly the same way, all apps that use Material Design *feel* related because they all use similar assets and guidelines.
+* It lets the Android platform describe the maximum framework API revision that it supports
+* It lets applications describe the framework API revision that they require
+* It lets the system negotiate the installation of applications on the user's device, such that version-incompatible applications are not installed
 
-The *material* in Material Design is referring to paper. The specifications are there to make an app feel more real.
+While the latest versions of Android often provide great APIs for your app, you should continue to support older versions of Android until more devices get updated. Generally, it’s a good practice to support about **90% of the active devices**, while targeting your app to the latest version.  
 
-Again, the goal is not to have the app look real, but to feel real. When a user interacts with your app, it should react to their touch as if the user were interacting with a sheet paper on the table. It should move responsively and realistically.
+##### Platform Versions
+The chart below provides data about the relative number of devices running a given version of the Android platform.
+![](https://cloud.githubusercontent.com/assets/10750398/11850985/6bfda560-a441-11e5-87f8-6ff9c6eccab4.jpg)
 
-Paper can also split and peel, it can be pushed around, stacked atop each other, and can contain ink that defines its content.
+##### Specify Minimum, Maximum and Target API Levels
 
-> Check: How does Material Design relate to real world objects?
+When talking about API Level, there are three main attributes to take into consideration:
+1.  ```android:minSdkVersion```
 
-## Demo: (Video) Making Material Design (10 mins)
+  An integer designating the minimum API Level required for the application to run. The Android system will prevent the user from installing the application if the system's API Level is lower than the value specified in this attribute. You should always declare this attribute.
 
-Let's watch the following to see the thought process of the designers at Google as they create Material Design.
+  *Caution*: If you do not declare this attribute, the system assumes a default value of "1", which indicates that your application is compatible with all versions of Android. If your application is not compatible with all versions (for instance, it uses APIs introduced in API Level 3) and you have not declared the proper minSdkVersion, then when installed on a system with an API Level less than 3, the application will crash during runtime when attempting to access the unavailable APIs. For this reason, be certain to declare the appropriate API Level in the minSdkVersion attribute.
 
+2. ```android:targetSdkVersion```
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=rrT6v5sOwJg" target="_blank"><img src="http://img.youtube.com/vi/rrT6v5sOwJg/0.jpg" width="300" border="10" /></a>
+  An integer designating the API Level that the application targets. If not set, the default value equals that given to minSdkVersion.
+  This attribute informs the system that you have tested against the target version and the system should not enable any compatibility behaviors to maintain your app's forward-compatibility with the target version. The application is still able to run on older versions (down to minSdkVersion). To maintain your application along with each Android release, you should increase the value of this attribute to match the latest API level, then thoroughly test your application on the corresponding platform version.
 
-https://www.youtube.com/watch?v=rrT6v5sOwJg
+3.  ```android:maxSdkVersion```
 
-## Demo: Utilizing color (20 mins)
+  An integer designating the maximum API Level on which the application is designed to run.
+  In Android 1.5, 1.6, 2.0, and 2.0.1, the system checks the value of this attribute when installing an application and when re-validating the application after a system update. In either case, if the application's maxSdkVersion attribute is lower than the API Level used by the system itself, then the system will not allow the application to be installed. In the case of re-validation after system update, this effectively removes your application from the device.
 
-#### Apply the Material theme
+  Declaring this attribute is not recommended. There is no need to set the attribute as means of blocking deployment of your application onto new versions of the Android platform as they are released.
 
-To provide system widgets that are updated with material design, you apply a material theme.
+  Future versions of Android (beyond Android 2.0.1) will no longer check or enforce the maxSdkVersion attribute during installation or re-validation.
 
-**In res/values/styles.xml:**
+###### Example:
+```
+<uses-sdk android:minSdkVersion="integer"
+          android:targetSdkVersion="integer"
+          android:maxSdkVersion="integer" />
+```
+These attributes can be found and changed in build.gradle file as well.  
+###### Example:
+
+![](https://cloud.githubusercontent.com/assets/10750398/11851073/c9525e68-a441-11e5-896a-49b3021faa2c.png)  
+
+If the above described properties are different in manifest and gradle files, gradle overrides the manifest values. It is a general practice to update build.gradle file rather than manifest. So you can safely remove or don't even add these attributes in the manifest and just update the gradle.
+
+##### Application forward compatibility
+Android applications are generally forward-compatible with new versions of the Android platform. Each successive version of the Android platform can include updates to the Android application framework API that it delivers.
+Updates to the framework API are designed so that the new API remains compatible with earlier versions of the API. That is, most changes in the API are additive and introduce new or replacement functionality. As parts of the API are upgraded, the older replaced parts are deprecated but are not removed, so that existing applications can still use them.
+
+As new versions of Android are released, some style and behaviors may change. To allow your app to take advantage of these changes and ensure that your app fits the style of each user's device, you should set the targetSdkVersion value to match the latest Android version available.
+
+##### Application backward compatibility
+Android applications are not necessarily backward compatible with versions of the Android platform older than the version against which they were compiled. Each new version of the Android platform can include new framework APIs, such as those that give applications access to new platform capabilities or replace existing API parts. The new APIs are accessible to applications when running on the new platform and also when running on later versions of the platform, as specified by API Level. Conversely, because earlier versions of the platform do not include the new APIs, applications that use the new APIs are unable to run on those platforms.
+
+Although it's unlikely that an Android-powered device would be downgraded to a previous version of the platform, it's important to realize that there are likely to be many devices in the field that run earlier versions of the platform. Even among devices that receive OTA updates, some might lag and might not receive an update for a significant amount of time.
+
+## Independent Practice: Create a new project (20 mins)  
+
+Create a new project that will support Ice Cream Sandwich (the most recent ICS API level) devices. When the project is created, open build.gradle(Module:app) and change minSdk to Kitkat API level. Run the project. If your testing device is Kitkat or higher, it should run successfully without any failures.  
+Open the manifest file and add a uses-sdk line changing the number to the API level of your device version:  
+```xml
+<uses-sdk android:minSdkVersion="19" />
+```
+Then in build.gradle(Module:app) change the line:
 
 ```xml
-<resources>
-  <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-    <!-- theme customizations -->
-  </style>
-</resources>
+minSdkVersion:
+```  
+...to the highest API level. Run the project. It should fail and throw an error that the device is not compatible (unless you have a Marshmallow Android device). *Pay attention that although in the manifest we set an API level to the version of our device, thus making our app compatible with the device, the gradle overrides its value and sets the minSdkLevel to the Marshmallow version (API Level 23).*
+Thus, we can come to the conclusion that it is a better practice to add/change API levels in the build.gradle(Module:app) file.
+
+## Guided Practice: Check System Version at Runtime (10 mins)
+Android provides a unique code for each platform version in the Build constants class. Below is an example of the code to build conditions that ensure the code that depends on higher API levels is executed only when those APIs are available on the system.
+
+```java
+private void setUpActionBar() {
+    // Make sure we're running on Honeycomb or higher to use ActionBar APIs
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+        ActionBar actionBar = getActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+    }
+}
 ```
 
-This is the baseline for your app's feel and color.
+## Introduction: Supporting Different Languages (10 mins)
 
-Make sure your app is using your defined theme in the **Android Manifest** xml, under the application tab:
+It’s always a good practice to extract UI strings from your app code and keep them in an external file. Android makes this easy with a resources directory in each Android project. To add support for more languages, create additional values directories inside res/ that include a hyphen and the ISO language code at the end of the directory name. For example, values-es/ is the directory containing simple resources for the Locales with the language code "es".
 
-```xml
-  <application
-      android:theme="@style/AppTheme">
-    <!-- Activities go here -->
-  </application>
-```
+Android loads the appropriate resources according to the locale settings of the
+device at run time. The folder structure will look like this:
 
-#### Primary, Secondary, and Accent color
+![](https://cloud.githubusercontent.com/assets/10750398/11850638/b00e7ef2-a43f-11e5-97d8-2edc99aca02e.png)
 
-When you have time, take a look at [Material Design color Palette](https://www.google.com/design/spec/style/color.html#color-color-schemes) for a good related reading.
+Add the string values for each locale into the appropriate file. At runtime, the Android system uses the appropriate set of string resources based on the locale currently set for the user's device. For example, the following are some different string resource files for different languages.
 
-The theme you define in your styles.xml is applied to the whole app. In it, you can define custom colors that will define the app's main colors.
-
-The **primary color** is your app's branding color. For a store like Target, their primary color would be red, and their whole store is designed around it. The primary color is the one most widely used. It defines the color of the toolbar.
-
-The **secondary color** is usually a darker or lighter version of the primary color. It's used to relay related information.
-
-The **accent color** provides a contrast to the other colors, usually much different. It's not used as much as the primary color, but is there to highlight interactive elements on the screen. It separates the element from the rest of the app, giving it more importance.
-
-> Check: Of the following, what are the primary, secondary, and accent colors?
-
-<p align="center">
-
-  <a href="https://lh4.ggpht.com/PcD9Arl2DUqEwsNU8w3KMRAhfGmN4zOca40hEO_GPHJiR_ibvEzMwWsafHtk8mh62w=h900-rw"><img src="https://lh4.ggpht.com/PcD9Arl2DUqEwsNU8w3KMRAhfGmN4zOca40hEO_GPHJiR_ibvEzMwWsafHtk8mh62w=h900-rw" height="300px"/></a>
-
-  <a href="http://core0.staticworld.net/images/article/2015/04/material-design-apps-android-paperboy-100579199-large.idge.jpg"><img src="http://core0.staticworld.net/images/article/2015/04/material-design-apps-android-paperboy-100579199-large.idge.jpg" height="300px"/></a>
-
-  <a href="http://core0.staticworld.net/images/article/2015/04/material-design-apps-android-buzzfeed-100579184-large.idge.jpg"><img src="http://core0.staticworld.net/images/article/2015/04/material-design-apps-android-buzzfeed-100579184-large.idge.jpg" height="300px"/></a>
-
-</p>
----
-
-In your apps, to change the three main colors, go back to your **styles.xml** and add the following values:
-
-```xml
-<resources>
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-    </style>
-</resources>
-```
-
-In the *colorPrimary*, *colorPrimaryDark*, and *colorAccent* items, you can define any color. It can be from a resource, like the above example, or just a color hex code like `<item name="colorAccent">#87001F</item>`.
-
-To view and change the color resources, you have to go to the **colors.xml** file:
-
-In **res/values/colors.xml**:
+English (default locale), /values/strings.xml:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <string name="program">General Assembly</string>
 </resources>
 ```
 
-Changing the values in the colors.xml changes the colors of everything that refers to it.
-
-## Independent Practice: Change the colors of an app (10 mins)
-
-For this practice, create a new Android project with the **blank** Activity template (not empty).
-
-Change the primary, secondary, and accent colors to be different. Observe how the toolbar and floating action button colors change.
-
-## Demo: (Video) Material widgets (5 mins)
-
-Let's look more about the thought process of the designers at Google as they create Material Design:
-
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=32i7ot0y78U" target="_blank"><img src="http://img.youtube.com/vi/32i7ot0y78U/0.jpg" width="300" border="10" /></a>
-
-https://www.youtube.com/watch?v=32i7ot0y78U
-
-
-## Demo: Importing these widgets (10 mins)
-
-For most of you, the Material theme was already applied to your apps! Meaning, your views were already material, and your apps were already material-ish. The theme utilizes a lot of the [Google Design Specifications](https://www.google.com/design/spec/material-design/introduction.html), so you don't have to worry about too much of it.
-
-However, not all of the material widgets are included in your projects by default, depending on your project.
-
-If you use a template with Material-like icons, like the **blank** activity or the **scrolling** activity, the design elements are already imported. Otherwise, you'll have to import them yourself.
-
-To do that, open up your **build.gradle** and add the following inside the dependencies block:
-
-```gradle
-  dependencies {
-      compile 'com.android.support:appcompat-v7:23.1.1'
-      compile 'com.android.support:design:23.1.1'
-  }
-```
-
-This adds the design library to your app, importing additional widgets that follow the Google Design Specs.
-
-## Demo: Material design widgets (25 mins)
-
-> Instructor note: Encourage students to follow along if they would like.
-
-You can see the contents of the full library here: [http://android-developers.blogspot.com/2015/05/android-design-support-library.html](http://android-developers.blogspot.com/2015/05/android-design-support-library.html)
-
-We'll be discussing a few of the views used in material design often.
-
-#### Toolbar
-
-*Included in the AppCompat v7 library.*
-
-<p align="center">
-  <img src="http://1.bp.blogspot.com/-vGCeyPIFPbs/VUe4G9iHhwI/AAAAAAAAC8Q/G_mDopz1Zug/s1600/IMG_20150504_234735.jpg" width="500px" />
-</p>
-
-There are two elements to be aware of: Toolbar and Action Bar.
-
-Action Bar is the default view that sits atop your apps. It's existed since the beginning of Android. You can add a drawer to it, menu items, change its title, etc.
-
-The problem with it is that it's not very flexible. You can't change the dimensions of it, the background, the position, etc. You don't have full access to it.
-
-That's where Toolbar comes in. Toolbar is, essentially, an Action Bar. However, Toolbar is just a view. Like any other view, you can change how it's displayed, place it anywhere in your layouts, etc.
-
-Here's how you include it in your layouts:
+Spanish, /values-es/strings.xml:
 
 ```xml
-<android.support.v7.widget.Toolbar
-    android:id=”@+id/toolbar”
-    android:layout_height=”wrap_content”
-    android:layout_width=”match_parent”
-    android:minHeight=”?attr/actionBarSize”
-    android:background=”?attr/colorPrimary” />
-```
-
-... and here's how you refer to it in your java classes:
-
-```java
-@Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-    }
-```
-
-The last line, `setSupportActionBar(toolbar);` is replacing the default action bar with your toolbar.
-
-At this point, you may see both the action bar and the toolbar crashed. In both cases, since you're using your own toolbar, you should hide the action bar. You do that in your app theme:
-
-```xml
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- other items above -->
-        <item name="android:windowNoTitle">true</item>
-        <item name="windowActionBar">false</item>
-    </style>
+    <string name="program">Asamblea General</string>
 </resources>
 ```
 
+It is a good practice to reference your string resources in your source code and other XML files using the resource name defined by the ```<string>``` element's name attribute.
 
+###### Example:
 
-#### Floating Action button
-
-You've probably seen (or used) this view a few times already. The Floating Action Button (FAB) is used to show a main action in an activity.
-
-For example, for a phone dialing app, the FAB would be the call button. For Gmail, this is the Create New Email button.
-
-<p align="center">
-
-  <a hraf="https://lh5.ggpht.com/qfCWb_QLcmsaE2JqmW_szIGKyDv1hto_xbqL1UMmKWEIz3UmGyXR5gD2sic00pd8dg=h900-rw"><img src="https://lh5.ggpht.com/qfCWb_QLcmsaE2JqmW_szIGKyDv1hto_xbqL1UMmKWEIz3UmGyXR5gD2sic00pd8dg=h900-rw" height="300px" /></a>
-
-</p>
-
-Usually, there are only one FAB in an activity.
-
-Here's how you add it to your layouts:
-
-```xml
-<android.support.design.widget.FloatingActionButton
-            android:id="@+id/fab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_plus_sign" />
-```
-
-Just like an image view, you can provide a source image to your button, usually an icon that describes what the button is doing.
-
-Here's how to reference it in java:
+* Reference in code:
 
 ```java
-    FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-
-    myFab.setOnClickListener(new View.OnClickListener() {
-        public void onClick(View v) {
-            doSomething();
-        }
-    });
+    TextView textView = (TextView) findViewById(R.id.view);
+    textView.setText(R.string.program);
 ```
-
-At that point, it acts like a regular button.
-
-#### Card View
-
-Cards are used a lot in Material Design. Some may argue that it is the main driver of it.
-
-A Card View is a layout type (it extends FrameLayout). It allows you to display information consistently across your app.
-
-First, it's separate from the design library. You import it to your build.gradle dependencies:
-
-```gradle
-    compile 'com.android.support:cardview-v7:21.0.+'
-```
-
-Then, just like any other view, you put it in your layout:
+* Reference in xml file:
 
 ```xml
-    <!-- A CardView that contains a TextView -->
-    <android.support.v7.widget.CardView
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/card_view"
-        android:layout_gravity="center"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        card_view:cardCornerRadius="4dp">
-
-        <TextView
-            android:id="@+id/info_text"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </android.support.v7.widget.CardView>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/program" />
 ```
+## Independent Practice: Creating functional apps (20 mins)  
+In the app created earlier add a button in `activity_main.xml`. The button should have a text "Submit". The app should be functional in Spanish ("Enviar") and Russian languages("Oтправить"), which can be done by creating separate folders values-es/ and values-ru/ with a strings file in each of them. Run the app and check if the button has the text "Submit". Go to the settings in your phone and change the language to Spanish, run the app and check if the text of the button gets changed to "Enviar". Then change the language to Russian and test if the text on the button gets changed to "Oтправить".
 
-You should set the width and height, and optionally set the `cardCornerRadius`, `cardElevation`, and `cardBackgroundColor`.
+## Break (5 mins)
+
+## Introduction: Supporting Different Screens (15 mins)
+
+Android categorizes device screens using two general properties:
+* size: small, normal, large, xlarge
+* density: low (ldpi), medium (mdpi), high (hdpi), extra high (xhdpi), extra-extra high (xxhdpi), extra-extra-extra-high(xxxhdpi)
+
+To declare different layouts and bitmaps you'd like to use for different screens, you must place these alternative resources in separate directories, similar to how you do for different language strings.
+
+##### Create Different Layouts
+To optimize user experience on different screen sizes, you should create a unique layout XML file for each screen size you want to support. Each layout should be saved into the appropriate resources directory, named with a ```-<screen_size>``` suffix. For example:
+
+![](https://cloud.githubusercontent.com/assets/10750398/11787480/e1db3fac-a259-11e5-9874-de95420af6a3.png)
+
+ This project includes a default layout and an alternative layout for large screens. The file names must be exactly the same, but their contents are different in order to provide an optimized UI for the corresponding screen size.
+ Also be aware that the screens orientation (landscape or portrait) is considered a variation of screen size, so many apps should revise the layout to optimize the user experience in each orientation. By default, the layout xml files are used for portrait orientation. To reference a landscape orientation, the folder should add the suffix -land:
+
+ ![](https://cloud.githubusercontent.com/assets/10750398/11794335/cd4f40f4-a27e-11e5-8fa4-2ea7a2f81316.png)
+
+## Independent Practice: Support different screens (20 mins)   
+In the app created earlier add a textView. In the portrait mode the textView should be below the button. In the landscape mode the TextView should be to the right of the button. Make sure to add strings in values-ru and values-es so that your app should support Spanish and Russian as well. See the screenshots:
+
+<p align="center">
+  <img src="https://cloud.githubusercontent.com/assets/10750398/11932433/63a879e4-a806-11e5-9256-499327b9cbca.png">
+  <img src="https://cloud.githubusercontent.com/assets/10750398/11932430/608645b6-a806-11e5-9cbd-88cf95bc936c.png">
+</p>
+
+## Introduction: Supporting different bitmaps (10 mins)
+
+All bitmap resources should be properly scaled to each of the generalized density buckets: low, medium, high, extra-high density, extra-extra high (xxhdpi), extra-extra-extra-high(xxxhdpi). To generate images, you should start with your raw resource in vector format and generate the images for each density using the following size scale:
+
+- ldpi (low) ~120dpi
+- mdpi (medium) ~160dpi
+- hdpi (high) ~240dpi
+- xhdpi (extra-high) ~320dpi
+- xxhdpi (extra-extra-high) ~480dpi
+- xxxhdpi (extra-extra-extra-high) ~640dpi
+
+After the images are ready, they are placed in the appropriate drawable resource directory. For example:
+
+![](https://cloud.githubusercontent.com/assets/10750398/11794684/98b1926e-a280-11e5-8dbf-6750034c1b0a.png)
+
+Any time you reference ```@drawable/android.png```, the system selects the appropriate bitmap based on the screen's density.  
+
+## Independent Practice: Supporting different bitmaps (15 mins)
+In the app created earlier add a new image for a launcher icon to the folder res/mipmap. The image should be scaled to the right dimensions and supported on all devices. Use ImageAsset functionality in Android Studio to generate images of different density. You can choose any image you want to place as a launcher or use this one:
+![](https://cloud.githubusercontent.com/assets/10750398/11934014/7749621a-a810-11e5-9942-9233aaa08bfc.jpg)
+
+## Introduction: Support Library (10 mins)
+
+In order to provide the best features and functionality across several Android versions, you should use the Android Support Library in your app, which allows you to use several recent platform APIs on older versions. The Android Support Library package is a set of code libraries that provide backward-compatible versions of Android framework APIs as well as features that are only available through the library APIs. Each Support Library is backward-compatible to a specific Android API level. This design means that your applications can use the libraries' features and still be compatible with devices running Android 1.6 (API level 4) and up.
+
+The Support Libraries each target a base Android API level and each provides a different set of features. In order to effectively use the libraries, it is important to consider what features you want to support and understand what features are supported by each library at what Android API level.
+
+Below you can see examples of the Support Library releases:
+![](https://cloud.githubusercontent.com/assets/10750398/11851140/1d296680-a442-11e5-9ddc-85b8d07e6e5b.png)
+
+The support library is imported at the top of a Java file. For example:
+![](https://cloud.githubusercontent.com/assets/10750398/11851177/49814432-a442-11e5-89c4-52ee43d1ed87.png)
 
 
-## Conclusion (5 mins)
+## Independent Practice: Supporting multiple APIs (5 mins)
 
-- How does material design in apps relate to real world objects?
-- What types of material design widgets can you use in your applications?
+In the app created earlier add the following piece of code in the MainActivity:
+```java
+Fragment fragment = new Fragment();
+```
+Import the right Support Library so your app remains compatible with devices running system versions as low as Android 1.6.
 
-## Additional resources
 
-[Google Developers - "Paper and Ink: The Materials that Matter"](https://www.youtube.com/watch?v=YaG_ljfzeUw)
+## Conclusion (10 mins):
+
+1. What is the name of the resource folder and resource file where text in the code should be referenced from?
+2. Name all the variations of the size and density screen properties on Android.
+3. What is the default layout orientaion?
+4. How to make an app look differently in the landscape mode?
+5. What is the name of the folder where we store images? How many of these folders should an application have?
+6. What is an API level?
+7. In reference to the API Level which three attributes should be set in the manifest?
+8. Look at the Platform Versions Chart and name the latest API? Which API dominates the market?
