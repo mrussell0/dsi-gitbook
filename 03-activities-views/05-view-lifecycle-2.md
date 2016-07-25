@@ -72,7 +72,7 @@ After committing the changes, the String with key "exampleKey" now contains the 
 <a name="guided-practice"></a>
 ## Guided Practice: Persistent Data with SharedPreferences (10 mins)
 
-In this practice, we will adapt the app from the previous lesson that saved the time the app was launched to use `SharedPreferences` instead of a Bundle. In the starter code directory, load the [SharedPreferencesBetweenActivities](starter-code/SharedActivityCreationTime) project.
+In this practice, we will adapt the app from the previous lesson that saved the time the app was launched to use `SharedPreferences` instead of a Bundle. In the starter code directory, load the [SharedPreferencesBetweenActivities](https://github.com/ga-students/view-life-cycle-2-starter-code/tree/master/SaveActivityCreationTime) project.
 
 > Instructor Note: Be sure to lead this as a discussion, of sorts, probing students about how and why to call and use methods. Solution code is in the appropriate [solution code](solution-code/SharedActivityCreationTime) folder.
 
@@ -112,7 +112,7 @@ In this demo, we will be looking at when `onPause` and `onResume` are called in 
 
 To do this, we will be using a `Dialog`, which brings a popup over the screen, causing the underlying activity to pause and resume.
 
-> Instructor Note: Starter code can be found in the [PauseResumeDemo](starter-code/PauseResumeDemo) project. Solution code in the appropriate [solution code](solution-code/PauseResumeDemo)
+> Instructor Note: Starter code can be found in the [PauseResumeDemo](https://github.com/ga-students/view-life-cycle-2-starter-code/tree/master/PauseResumeDemo) project. Solution code in the appropriate [solution code](solution-code/PauseResumeDemo)
 
 > Check: Ask the students explain why onStart and onStop were not called.
 
@@ -122,7 +122,7 @@ To do this, we will be using a `Dialog`, which brings a popup over the screen, c
 
 We are going to be making a basic countdown timer app that is only timing while the initial activity is running. When we switch to another activity, we will pause the time until we return to the first activity.
 
-> Instructor Note: Starter code can be found in the [CountdownApp](starter-code/CountdownApp) project. Solution code in the appropriate [solution code](solution-code/CountdownApp)
+> Instructor Note: Starter code can be found in the [CountdownApp](https://github.com/ga-students/view-life-cycle-2-starter-code/tree/master/CountdownApp) project. Solution code in the appropriate [solution code](solution-code/CountdownApp)
 
 ***
 
@@ -131,7 +131,7 @@ We are going to be making a basic countdown timer app that is only timing while 
 
 > Instructor Note: This can be a pair programming activity or done independently.
 
-You will be modifying the [provided music player](starter-code/MusicPlayer) to pause the music when a new activity is opened and automatically resume it when the user returns to the activity. Starter code is provided in the MusicPlayer project.
+You will be modifying the [provided music player](https://github.com/ga-students/view-life-cycle-2-starter-code/tree/master/MusicPlayer) to pause the music when a new activity is opened and automatically resume it when the user returns to the activity. Starter code is provided in the MusicPlayer project.
 
 **The music used in this app is provided by www.bensound.com under the creative commons license**
 

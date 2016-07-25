@@ -154,7 +154,7 @@ Saving and restoring data should be used carefully. While it is loading data, th
 
  We will make an app that saves and displays the time the app was launched and restores that value when the activity is destroyed and restarted. To do this, we save the time instance variable in `onSaveInstanceState`, and retrieve it in `onCreate`.
 
- In the [starter code](starter-code), load up the project `SaveActivityCreationTime`.
+ In the [starter code](https://github.com/ga-students/view-life-cycle-1-starter-code), load up the project `SaveActivityCreationTime`.
 
  We will destroy the activity by rotating the device.
 
@@ -164,7 +164,7 @@ Saving and restoring data should be used carefully. While it is loading data, th
 <a name="independent-practice"></a>
 ## Independent Practice: Saving State with Bundles (15 mins)
 
-In this practice you will be creating a simple app that has an `EditText` for your name with a Button to submit it. When you press the button, it prints out the following message in a TextView below "Hello NAME! You will be saved into the bundle! X names have been saved." X is a counter for the number of times the button has been clicked. In the [starter code](starter-code), load the project `HelloNameSaveState`.
+In this practice you will be creating a simple app that has an `EditText` for your name with a Button to submit it. When you press the button, it prints out the following message in a TextView below "Hello NAME! You will be saved into the bundle! X names have been saved." X is a counter for the number of times the button has been clicked. In the [starter code](https://github.com/ga-students/view-life-cycle-1-starter-code), load the project `HelloNameSaveState`.
 
 > Check: Were students able to successfully solve the problem or complete the task?
 
