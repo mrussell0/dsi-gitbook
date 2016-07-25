@@ -17,10 +17,6 @@ creator:
 *Before this lesson, you should already be able to:*
 - Describe and implement basic fragments
 
-### INSTRUCTOR PREP
-*Before this lesson, instructors will need to:*
-- Run the solution code to ensure it runs and that you agree with how it was implemented
-
 ---
 <a name="opening"></a>
 ## Opening (5 mins)

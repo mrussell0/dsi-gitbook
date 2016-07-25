@@ -1,13 +1,3 @@
----
-title: Fragments
-duration: "1:25"
-creator:
-    name: Drew Mahrt
-    city: NYC
----
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Fragments
-
-
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
 - Describe the purpose of a Fragment
@@ -18,13 +8,6 @@ creator:
 *Before this lesson, you should already be able to:*
 - Describe the purpose of an activity
 - Describe the Activity Lifecycle
-
-### INSTRUCTOR PREP
-*Before this lesson, instructors will need to:*
-- Review pre-work, projects, or exit ticket, if applicable
-- Review current lesson objectives
-- Reference general course content or topics (e.g. code or concepts that have been used across multiple lessons)
-- Include Hook / Real-world Relevance (why the content from this lesson is useful or important)
 
 ---
 <a name="opening"></a>
@@ -43,7 +26,7 @@ Fragments were introduced in version 3.0 of Android (Honeycomb) in order to allo
 With Fragments, you can swap out entire sections of the layout at runtime while the current Activity is still running. Fragments cannot be created on their own - they **must** be contained within an Activity. Due to the close relationship with the hosting Activity, they are also affected by the Activity's Lifecycle. In addition, each fragment has its own Lifecycle (something we will be discussing soon). Basically they are like a Sub-activity of the parent Activity.
 
 <p align="center">
-  <img src="./images/fragments.png">
+  <img src="./screenshots/fragments.png">
 </p>
 
 #### Why Fragments?
@@ -55,7 +38,7 @@ Some developers like using Fragments extensively, while others use them as spari
 #### Fragment Lifecycle
 
 <p align="center">
-  <img src="./images/fragment_lifecycle.png">
+  <img src="./screenshots/fragment_lifecycle.png">
 </p>
 
 While the Fragment Lifecycle is similar the Activity's, there are some key differences. Let's look at some of the important methods:
