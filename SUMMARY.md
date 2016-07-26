@@ -119,6 +119,7 @@
 * [8. UX & Research](08-ux/readme.md)
     * [Paper Prototyping](08-ux/01-paper-prototyping.md)
     * [Material Design](08-ux/02-intro-to-material-design.md readme.md)
+    * [Accessibility](08-ux/03-accessibility.md)
 * [9. Content Providers & Google Play](09-content-providers/readme.md)
 * [10. Computer Science](10-cs/readme.md)
   * [Intro to Recursion](10-cs/recursion.md)
