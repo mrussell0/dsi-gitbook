@@ -112,6 +112,7 @@
     * [Testing Fundamentals 102](05-testing/05-debugging-102.md)
     * [User Stories](05-testing/05-testing-user-stories.md)
     * [JUnit](05-testing/05-junit-lesson.md)
+    * [Espresso Testing](05-testing/espresso-lesson/readme.md)
 * [6. Material Design](06-material-design/readme.md)
   * [Intro to Material Design](06-material-design/intro-to-material-design.md)
 * [7. HTTP, REST, & JSON](07-http/readme.md)
@@ -120,6 +121,8 @@
     * [Paper Prototyping](08-ux/01-paper-prototyping.md)
     * [Material Design](08-ux/02-intro-to-material-design.md readme.md)
     * [Accessibility](08-ux/03-accessibility.md)
+    * [Simple Animations](08-ux/simple-animation-lesson/readme.md
+    * [Toolbars and Menus](08-ux/toolbars-and-menus-lesson/readme.md)
 * [9. Content Providers & Google Play](09-content-providers/readme.md)
 * [10. Computer Science](10-cs/readme.md)
   * [Intro to Recursion](10-cs/recursion.md)
