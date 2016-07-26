@@ -121,7 +121,7 @@
     * [Paper Prototyping](08-ux/01-paper-prototyping.md)
     * [Material Design](08-ux/02-intro-to-material-design.md readme.md)
     * [Accessibility](08-ux/03-accessibility.md)
-    * [Simple Animations](08-ux/simple-animation-lesson/readme.md
+    * [Simple Animations](08-ux/simple-animation-lesson/readme.md)
     * [Toolbars and Menus](08-ux/toolbars-and-menus-lesson/readme.md)
 * [9. Content Providers & Google Play](09-content-providers/readme.md)
 * [10. Computer Science](10-cs/readme.md)
