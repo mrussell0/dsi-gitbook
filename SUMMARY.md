@@ -113,6 +113,7 @@
     * [User Stories](05-testing/05-testing-user-stories.md)
     * [JUnit](05-testing/05-junit-lesson.md)
     * [Espresso Testing](05-testing/espresso-lesson/readme.md)
+    * [Usability Testing](05-testing/05-usability-testing.md)
 * [6. Material Design](06-material-design/readme.md)
   * [Intro to Material Design](06-material-design/intro-to-material-design.md)
 * [7. HTTP, REST, & JSON](07-http/readme.md)
