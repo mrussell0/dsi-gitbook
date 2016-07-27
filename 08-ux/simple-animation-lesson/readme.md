@@ -132,7 +132,7 @@ Let's take two minutes and watch this video about different types of [interpolat
 > Instructor Notes: There should be 2 minutes' pause to show the video on the projector.
 
 ## Demo: Interpolators (5 mins)  
-Now let's see how interpolators work in code. Import [InterpolatorApp] (https://github.com/generalassembly-studio/ADI-curriculum/tree/simple-animation-lesson/resources/04-workflow-and-dev-tools/simple-animation-lesson/InterpolatorApp) and run the project.  
+Now let's see how interpolators work in code. Import [InterpolatorApp] (https://github.com/ga-students/simple-animation-starter-code) and run the project.  
 <img src="screenshots/interpolator_app.gif" height="300px">
 
 > Instructor Notes: Discuss 4 xml files in the folder res/anim: **pull_right.xml**, **pull_left.xml**, **push_out_left.xml**, **push_out_right.xml**. The transition between 2 activities is sliding from left to right. Pay students' attention to the fact that each anim file has an ```android:interpolator``` attribute.
@@ -147,7 +147,7 @@ textView.startAnimation(animation);
 ```
 
 ## Guided Practice: Types of view animation (10 mins)
-*The demo project and the source code is in the [viewAnimation project] (https://github.com/generalassembly-studio/ADI-curriculum/tree/simple-animation-lesson/resources/04-workflow-and-dev-tools/simple-animation-lesson/ViewAnimation)*  
+*The demo project and the source code is in the [viewAnimation project](https://github.com/ga-students/simple-animation-starter-code)*  
 
 Let's look at different types of animation:    
 1 Scale - inscreasing/decreasing the size of the view.  
@@ -264,14 +264,12 @@ view.setLayoutTransition(layout);
 ```
 
 ## Demo: Layout Animation (5 mins)  
-The layout code animation app could be found in [ViewAnimation] (https://github.com/generalassembly-studio/ADI-curriculum/tree/simple-animation-lesson/resources/04-workflow-and-dev-tools/simple-animation-lesson/ViewAnimation) in the *LayoutAnimationActivity* and *layout_animation_activity.xml*.  
+The layout code animation app could be found in [ViewAnimation] (https://github.com/ga-students/simple-animation-starter-code) in the *LayoutAnimationActivity* and *layout_animation_activity.xml*.  
 <img src="screenshots/layout_animation.gif" height="400px">  
 
 ## Independent Practice: Layout Animation (15 mins)  
-Import the project [ViewAnimation] (https://github.com/generalassembly-studio/ADI-curriculum/tree/simple-animation-lesson/resources/04-workflow-and-dev-tools/simple-animation-lesson/ViewAnimation), click the button "nextActivity" and you will be redirected to the activity that deals with layout animation. Every time you click the button "add button", another button gets added to the view group. Create another button "delete button"  that will remove a button from the same view group. Look at the screenshot:   
+Import the project [ViewAnimation] (https://github.com/ga-students/simple-animation-starter-code), click the button "nextActivity" and you will be redirected to the activity that deals with layout animation. Every time you click the button "add button", another button gets added to the view group. Create another button "delete button"  that will remove a button from the same view group. Look at the screenshot:   
 <img src="screenshots/independent_practice_solution.gif" height="400px">
-
-> Instructor Notes: The solution code to independent practice can be found in the [IndependentPracticeSolutionCode project] (https://github.com/generalassembly-studio/ADI-curriculum/tree/simple-animation-lesson/resources/04-workflow-and-dev-tools/simple-animation-lesson/IndependentPracticeSolution).
 
 ## Check (5 mins)
  1. What are the 12 universal principles of animation?
