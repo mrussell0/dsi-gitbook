@@ -87,6 +87,21 @@ Finally, in the same file, add the test runner (which, well, runs the tests) to 
     }
 ```
 
+**Another Note:** Android Studio may have trouble automatically importing some test methods.
+If you see an error like `cannot resolve method onView` you may need to manually import
+each test method like this:
+
+```
+import static android.support.test.espresso.Espresso.onView;
+import static android.support.test.espresso.action.ViewActions.click;
+import static android.support.test.espresso.action.ViewActions.closeSoftKeyboard;
+import static android.support.test.espresso.action.ViewActions.typeText;
+import static android.support.test.espresso.assertion.ViewAssertions.matches;
+import static android.support.test.espresso.matcher.ViewMatchers.withId;
+import static android.support.test.espresso.matcher.ViewMatchers.withText;
+...
+```
+
 #### Adding a test
 
 Adding a test in Android Studio is as easy as adding a class (since all tests are classes with methods being run).
@@ -300,6 +315,19 @@ The other method that returns a ViewAssertion is `doesNotExist()`, which asserts
 ```java
     onView(withId(R.id.sign_in_button))
         .check(doesNotExist());
+```
+
+#### Testing Text Content
+
+You can check to see the value of text in your application using the `withText()` method.
+Here's an example of code that presses a Like button and supposes the text of another
+element changes to say "unlike".
+
+```
+onView(withId(R.id.like_button))
+  .perform(click());
+onView(withId(R.id.like_text))
+  .check(matches(withText("unlike")));
 ```
 
 ## Introduction: Note about Collection Views (5 mins)
