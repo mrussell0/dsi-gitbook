@@ -118,6 +118,7 @@
   * [Intro to Material Design](06-material-design/intro-to-material-design.md)
 * [7. HTTP, REST, & JSON](07-http/readme.md)
     * [Http & REST](07-http/07-http-and-rest.md)
+    * [Threading](07-http/07-threading.md)
     * [Async & Handlers](07-http/07-async-handlers-lesson.md)
 * [8. UX & Research](08-ux/readme.md)
     * [Paper Prototyping](08-ux/01-paper-prototyping.md)
