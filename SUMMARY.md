@@ -120,6 +120,7 @@
     * [Http & REST](07-http/07-http-and-rest.md)
     * [Threading](07-http/07-threading.md)
     * [Async & Handlers](07-http/07-async-handlers-lesson.md)
+    * [Networking](07-http/03-networking-in-android.md)
 * [8. UX & Research](08-ux/readme.md)
     * [Paper Prototyping](08-ux/01-paper-prototyping.md)
     * [Material Design](08-ux/02-intro-to-material-design.md readme.md)
