@@ -130,7 +130,7 @@
     * [Simple Animations](08-ux/simple-animation-lesson/readme.md)
     * [Toolbars and Menus](08-ux/toolbars-and-menus-lesson/readme.md)
 * [9. Content Providers & Google Play](09-content-providers/readme.md)
-    * [Toolbars and Menus](09-content-providers/01-services.md)
+    * [Services](09-content-providers/01-services.md)
 * [10. Computer Science](10-cs/readme.md)
   * [Intro to Recursion](10-cs/recursion.md)
   * [Recursion Solutions](10-cs/recursion-solutions.md)
