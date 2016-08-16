@@ -142,6 +142,7 @@
   * [Big-O Algorithm Complexity](10-cs/big-o-algorithm-complexity.md)
 * [11. Job Hunt Prep](11-job-hunt/readme.md)
   * [User Research](11-job-hunt/05-user-research.md)
+  * [User Goals](11-job-hunt/05-user-goals.md)
   * [Design Thinking and UX](11-job-hunt/05-design-ux.md)
 * [12. Github Advanced](12-github-advanced/readme.md)
   * [Github WorkFlow pt.1](12-github-advanced/01-github-workflow-pt1.md)
