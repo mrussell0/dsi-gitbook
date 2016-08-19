@@ -141,6 +141,7 @@
 * [10. Computer Science](10-cs/readme.md)
   * [Intro to Recursion](10-cs/recursion.md)
   * [Recursion Solutions](10-cs/recursion-solutions.md)
+  * [Inheritance & Abstraction](10-cs/01-inheritance-abstraction.md)
   * [Big-O Algorithm Complexity](10-cs/big-o-algorithm-complexity.md)
   * [Linked Lists](10-cs/01-linked-lists.md)
 * [11. Job Hunt Prep](11-job-hunt/readme.md)
