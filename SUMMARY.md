@@ -130,6 +130,7 @@
     * [Simple Animations](08-ux/simple-animation-lesson/readme.md)
     * [Toolbars and Menus](08-ux/toolbars-and-menus-lesson/readme.md)
     * [Competitive Research](08-ux/02-competitive-research.md)
+    * [Personas from Research](08-ux/05-personas-from-research.md)
 * [9. Content Providers & Google Play](09-content-providers/readme.md)
     * [Services](09-content-providers/01-services.md)
     * [Google Play](09-content-providers/01-google-play.md)
