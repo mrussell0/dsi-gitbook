@@ -12,8 +12,8 @@ Please use the navigation bar to the left to browse our cohort's *living syllabu
 https://bradzzz.gitbooks.io/ga-seattle-dsi/content/
 
 ## Your Instructors
-<table style="display: inline-table">
-  <tr align="center">
+<table style="display: inline-table;">
+  <tr>
     <td><img src="./instructors/brad.jpg" width="200px" height="200px">
     <br><a href="brad.zimmerman@generalassemb.ly">Brad Zimmerman</a>
     </td>
