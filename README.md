@@ -5,7 +5,6 @@ Welcome to Data Science! We are building a global community of lifelong learners
 In this program, you’ll take on real world problems by analyzing data sets for insights and presenting findings using statistics, programming, data modeling, and business knowledge.
 
 ## Welcome!
-
 Please use the navigation bar to the left to browse our cohort's *living syllabus/textbook*.
 
 ## Living link to gitbook
