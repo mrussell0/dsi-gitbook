@@ -74,7 +74,7 @@
 * [8. Bayesian Inference](dsi/dsi_08_bayesian_inference/readme.md)
   * [1.1 Bayes](dsi/dsi_08_bayesian_inference/1.1-lesson/readme.md)
   * [1.3 Bayes Deep Dive](dsi/dsi_08_bayesian_inference/1.3-lesson/readme.md)
-  * [3.1 API Review with Foursquare API](dsi/dsi_08_bayesian_inference/3.1-lesson/readme.md)
+  <!--* [3.1 API Review](dsi/dsi_08_bayesian_inference/3.1-lesson/readme.md) -->
   * [3.3 LDA](dsi/dsi_08_bayesian_inference/3.3-lesson/readme.md)
   * [4.1 Bayesian Stat Testing](dsi/dsi_08_bayesian_inference/4.1-lesson/readme.md)
   * [4.3 Naive Bayes](dsi/dsi_08_bayesian_inference/4.3-lesson/readme.md)
