@@ -12,8 +12,8 @@ Please use the navigation bar to the left to browse our cohort's *living syllabu
 https://bradzzz.gitbooks.io/ga-seattle-dsi/content/
 
 ## Your Instructors
-<table style="display: inline-table;">
-  <tr>
+<table>
+  <tr align="center">
     <td><img src="./instructors/brad.jpg" width="200px" height="200px">
     <br><a href="brad.zimmerman@generalassemb.ly">Brad Zimmerman</a>
     </td>
@@ -22,14 +22,6 @@ https://bradzzz.gitbooks.io/ga-seattle-dsi/content/
     </td>
   </tr>
 </table>
-
-## _Curriculum Construction In Progress!_
-
-This is the official baseline site for General Assembly's Data Science Immersive Course. We're still in the process of assembling an amazing course, so be sure to check back regularly!
-
-#### Curriculum Build Timeline
-- **v 1.0 Projects + Weeks 1-11 Complete**: 6/21
-- **v 1.1 Revisions**: 8/1
 
 ## Course Value Proposition
 
