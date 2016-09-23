@@ -13,11 +13,12 @@ https://bradzzz.gitbooks.io/ga-seattle-dsi/content/
 
 ## Your Instructors
 <table>
-  <tr>
+  <col align="center">
+  <col align="center">
+  <tr align="center">
     <td><img src="./instructors/brad.jpg" width="150px" height="200px">
     <br><a href="brad.zimmerman@generalassemb.ly">Brad Zimmerman</a>
     </td>
-
     <td><img src="./instructors/qingqing.jpg" width="150px" height="200px">
     <br><a href="qingqing.gan@ga.co">Qingqing Gan</a>
     </td>
