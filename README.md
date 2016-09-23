@@ -4,6 +4,28 @@ Welcome to Data Science! We are building a global community of lifelong learners
 
 In this program, you’ll take on real world problems by analyzing data sets for insights and presenting findings using statistics, programming, data modeling, and business knowledge.
 
+## Welcome!
+
+Please use the navigation bar to the left to browse our cohort's *living syllabus/textbook*.
+
+## Living link to gitbook
+https://bradzzz.gitbooks.io/ga-seattle-dsi/content/
+
+## Your Instructors
+<table>
+  <tr>
+    <td><img src="./instructors/brad.jpg" width="150px" height="200px">
+    <br><a href="https://github.com/BradZzz">Brad Zimmerman</a>
+    brad.zimmerman@generalassemb.ly
+    </td>
+
+    <td><img src="./instructors/qingqing.jpg" width="150px" height="200px">
+    <br><a href="https://github.com/">Qingqing Gan</a>
+    qingqing.gan@ga.co
+    </td>
+  </tr>
+</table>
+
 ## _Curriculum Construction In Progress!_
 
 This is the official baseline site for General Assembly's Data Science Immersive Course. We're still in the process of assembling an amazing course, so be sure to check back regularly!
@@ -37,79 +59,6 @@ This course is designed to give you the deep dive into the world of *Data Scienc
 - Present clear and reproducible reports to stakeholders
 - Identify big data problems and understand how distributed systems and parallel computing technologies are solving these challenges.
 - Apply question, modeling, and validation problem solving processes to datasets from various industries to gain insight into real-world problems and solutions.
-
----
-
-## To Get Started
-
-Please take at least **1 hour** to read through the following on-boarding documents, in the order provided, to get a better understanding of your responsibilities as an instructor, student responsibilities, and the scope, sequence, and value proposition of this course.  Each document links to the next at the bottom of the file!
-
-Document                             | Description
------------------------------------ | ------------------------------------------
-[Students](./curriculum/01-instructor-onboarding/01-your-students.md) | Student personas and course demographics
-[Materials](./curriculum/01-instructor-onboarding/02-course-materials.md) | What we provide and what you should build
-[Format](./curriculum/01-instructor-onboarding/03-course-format.md) | Course syllabus and schedule
-[Projects & Assessments](./curriculum/01-instructor-onboarding/04-projects-assessments.md) | Course projects and grading expectations
-[Expectations](./curriculum/01-instructor-onboarding/05-instructor-expectations.md) | Planning and communication responsibilities
-[Technology](./curriculum/01-instructor-onboarding/06-tech-guide.md) | Tools used in this course
-[Supplemental Resources](./curriculum/01-instructor-onboarding/07-supplemental-resources.md) | Common course issues and suggestions
-
-
-After reading these docs, we welcome you to jump into the `#dsi-instructors` channel on Slack and join the conversation!
-
----
-
-#### ⑃ Forking and Collaborating
-
-The structure of this repository provides a way for us to organize our information and resources.
-
-We encourage the teaching team for each cohort to fork this repository directly, and use it to create resources for your own instance. Please make sure to submit new materials back to the master so we can share them with students and instructors world-wide!
-
-If you have any questions about the organization of resources, or about the scope of our curriculum, feel free to open an issue.
-
-Please check out our [contributing guidelines](./contributing.md) for more details.
-
-
-## Licensing
-
-<!--  remember to replace the placeholder content in curly braces in the GNU license -->
-
-1. All content is licensed under a CC-BY-NC-SA 4.0 license.
-2. All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact legal@ga.co.
-
-
-
-# ADI Seattle #1: Churro
-
-![ADISEA](adi-sea.png)
-
-## Welcome!
-
-Please use the navigation bar to the left to browse our cohort's *living syllabus/textbook*.
-
-## Living link to gitbook
-https://bradzzz.gitbooks.io/android-sea/content/
-
-## Your Instructors
-<table>
-  <tr>
-    <td><img src="https://s3-us-west-1.amazonaws.com/project.prototype.cache/ambrosia/profile_img/570e0f785d31313602b7d1a2.png?1466542810166" width="150px" height="200px">
-    <br><a href="https://github.com/BradZzz">Brad Zimmerman</a>
-    brad.zimmerman@generalassemb.ly
-    </td>
-
-    <td><img src="https://s3-us-west-1.amazonaws.com/project.prototype.cache/ambrosia/profile_img/5761e3ba61c4050f052e1832.png?1466544930945" width="150px" height="200px">
-    <br><a href="https://github.com/geluso">Steve Geluso</a>
-    steve.geluso@generalassemb.ly
-    </td>
-
-    <td><img src="https://s3-us-west-1.amazonaws.com/project.prototype.cache/ambrosia/profile_img/57685d2095e7131100c00bab.png?1466542287432" width="150px" height="200px">
-    <br><a href="https://github.com/rcureton">Rashad Cureton</a>
-    rashad.cureton@generalassemb.ly
-    </td>
-
-  </tr>
-</table>
 
 ## Outcomes
 
