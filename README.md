@@ -15,13 +15,11 @@ https://bradzzz.gitbooks.io/ga-seattle-dsi/content/
 <table>
   <tr>
     <td><img src="./instructors/brad.jpg" width="150px" height="200px">
-    <br><a href="https://github.com/BradZzz">Brad Zimmerman</a>
-    brad.zimmerman@generalassemb.ly
+    <br><a href="brad.zimmerman@generalassemb.ly">Brad Zimmerman</a>
     </td>
 
     <td><img src="./instructors/qingqing.jpg" width="150px" height="200px">
-    <br><a href="https://github.com/">Qingqing Gan</a>
-    qingqing.gan@ga.co
+    <br><a href="qingqing.gan@ga.co">Qingqing Gan</a>
     </td>
   </tr>
 </table>
