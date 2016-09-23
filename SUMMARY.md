@@ -12,6 +12,7 @@
   * [4.1 Math Primer pt. 2](dsi/dsi_01_python/4.1-lesson/readme.md)
   * [4.4 Data Viz Principles](dsi/dsi_01_python/4.4-lesson/readme.md)
   * [5.1 Plotting Tools](dsi/dsi_01_python/5.1-lesson/readme.md)
+  * [5.3 Python List Comprehensions](dsi/dsi_01_python/5.3-flex/readme.md)
 * [2. Pandas / Data Analysis](dsi/dsi_02_pandas_exploratory_data/readme.md)
   * [1.1 Pandas pt.1](dsi/dsi_02_pandas_exploratory_data/1.1-lesson/readme.md)
   * [1.2 Study Design](dsi/dsi_02_pandas_exploratory_data/1.2-lesson/readme.md)
