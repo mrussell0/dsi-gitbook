@@ -96,11 +96,6 @@ We will use 'foursquare' in Python, which can be loaded up in your system via ea
 
 To access the Foursquare API you must first register an App using the foursquare App registration service https://foursquare.com/developers/apps
 
-Setup your new "App"
-<img = AppSN.png>
-
-This will give you the credentials you need to pull/use Foursquare data.
-
 ## Foursquare Data and Methods Overview (15 min)
 
 > Note: Break timing for this into two section at 15min + 10 min each, respectively
