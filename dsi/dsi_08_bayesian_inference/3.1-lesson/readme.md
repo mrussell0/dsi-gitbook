@@ -84,6 +84,12 @@ The end user activity is incentivized/rewarded through accumulation of badges, t
 ---
 
 <a name = "demo"></a>
+## Demo: Accessing the Foursquare API (15 mins)
+
+Accessing the Foursquare API has become much simpler in recent years through the construction of 3rd party Python libraries that make the Oauth an data pull process much simpler, and wraps the data/meta-data in appropriate Python data-types.
+
+We will use 'foursquare' in Python, which can be loaded up in your system via easy_install or pip in the usual way (i.e. `pip install foursquare`).
+
 
 ## Foursquare Data and Methods Overview (15 min)
 
