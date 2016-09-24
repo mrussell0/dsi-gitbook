@@ -101,16 +101,6 @@ Setup your new "App"
 
 This will give you the credentials you need to pull/use Foursquare data.
 
-```python
-import foursquare
-import pandas as pd
-
-CLIENT_ID = ''   # Input your client id/ client secret here
-CLIENT_SECRET = ''
-client = foursquare.Foursquare(client_id=CLIENT_ID, client_secret=CLIENT_SECRET)
-```
-
-
 ## Foursquare Data and Methods Overview (15 min)
 
 > Note: Break timing for this into two section at 15min + 10 min each, respectively
