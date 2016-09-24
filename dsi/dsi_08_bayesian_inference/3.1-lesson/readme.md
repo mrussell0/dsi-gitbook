@@ -118,38 +118,3 @@ We're going to do a fun exercise that looks at our local venues and do simple co
 ```
 
 <a name = "Guided"></a>
-## Foursquare Data and Methods Overview (15 min)
-
-> Note: Break timing for this into two section at 15min + 10 min each, respectively
-
-Before we delve deeper into Python procedures, we need to understand the Foursquare data so we can better build a container to house the JSON data into a common tabular format.
-
-```python
-client.venues.search(params={'ll': 'x,y'})  # Put in a lat/long you're interested in
-```
-
-Observe that the data is housed in a nested hierarchy, we can access the data using the bracket notation in Python Pandas.
-
-Ex:
-u'stats': {u'checkinsCount': 7197, u'tipCount': 15, u'usersCount': 2266}
-
-Can be accessed as data_frame['stats']['checkingCount']
-
-#### Foursquare API Data Types (10 min)
-
-Below is a useful table for data types that can be accessed in Foursquare. In general, Foursquare Data for the users require explicit permission. However, Venues data can be used for exploratory analysis with a user-less credential.
-
-| Type  | General  | Aspects | Actions |  
-|---|---|---|---|
-| Users  | Search, Requests  | venuehistory, photos, tastes, friends, checkins, tips, venuelikes, mayorships, lists | deny, setpings, update, unfriend, approve |
-| Venues | Search, SuggestionCompletion, Categories, Timeseries, Trending, Exploring, Add, Managed  | similar, photos, events, likes, nextvenues, hours, stats, links, menu, tips, herenow, listed | claim, dislike, flag, proposeedit, like, setrole, edit, setsinglelocation | update, addvenue, edit, removevenue |
-| VenueGroups  | List, Delete, Add | timeseries | update, addvenue, edit, removevenue |
-  checkins | Resolve, Recent, Add | likes | deletecomment, like, addpost, addcomment |
-| tips | Add | likes, saves, listed |  unmark, flag, like | update, deleteitem, updateitem, follow, unfollow, moveitem,, share, additem |
-| lists | Add | followers, suggestphoto, suggesttip, saves, items, suggestvenues | update, deleteitem, updateitem, follow, unfollow, moveitem, share, additem |
-|updates | Notifications | | marknotificationsread |
-| photos | Add | Read the docs! |Read the docs! |
-
----
-
-<a name = "Indy"></a>
