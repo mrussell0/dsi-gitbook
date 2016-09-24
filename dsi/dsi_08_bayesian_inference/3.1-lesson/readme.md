@@ -84,37 +84,107 @@ The end user activity is incentivized/rewarded through accumulation of badges, t
 ---
 
 <a name = "demo"></a>
-## Demo: Accessing the Foursquare API (15 mins)
 
-Accessing the Foursquare API has become much simpler in recent years through the construction of 3rd party Python libraries that make the Oauth an data pull process much simpler, and wraps the data/meta-data in appropriate Python data-types.
+## Foursquare Data and Methods Overview (15 min)
 
-We will use 'foursquare' in Python, which can be loaded up in your system via easy_install or pip in the usual way (i.e. `pip install foursquare`).
+> Note: Break timing for this into two section at 15min + 10 min each, respectively
 
-#### Foursquare API OAuth process  
-
-**Brief Review:** "OAuth" is a web protocol for authentication with a third-party service, like when you try to sign up for a website and get directed to sign in with Google. Essentially, the website is using Google to prove who you are
-
-To access the Foursquare API you must first register an App using the [foursquare App registration service](https://foursquare.com/developers/apps)
-
-Setup your new "App"
-<img = AppSN.png>
-
-This will give you the credentials you need to pull/use Foursquare data.
+Before we delve deeper into Python procedures, we need to understand the Foursquare data so we can better build a container to house the JSON data into a common tabular format.
 
 ```python
-import foursquare
-import pandas as pd
-
-CLIENT_ID = ''   # Input your client id/ client secret here
-CLIENT_SECRET = ''
-client = foursquare.Foursquare(client_id=CLIENT_ID, client_secret=CLIENT_SECRET)
+client.venues.search(params={'ll': 'x,y'})  # Put in a lat/long you're interested in
 ```
 
-We're going to do a fun exercise that looks at our local venues and do simple counts. The first thing we need to do is construct a bounding box around our geo-area. A simple tool for this is here: http://boundingbox.klokantech.com/. Select your home location, and create a bounding box around it. Make sure your output coordinates is set to "raw CSV". Get that data and input it into a python list
+Observe that the data is housed in a nested hierarchy, we can access the data using the bracket notation in Python Pandas.
+
+Ex:
+u'stats': {u'checkinsCount': 7197, u'tipCount': 15, u'usersCount': 2266}
+
+Can be accessed as data_frame['stats']['checkingCount']
+
+#### Foursquare API Data Types (10 min)
+
+Below is a useful table for data types that can be accessed in Foursquare. In general, Foursquare Data for the users require explicit permission. However, Venues data can be used for exploratory analysis with a user-less credential.
+
+| Type  | General  | Aspects | Actions |  
+|---|---|---|---|
+| Users  | Search, Requests  | venuehistory, photos, tastes, friends, checkins, tips, venuelikes, mayorships, lists | deny, setpings, update, unfriend, approve |
+| Venues | Search, SuggestionCompletion, Categories, Timeseries, Trending, Exploring, Add, Managed  | similar, photos, events, likes, nextvenues, hours, stats, links, menu, tips, herenow, listed | claim, dislike, flag, proposeedit, like, setrole, edit, setsinglelocation | update, addvenue, edit, removevenue |
+| VenueGroups  | List, Delete, Add | timeseries | update, addvenue, edit, removevenue |
+  checkins | Resolve, Recent, Add | likes | deletecomment, like, addpost, addcomment |
+| tips | Add | likes, saves, listed |  unmark, flag, like | update, deleteitem, updateitem, follow, unfollow, moveitem,, share, additem |
+| lists | Add | followers, suggestphoto, suggesttip, saves, items, suggestvenues | update, deleteitem, updateitem, follow, unfollow, moveitem, share, additem |
+|updates | Notifications | | marknotificationsread |
+| photos | Add | Read the docs! |Read the docs! |
+
+---
+
+<a name = "Indy"></a>
+## Data-Crawling with Foursquare (15 minutes)
+
+> Note: Have students discuss this in pairs with partners after reading the following question before moving on:
+
+Suppose we wanted to generate a list of venues for a given geographical boundary, such as our previously defined bounded box. How would we go about doing so?
+
+We could use a search procedure to go through the data bounded by a lat/long. First, we have to identify which columns we would like to include in our data frame.
 
 ```python
-# Example
-#bounding_box = [x,y,z,t]  - Input the raw CSV file in here
+# We should include the lat, lon, name of the venue, and all of the data housed in hte "stats" heading in the JSON example.
+
+venues = venues.append(pd.DataFrame({"name":res["venue"]["name"],"users":res["venue"]["stats"]["usersCount"],
+"checkins":res["venue"]["stats"]["checkinsCount"], "tips":nv["stats"]["tipCount"], "lat":res["venue"]["location"]["lat"],
+"lng":res["venue"]["location"]["lng"]}, index=[v]))
 ```
 
-<a name = "Guided"></a>
+An important method we will explore for the independent practice is 'nextvenue' method. You can find more info on this method in [these API notes](https://developer.foursquare.com/docs/venues/nextvenues). The 'nextvenue' method:
+
+"Returns venues that people often check in to after the current venue. Up to 5 venues are returned in each query, and results are sorted by how many people have visited that venue after the current one. Homes are never returned in results."
+
+This method will form the kernel of a depth-first search procedure you will complete to crawl foursquare web-data.
+
+
+## Foursquare Independent Practice (10 min)
+
+To get more facility with Foursquare JSON structures, let's do a little practice. Select any resteraunt venue in your list of venues:
+
+```python
+client.venues('venue number here')
+```
+
+Now, your task is to extract a list of comments, and only the comments from the JSON. You can use the json library in Python to help you visualize the data in a more organized manner, but nothing else.
+
+Now let's try something a bit more difficult. Select any venue in your list of venues:
+
+```python
+import json
+
+temp = client.venues('4ba8cefdf964a520a9f039e3')
+client.venues('4ba8cefdf964a520a9f039e3')
+
+temp['venue']['tips']['groups']
+# Use the Json library to better output your json dump, otherwise it will take you forever to traverse the hierarchy
+print(json.dumps(temp, indent = 4))
+# Compare the nested data-structure, how would you go deeper to extract the comments?
+print(json.dumps(temp['venue']['tips']['groups'], indent = 4))
+#Voila! Simple, and elegant, but requires you to understand how the different data types are nested in each other
+map(lambda h: h['text'], temp['venue']['tips']['groups'][0]['items'])
+```
+
+---
+
+<a name = "conclusion"></a>
+## Conclusion (5 min)
+
+Some parting thoughts on today's activities:
+
+- Describe what an API allows you to do?
+- How does an API response compare with a HTTP response in the browser?
+- In what format is the data returned?
+
+Excellent, we have done a lot in learning about the Foursquare API , and we now have a data set we can use for basic analysis. In the lab, we will engage in some exploratory analysis, and explore foursquare data more!
+
+
+### ADDITIONAL RESOURCES
+
+- [Working with APIs](https://zapier.com/learn/apis/chapter-1-introduction-to-apis/)
+- [Foursquare Developer API docs](https://developer.foursquare.com)
