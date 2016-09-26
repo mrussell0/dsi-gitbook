@@ -1,4 +1,4 @@
-* [i. Student](dsi/readme.md)
+* [i. Students](dsi/readme.md)
   * [a: Onboarding](dsi/dsi_student_onboarding/readme.md)
     * [1: Installfest](dsi/dsi_student_onboarding/installfest-lesson/readme.md)
   * [b: Resources](dsi/dsi_resources/readme.md)
