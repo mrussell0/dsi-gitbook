@@ -3,7 +3,6 @@
 # Global Curriculum
 General Assembly's Data Science Immersive is made up of 4 Units split into 3 weeks each. These are:
 
-
 ### Unit Breakdown
 
 | Unit   | Title  | Lessons  | Topics | Flex Sessions |
