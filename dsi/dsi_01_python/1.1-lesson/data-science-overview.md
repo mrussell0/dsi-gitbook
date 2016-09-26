@@ -76,7 +76,7 @@ Week 1 | Day 1
 - An interdisciplinary, problem-solving oriented practice
 - The application of scientific techniques to practical problems
 
-![Data Science venn diagram](./1.1-lesson/assets/images/datascience-vd.png)
+![Data Science venn diagram](./assets/images/datascience-vd.png)
 
 
 #### Who uses Data Science?
@@ -100,7 +100,7 @@ Week 1 | Day 1
 * Data Engineer
 * Statistician
 
-![Data Science Roles](./1.1-lesson/assets/images/datascienceroles.jpg)
+![Data Science Roles](./assets/images/datascienceroles.jpg)
 
 
 **Common Skills:**
@@ -116,11 +116,11 @@ Week 1 | Day 1
 
 
 
-![Data Science Skills](./1.1-lesson/assets/images/datasci-skills.jpg)
+![Data Science Skills](./assets/images/datasci-skills.jpg)
 
 **Breakdown of Skills by Role:**
 
-![Data Science Skills by Role](./1.1-lesson/assets/images/datasci-skills-by-role.jpg)
+![Data Science Skills by Role](./assets/images/datasci-skills-by-role.jpg)
 
 ***
 
@@ -137,8 +137,8 @@ Week 1 | Day 1
 	* Predictor
 	* Covariate
 
-![](./1.1-lesson/assets/images/Table.png)
-	
+![](./assets/images/Table.png)
+
 
 3. Draw a normal distribution.
 4. True or False: Linear regression is an unsupervised learning algorithm.
@@ -151,7 +151,7 @@ Week 1 | Day 1
 <a name="introduction2"></a>
 ## Introduction: The Data Science Work Flow (25 mins)
 #### Overview of Steps:
-Throughout the class - and for our projects - we will be following [the **data science workflow**](../../../resources/syllabus/DSI-workflow-v1.pdf). This workflow will help you produce *reliable* and *reproducible* results.
+Throughout the class - and for our projects - we will be following [the **data science workflow**](../../../dsi_resources/syllabus/DSI-workflow-v1.pdf). This workflow will help you produce *reliable* and *reproducible* results.
 
 - **Reliable** = Accurate findings
 - **Reproducible** = Others can follow your steps and get the same results!
@@ -167,14 +167,13 @@ Throughout the class - and for our projects - we will be following [the **data s
 7. Present
 8. *Optional: Deploy!*
 
-![Data Science Workflow Visual](./1.1-lesson/assets/images/data-science-workflow-final.jpg)
+![Data Science Workflow Visual](./assets/images/data-science-workflow-final.jpg)
 
 **Note:** While this may appear to be a *linear* process, this is in fact a bit simplified. Realistically, at any point, you may need to **repeat** earlier steps in order to *iterate* through the workflow, depending on whether you change your goals, acquire new data, or are trying to fine-tune your model.
 
-Overall, the Data Science Workflow will serve as [a useful set of standards](../../../resources/syllabus/standards-learning-goals.md) and as a reference for our [course projects](../../03-projects/).
+Overall, the Data Science Workflow will serve as [a useful set of standards](../../../dsi_resources/syllabus/standards-learning-goals.md) and as a reference for our [course projects](../../dsi_projects/).
 
 Let's review these steps a bit further:
-
 
 ##### IDENTIFY: Understand the problem
 
