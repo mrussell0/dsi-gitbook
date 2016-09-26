@@ -56,6 +56,16 @@ There are 9 exercises in iPython notebooks within the starter-code folder to hel
 <a name="ind-practice"></a>
 ## Independent Practice: Topic (35-40 mins)
 
+[Problem 1](./starter-code/w1-3.1-review-problem-1.ipynb)
+[Problem 2](./starter-code/w1-3.1-review-problem-2.ipynb)
+[Problem 3](./starter-code/w1-3.1-review-problem-3.ipynb)
+[Problem 4](./starter-code/w1-3.1-review-problem-4.ipynb)
+[Problem 5](./starter-code/w1-3.1-review-problem-5.ipynb)
+[Problem 6](./starter-code/w1-3.1-review-problem-6.ipynb)
+[Problem 7](./starter-code/w1-3.1-review-problem-7.ipynb)
+[Problem 8](./starter-code/w1-3.1-review-problem-8.ipynb)
+[Problem 9](./starter-code/w1-3.1-review-problem-9.ipynb)
+
 Pair up into groups of two to tackle one of the exercises. If you complete your assigned exercise, trying completing another one (or at least getting started on it).
 
 

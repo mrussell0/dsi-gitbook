@@ -45,7 +45,7 @@ Some students might already know Python quite well so we are offering this _opti
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|
 | 5 min  | [Introduction](#introduction)   | Challenge  |
-| 70 min  | [Code Challenge #1](code/starter-code/Alternate%20Code%20Challenges%20-%20Week%201%20Lesson%201.2.ipynb)  | Intense Coding  |
+| 70 min  | [Code Challenge](./starter-code/w1-1.3-bonus-starter.ipynb)  | Intense Coding  |
 | 5 min  | [Conclusion](#conclusion)  |  Challenge Conclusion |
 
 ---
