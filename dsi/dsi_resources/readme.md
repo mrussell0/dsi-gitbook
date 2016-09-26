@@ -1,18 +1,6 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Data Science Resources
 
-In this folder, you'll find a range of useful support course-related materials. Here you'll find guidelines, scripts, and syllabus information.
-
-## Guidelines
-
-- [Contributing Guide](../contributing.md) - Suggestions on how to contribute materials to our global community!
-- [GA Template Styleguide](../templates/styleguide.md) - General rules for GA materials on Github
-- [Github Setup Guide](./guidelines/github-repo-instance-guide.md) - Process for creating your own fork and student repo.
-- [Schedule Planning](./guidelines/schedule-planning.md) - Suggestions for planning your course
-
-## Scripts
-
-- [Transform.sh](./scripts/transform.sh) - This script reviews markdown files and strips out instructor notes.
-- [Update.sh](./scripts/update.sh) - This automatically pulls and rebases new material from the master curriculum with your local course fork.
+In this folder, you'll find a range of useful support course-related materials.
 
 ## Syllabus & Student-Facing Learning Aids
 - [Detailed Syllabus](./syllabus/dsi-syllabus.pdf) - Data Science Immersive Syllabus, v10.2
