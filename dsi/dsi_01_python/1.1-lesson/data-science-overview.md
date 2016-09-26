@@ -151,7 +151,7 @@ Week 1 | Day 1
 <a name="introduction2"></a>
 ## Introduction: The Data Science Work Flow (25 mins)
 #### Overview of Steps:
-Throughout the class - and for our projects - we will be following [the **data science workflow**](../../../dsi_resources/syllabus/DSI-workflow-v1.pdf). This workflow will help you produce *reliable* and *reproducible* results.
+Throughout the class - and for our projects - we will be following [the **data science workflow**](../../dsi_resources/syllabus/DSI-workflow-v1.pdf). This workflow will help you produce *reliable* and *reproducible* results.
 
 - **Reliable** = Accurate findings
 - **Reproducible** = Others can follow your steps and get the same results!
@@ -171,7 +171,7 @@ Throughout the class - and for our projects - we will be following [the **data s
 
 **Note:** While this may appear to be a *linear* process, this is in fact a bit simplified. Realistically, at any point, you may need to **repeat** earlier steps in order to *iterate* through the workflow, depending on whether you change your goals, acquire new data, or are trying to fine-tune your model.
 
-Overall, the Data Science Workflow will serve as [a useful set of standards](../../../dsi_resources/syllabus/standards-learning-goals.md) and as a reference for our [course projects](../../dsi_projects/).
+Overall, the Data Science Workflow will serve as [a useful set of standards](../../dsi_resources/syllabus/standards-learning-goals.md) and as a reference for our [course projects](../../dsi_projects/).
 
 Let's review these steps a bit further:
 
