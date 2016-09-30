@@ -50,7 +50,7 @@ This course is designed to give you the deep dive into the world of *Data Scienc
 
 ## Outcomes
 
-**Beth Miller** and **Larry Palazzolo** will be your outcome coaches for this cohort. They instruct you just the same as your instructional staff; they are who will be helping you get a job.
+**Beth Miller** and **Casey Hills** will be your outcome coaches for this cohort. They instruct you just the same as your instructional staff; they are who will be helping you get a job.
 
 ## Licensing
 All content is licensed under a CC­BY­NC­SA 4.0 license.

@@ -24,6 +24,9 @@ Week 1 | Lesson 1.3
 *Before this lesson, you should already be able to:*
 - Describe/define Python data types
 
+### STARTER CODE
+[iPython Notebook](./code/starter-code/w1-1.3-bonus-starter.ipynb)
+
 ### LESSON GUIDE
 
 | TIMING  | TYPE  | TOPIC  |
