@@ -27,6 +27,12 @@ Week 4 Lesson 2.3
 - Complete Prep work required
 - Prepare any specific instructions
 
+### STARTER CODE
+[Demo](./code/guided-practice.ipynb)
+
+[Code Along](./code/AUC-ROC-codealong.ipynb)
+[Code Along 2](./code/starter-code/AUC-sacramento-housing-starter-code.ipynb)
+
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|

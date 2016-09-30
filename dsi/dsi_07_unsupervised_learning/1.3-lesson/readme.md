@@ -24,6 +24,9 @@ Week 7 | Lesson 1.3
 *Before this lesson, instructors will need to:*
 - Prepare the starter and solution code on their local machine
 
+### STARTER CODE
+[Code Along](./code/starter-code/starter-code.ipynb)
+
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|
@@ -39,37 +42,37 @@ Week 7 | Lesson 1.3
 <a name="opening"></a>
 ## Opening (5 mins)
 
-> Instructor Note: 
+> Instructor Note:
 - Review pre-work, projects, or exit ticket, if applicable
 - Review current lesson objectives
 - Reference general course content or topics (e.g. code or concepts that have been used across multiple lessons)
 - Include Hook / Real-world Relevance (why the content from this lesson is useful or important)
 
-**Check:** Ask students to recall the techniques of k-means clustering and recall the process from start to finish. 
+**Check:** Ask students to recall the techniques of k-means clustering and recall the process from start to finish.
 
 <a name="introduction"></a>
 ## Introduction: Intro  (5 mins)
 
-#### So I performed a clustering analysis - Now what? 
+#### So I performed a clustering analysis - Now what?
 
-Remember that before we conduct our k-means analysis, we needed to decide how to select "k". In the previous lesson, we visually selected "k", we can lead to noise in our analysis. Today, we're going to learn about how to evaluate this analysis. 
+Remember that before we conduct our k-means analysis, we needed to decide how to select "k". In the previous lesson, we visually selected "k", we can lead to noise in our analysis. Today, we're going to learn about how to evaluate this analysis.
 
-Now that you know how to perform a k-means clustering analysis, how do we know if we have good results? 
+Now that you know how to perform a k-means clustering analysis, how do we know if we have good results?
 
 The key to understanding your clustering analysis are the visual evaluation of your clusters, the measurement of their characteristics, and the computation of metrics that can measure how good your analysis is and how to interpret it. In the following sections, we'll look at a few common methods for understanding and validating your analysis.
 
 So what constitutes a good cluster versus a bad cluster? Largely based on the accuracy and precision of the analysis, we can explore how well we've characterized our data.
 
-**Check:** How might we think about "Good" clusters vs "Bad" clusters ? 
+**Check:** How might we think about "Good" clusters vs "Bad" clusters ?
 
 <a name="demo"></a>
 ## Techniques to Evaluate Clusters - Demo (15 mins)
 
-From visual methods to metrics to algorithms, there are many methods that we can use to evaluate clusters and our clustering algorithms. Today, we're going to look at a few of the more common ones. 
+From visual methods to metrics to algorithms, there are many methods that we can use to evaluate clusters and our clustering algorithms. Today, we're going to look at a few of the more common ones.
 
 #### Visualization
 
-When evaluating clusters, the first and easiest method is to visually examine the output of the clustering algorithm. After we run the algorithm and calculate the centroids as we did in the previous lesson, we can plot the resulting clusters to see where the centroids are based and how the clusters are grouping. 
+When evaluating clusters, the first and easiest method is to visually examine the output of the clustering algorithm. After we run the algorithm and calculate the centroids as we did in the previous lesson, we can plot the resulting clusters to see where the centroids are based and how the clusters are grouping.
 
 ![plot](./assets/images/plot.png)
 
@@ -107,19 +110,19 @@ Despite the name, a confusion matrix is anything but confusing. It's a simple qu
 
 ![plot](./assets/images/confusion.png)
 
-When used in clustering, the matrix has the predicted class labels on the top x axis, and the actual class labels on the y axis. Each number within the matrix represents how many of the true classes were classified as each of the predicted classes. 
+When used in clustering, the matrix has the predicted class labels on the top x axis, and the actual class labels on the y axis. Each number within the matrix represents how many of the true classes were classified as each of the predicted classes.
 
 Where the name "confusion" comes in: a non-confused class will have large values on the diagonal, so that the predicted classes match up with the actual classes, whereas a "confused" class will have values all over the place.
 
 If we look back at our comparison graph above, we can see this in action - the predicted classes do not match up well with the actual classes, so we have "confused" classes!
 
-To implement it in Python, we only need one line of code from Scikit-Learn: 
+To implement it in Python, we only need one line of code from Scikit-Learn:
 
 ```python
 metrics.confusion_matrix(y_test, predicted)
 ```
 
-The confusion matrix is a form of **external evaluation**. 
+The confusion matrix is a form of **external evaluation**.
 
 <a name="guided-practice"></a>
 ## Guided Practice: Perform a K-Means Analysis and Evaluate the Clusters (20 minutes)
@@ -175,7 +178,7 @@ and print the labels to take a look at what our predicted classes are.
 print(labels)
 ```
 
-Once we have these, we'll define the predicted class labels. 
+Once we have these, we'll define the predicted class labels.
 
 ```python
 predY = np.choose(labels, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]).astype(np.int64)
@@ -201,7 +204,7 @@ Check the F-Score, Precision, and Recall:
 print(metrics.classification_report(y, predY))
 ```
 
-And finally, the confusion matrix. 
+And finally, the confusion matrix.
 
 ```
 print(metrics.confusion_matrix(y, predY))
@@ -215,7 +218,7 @@ We're done! you've successfully analyzed your clusters.
 <a name="ind-practice"></a>
 ## Independent Practice: Perform a K-Means Analysis and Evaluate the Clusters (20 minutes)
 
-Now that we've walked through the process of clustering and measuring your clusters, it's time to put your skills to the test. We're going to be looking at the [classic Iris dataset](./assets/datasets/iris.csv) to understand how the measurements cluster and how to evaluate our analysis. 
+Now that we've walked through the process of clustering and measuring your clusters, it's time to put your skills to the test. We're going to be looking at the [classic Iris dataset](./assets/datasets/iris.csv) to understand how the measurements cluster and how to evaluate our analysis.
 
 Open the [starter code](./code/starter-code/starter-code.ipynb) and try to work through both exercises with a partner. Do your best!
 
@@ -235,4 +238,3 @@ Open the [starter code](./code/starter-code/starter-code.ipynb) and try to work 
 
 - [K Means & Clustering](https://dl.dropboxusercontent.com/u/6044937/PyData/SKL31-KMeans.pdf)
 - [Additional description & videos from Udemy](https://www.udemy.com/cluster-analysis-unsupervised-machine-learning-python/)
-

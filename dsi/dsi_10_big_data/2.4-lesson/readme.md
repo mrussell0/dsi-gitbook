@@ -30,6 +30,9 @@ Week 10 | Lesson 2.4
 - Provide students with additional resources
 - Read the two articles mentioned in the Opening section
 
+### STARTER CODE
+[Code Along](./assets/readme.ipynb)
+
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|
@@ -162,7 +165,7 @@ Your goal for this phase is to learn as much as possible about the different typ
 At the end of this phase you should **select the problem** that you would like to **tackle first**.
 
 ### Team Green (Consultant) goals
-Your goal for this phase is to learn as much as possible about the challenges of fraud detection. In particular, you should learn: 
+Your goal for this phase is to learn as much as possible about the challenges of fraud detection. In particular, you should learn:
 - what makes fraud detection so difficult from a statistical point of view.
 > rare events, active deception
 
@@ -217,4 +220,3 @@ THe original articles on the 2 cases:
 - [TV show uses data to change the world](https://gigaom.com/2012/08/11/how-indias-favorite-tv-show-uses-data-to-change-the-world/)
 
 - [South Bend’s sewage problem](https://gigaom.com/2012/08/30/managing-sewage-like-traffic-thanks-to-data/)
-

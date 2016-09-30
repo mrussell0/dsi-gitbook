@@ -13,7 +13,7 @@ Week 7 | Lesson 3.2
 *After this lesson, you will be able to:*
 - Perform a Hierarchical Clustering
 - Plot, Analyze, and Understand the Dendrogram
-- Evaluate clusters for fit 
+- Evaluate clusters for fit
 
 
 ### STUDENT PRE-WORK
@@ -24,6 +24,9 @@ Week 7 | Lesson 3.2
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
 - Prepare the starter and solution code on their local machine
+
+### STARTER CODE
+[Code Along](./code/starter-code/starter-code.ipynb)
 
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
@@ -51,15 +54,15 @@ Week 7 | Lesson 3.2
 <a name="introduction"></a>
 ## Introduction: Intro to Hierarchical Clustering (10 mins)
 
-#### What is Hierarchical Clustering? 
+#### What is Hierarchical Clustering?
 
 Hierarchical clustering, like k-means clustering, is another common form of clustering analysis. With this type of clustering - we seek to do exactly what the name suggests: build hierarchies of links that ultimately form clusters. Once these links are determined, they are displayed in what is called a **dendrogram** - a graph that displays all of these links in a hierarchical manner.
 
 ![denex](./assets/images/denex.png)
 
-To find clusters in a dendrogram, we can cut the graph to find the clusters - we'll go over this later in the lesson. 
+To find clusters in a dendrogram, we can cut the graph to find the clusters - we'll go over this later in the lesson.
 
-#### How is Hierarchical Clustering Different from K-Means Clustering? 
+#### How is Hierarchical Clustering Different from K-Means Clustering?
 
 Much like we learned about k-means clustering, hierarchical clustering is another method for classifying our data. If you recall, in k-means clustering, the algorithm groups data into a pre-defined set of clusters based on various attributes. However in the case of hierarchical clustering, the algorithm builds classifications trees of the data that merges groups of similar data points.
 
@@ -67,10 +70,10 @@ With k-means, the boundaries between the various clusters are distinct and indep
 
 ![kmeans](./assets/images/kmeans.png)
 
-All of these attributes can lend themselves to certain clustering situations - for instance, hierarchical clustering is more beneficial for smaller datasets - think about the complexity of a dendrogram from a 1000 point dataset! Likewise, this form of clustering works better when we have binary data or dummy variables: as k-means computes *means* in forming clusters, performing k-means on a dataset with a significant amount of variables would skew the resulting clusters and distributions. 
+All of these attributes can lend themselves to certain clustering situations - for instance, hierarchical clustering is more beneficial for smaller datasets - think about the complexity of a dendrogram from a 1000 point dataset! Likewise, this form of clustering works better when we have binary data or dummy variables: as k-means computes *means* in forming clusters, performing k-means on a dataset with a significant amount of variables would skew the resulting clusters and distributions.
 
 
-**Check:** How is clustering different from classification? When might we use one over the other? 
+**Check:** How is clustering different from classification? When might we use one over the other?
 
 <a name="demo"></a>
 ## How Does Hierarchical Clustering Work? - Demo (10 mins)
@@ -95,17 +98,17 @@ Z = linkage(X, 'ward')
 
 Here, "X" represents the matrix of data that we are clustering, and "ward" tells our algorithm which method to use to calculate distance between our newly formed clusters - in this case **Ward's Method** which seeks to minimize the variance when forming clusters. When calculating distance, the default is **Euclidean distance** which we learned about in our dimensionality reduction lesson.
 
-After we cluster, we can calculate the dendrogram using a simple ```dendrogram()``` function from SciPy, which we can then draw using our handy  ```plt``` from matplotlib. 
+After we cluster, we can calculate the dendrogram using a simple ```dendrogram()``` function from SciPy, which we can then draw using our handy  ```plt``` from matplotlib.
 
-To check how well our algorithm has measured distance, we can calculate the **cophenetic correlation coefficient**. This metric, which measures the height of the dendrogram at the point where two branches merge, can tell us how well the dendrogram has measured the distance between data points in the original dataset and is a helpful measure to see how well our clustering test has run. 
+To check how well our algorithm has measured distance, we can calculate the **cophenetic correlation coefficient**. This metric, which measures the height of the dendrogram at the point where two branches merge, can tell us how well the dendrogram has measured the distance between data points in the original dataset and is a helpful measure to see how well our clustering test has run.
 
 ```python
 c, coph_dists = cophenet(Z, pdist(X))
 ```
 
-Here, we call the cophenetic function using ```cophenet``` from SciPy and apply it to our clustered set, Z, and the distance of our original set, X. 
+Here, we call the cophenetic function using ```cophenet``` from SciPy and apply it to our clustered set, Z, and the distance of our original set, X.
 
-**Check:** What is the cophenetic coefficient? How does it relate to the dendrogram? 
+**Check:** What is the cophenetic coefficient? How does it relate to the dendrogram?
 
 <a name="guided-practice"></a>
 ## Guided Practice: Preparing Your Analysis & Handling Data (15 mins)
@@ -114,13 +117,13 @@ Here, we call the cophenetic function using ```cophenet``` from SciPy and apply 
 
 Let's say that you're asked to perform hierarchical clustering analysis on a new dataset - how would we go about it?
 
-We're going to be using a dataset that details [language skills](.assets/datasets/lang.csv) from different European countries. We will perform a hierarchical clustering analysis on this dataset. 
+We're going to be using a dataset that details [language skills](.assets/datasets/lang.csv) from different European countries. We will perform a hierarchical clustering analysis on this dataset.
 
 You might be faced with a situation like this is you were asked to tackle demographic info or survey responses, so it's a useful test!
 
 **Check**: Can you think of some other examples for how this type of data could be used?
 
-First; Let's setup our imports in a new Ipython notebook: 
+First; Let's setup our imports in a new Ipython notebook:
 
 ```python
 from matplotlib import pyplot as plt
@@ -141,7 +144,7 @@ lang = pd.read_csv(".../lang.csv")
 lang.head()
 ```
 
-First, let's plot our data to visually examine the clusters. 
+First, let's plot our data to visually examine the clusters.
 
 ```python
 plt.scatter(lang['country'], lang['english'])
@@ -163,7 +166,7 @@ X = df.as_matrix(columns=None)
 
 Next, we'll implement the actual clustering algorithm using the `ward` method:
 
-```python 
+```python
 Z = linkage(X, 'ward')
 ```
 
@@ -173,7 +176,7 @@ Now, we can calculate the cophenetic correlation coefficient to see how well our
 c, coph_dists = cophenet(Z, pdist(X))
 ```
 
-To see the coefficient, just type in the variable: 
+To see the coefficient, just type in the variable:
 
 ```python
 c
@@ -196,9 +199,9 @@ plt.show()
 
 ![graph2](./assets/images/dendro.png)
 
-Now, we want to determine our clusters. While there are many ways to automate this process,  we're going to help estimate our clusters by visually examining the graph to better understand the structure of the dendrogram. 
+Now, we want to determine our clusters. While there are many ways to automate this process,  we're going to help estimate our clusters by visually examining the graph to better understand the structure of the dendrogram.
 
-Here, we can see that no links exist above a distance of 200 - so we will set maximum distance at 200 and use the ```fclusters``` function from ```scipy.cluster.hierarchy```, which will return our cluster ID's. 
+Here, we can see that no links exist above a distance of 200 - so we will set maximum distance at 200 and use the ```fclusters``` function from ```scipy.cluster.hierarchy```, which will return our cluster ID's.
 
 ```python
 max_dist = 200
@@ -213,13 +216,13 @@ plt.scatter(X[:,0], X[:,6], c=clusters, cmap='prism')
 plt.show()
 ```
 
-We should get a graph that looks similar to this: 
+We should get a graph that looks similar to this:
 
 
 ![graph](./assets/images/scatter.png)
 
 
-**Check:** Were you able to successfully run your own code? Does it match the instructors' results? 
+**Check:** Were you able to successfully run your own code? Does it match the instructors' results?
 
 <a name="ind-practice"></a>
 ## Independent Practice: Perform a Hierarchical Clustering Analysis (15 minutes)
@@ -243,7 +246,7 @@ Open the [data](./assets/datasets/iris.csv) and [starter code](./code/starter-co
 
 ***
 
-## Additional Resources 
+## Additional Resources
 
 - [SciPy Documentation for Linkage techniques](http://docs.scipy.org/doc/scipy-0.16.0/reference/generated/scipy.cluster.hierarchy.linkage.html)
 - [What even is this Hierarchical Clustering Thing, Anyway?](http://www.saedsayad.com/clustering_hierarchical.htm)

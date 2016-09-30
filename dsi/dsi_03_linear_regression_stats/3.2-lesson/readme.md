@@ -27,6 +27,9 @@ Week 3 | Lesson 3.2
 - Prepare any specific materials
 - Provide students with additional resources
 
+### STARTER CODE
+[Demo](./code/starter-code/Train-Test-Split-starter.ipynb)
+
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|

@@ -26,6 +26,9 @@ Week 7 | Lesson 2.2
 - Prepare any specific materials
 - Provide students with additional resources
 
+### STARTER CODE
+[Code Along](./code/starter-code/starter-code.ipynb)
+
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|
@@ -51,19 +54,19 @@ Week 7 | Lesson 2.2
 <a name="introduction"></a>
 ## Introduction: A Brief Mathematical Introduction to Principal Component Analysis (15 mins)
 
-Last lesson we learned the about dimensionality reduction overall; now we're going to take an in-depth look at a very useful form of dimensionality reduction - **Principal Component Analysis** or **PCA**. Principal Component Analysis, in very simple terms, is a method to *simplify* the data so that any analysis becomes easier to conduct and more accurate. 
+Last lesson we learned the about dimensionality reduction overall; now we're going to take an in-depth look at a very useful form of dimensionality reduction - **Principal Component Analysis** or **PCA**. Principal Component Analysis, in very simple terms, is a method to *simplify* the data so that any analysis becomes easier to conduct and more accurate.
 
-When conducting Principal Component Analysis there are two methods one could use - the covariance method and the correlation method. Last lesson, we looked at the more common covariance method, which is what we will explore in depth today. 
+When conducting Principal Component Analysis there are two methods one could use - the covariance method and the correlation method. Last lesson, we looked at the more common covariance method, which is what we will explore in depth today.
 
 ### The Covariance Matrix
 
-Last lesson we learned how to create the covariance matrix using Numpy in Python: 
+Last lesson we learned how to create the covariance matrix using Numpy in Python:
 
 ```python
 covariance_matrix = np.cov(x_standard.T)
 ```
 
-The basis of the covariance matrix, of course, is the **covariance** itself - best defined as a measurement of how much each of the **dimensions** vary about the mean with respect to each other. The **covariance matrix** itself is a representation of covariance across dimensions. 
+The basis of the covariance matrix, of course, is the **covariance** itself - best defined as a measurement of how much each of the **dimensions** vary about the mean with respect to each other. The **covariance matrix** itself is a representation of covariance across dimensions.
 
 ### Eigenvalues and Eigenvectors
 
@@ -79,7 +82,7 @@ As you can see, there is an intuitive relationship between the covariance matrix
 
 Explained variance is exactly what it seems to be - it is the amount of variance that can be attributed to each of the principal components we discovered by finding the eigenvalues. This will help us choose which eigenvalues to keep for our Principal Component Analysis.
 
-In python, we calculated the explained variance as: 
+In python, we calculated the explained variance as:
 
 ```python
 eigenValSum = sum(eigenValues)
@@ -98,9 +101,9 @@ Once we have the principal components that we'd like to keep, we create a **proj
 <a name="demo"></a>
 ## Demo: Two Approaches to Principal Component Analysis - Mathematical and Automated (20 mins)
 
-Last lesson, we stopped at calculating the eigenvectors and eigenvalues - today we're going to take this a step further 
+Last lesson, we stopped at calculating the eigenvectors and eigenvalues - today we're going to take this a step further
 
-First, we're going to use the eigenvalues to calculate the **explained variance**. The explained variance is a measure that tells us how much of the total variance can be explained by each of the Principal Components. 
+First, we're going to use the eigenvalues to calculate the **explained variance**. The explained variance is a measure that tells us how much of the total variance can be explained by each of the Principal Components.
 
 ```python
 totalEigen = sum(eig_vals)
@@ -122,9 +125,9 @@ X = data.ix[:,0:4].values
 y = data.ix[:,4].values
 ```
 
-and "M" is the matrix ```Pmatrix``` that we just calculated above. 
+and "M" is the matrix ```Pmatrix``` that we just calculated above.
 
-In Python, this is implemented as: 
+In Python, this is implemented as:
 
 ```
 Y = xStandardized.dot(Pmatrix)
@@ -132,35 +135,35 @@ Y = xStandardized.dot(Pmatrix)
 
 #### PCA using Scikit-Learn
 
-For a practical implementation of Principal Component Analysis, we can use Scikit-Learn's PCA function. 
+For a practical implementation of Principal Component Analysis, we can use Scikit-Learn's PCA function.
 
 This time, we'll import the PCA module from sklearn. As before, we'll split our dataset and standardize "x".
 
 ```python
-from sklearn.decomposition import PCA 
+from sklearn.decomposition import PCA
 
 x = data.ix[:,0:4].values
 y = data.ix[:,4].values
 xStandardized = StandardScaler().fit_transform(x)
 ```
 
-Then, instead of calculating the eigenvalues and eigenvectors, we'll simply call the PCA function from sklearn and set the components at 2, much like we estimated "k" when learning about k-means clustering. 
+Then, instead of calculating the eigenvalues and eigenvectors, we'll simply call the PCA function from sklearn and set the components at 2, much like we estimated "k" when learning about k-means clustering.
 
 ```python
 PCA_sk = PCA(n_components=2)
 Y_sk = PCA_sk.fit_transform(x_std)
 ```
 
-**Check:** Do students understand how the math translates into code? Do they understand the process? 
+**Check:** Do students understand how the math translates into code? Do they understand the process?
 
 <a name="guided-practice"></a>
 ## Guided Practice: Topic (20 mins)
 
-Now that you know the procedure, let's run through an implementation of PCA with a real dataset. 
+Now that you know the procedure, let's run through an implementation of PCA with a real dataset.
 
-We're going to be revisiting the classic [iris dataset](./assets/datasets/iris.csv) that we worked with last lesson. 
+We're going to be revisiting the classic [iris dataset](./assets/datasets/iris.csv) that we worked with last lesson.
 
-Open the [starter code](./code/starter-code/Starter-Code-Guided.ipynb) and follow along with the instructor. 
+Open the [starter code](./code/starter-code/Starter-Code-Guided.ipynb) and follow along with the instructor.
 
 > Note: [solution code](./code/solution-code/Solution-Code-Guided.ipynb).
 
@@ -179,7 +182,7 @@ Now that we've gone over the long-form approach to dimensionality reduction and 
 
 PCA is a useful tool for reducing our data down to it's core points, however it's important to remember it's an intermediate tool! For instance, say we have a large noisy data set that we want to cluster - PCA is a manner to reduce this dataset to make that clustering easier. We'll examine a case like this in your final project!
 
-To recap: 
+To recap:
 
 - We form the covariance matrix first
 - Reduce the matrix to find the eigenvalues and eigenvectors

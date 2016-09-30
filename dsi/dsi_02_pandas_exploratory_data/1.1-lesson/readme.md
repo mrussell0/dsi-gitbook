@@ -25,6 +25,9 @@ make sure you have all the dependencies installed as well:
     - python-dateutil: 1.5 or higher
     - pytz: needed for time zone support
 
+### STARTER CODE
+[Demo](./code/w2-1.1-demo.ipynb)
+
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
 - Read in / Review any dataset(s) & starter/solution code

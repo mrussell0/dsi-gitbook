@@ -25,6 +25,9 @@ Week 11 | Lesson 1.1
 - Familiarize yourself with the Case Studies in the lesson plan, or, find others you wish to use
 - Provide students with additional resources
 
+### STARTER CODE
+[Code Along](./code/starter-code/ab_testing.ipynb)
+
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|
@@ -94,7 +97,7 @@ Will you be splitting the incoming traffic 50/50 between variants, or can you ge
 
 ### 3. How long will the test run?
 
-This is a very important question to ask. If the test doesn't run long enough, your data won't be useful. If it runs too long, that can impact business needs. 
+This is a very important question to ask. If the test doesn't run long enough, your data won't be useful. If it runs too long, that can impact business needs.
 Remember back to Week 9's Time Series Analysis lessons- ensure that you have enough data to capture across multiple periods, or seasons, but not too much data that your result will be heavily affected by trend.
 
 ### 4. Why is this test truly necessary?
@@ -103,7 +106,7 @@ A/B testing is a gamble. If the business result of the test is less valuable tha
 
 ## Multi-Arm Bandit Testing
 
-A traditional A/B test is done by splitting traffic between variants 50/50. A newer approach is the _Multi-Arm Bandit_. 
+A traditional A/B test is done by splitting traffic between variants 50/50. A newer approach is the _Multi-Arm Bandit_.
 
 In this strategy, traffic is split as such:
 - **Exploration Phase**: During the first ~10% of the test, traffic is split 50/50. This phase picks a short-term 'winner', and a short-term 'loser'.
@@ -113,7 +116,7 @@ The Multi-Arm Bandit approach is championed by many big companies, primarily Goo
 
 **Check:** What do you think the pros and cons of this model are?
 
-In practice, Multi-Arm Bandit testing does a fairly good job of optimizing conversion rates. The downside to this method, however, is increased difficulty in evaluation of results. Simply picking a 'winner' variant is not always the best strategy, especially since the 'loser' variant often gets so little traffic that it can be hard to validate the statistical significance of the lift. 
+In practice, Multi-Arm Bandit testing does a fairly good job of optimizing conversion rates. The downside to this method, however, is increased difficulty in evaluation of results. Simply picking a 'winner' variant is not always the best strategy, especially since the 'loser' variant often gets so little traffic that it can be hard to validate the statistical significance of the lift.
 
 To shed more light on the importance of controlling your traffic flow through variants, let's look at how these tests are analyzed.
 
@@ -152,7 +155,7 @@ Let's look at how we would model the Student's _t_-test in Python in the [`ab_te
 <a name="code-ztest"></a>
 ## Guided Practice/Codealong: _Z_-tests (15 mins)
 
-The _z_-tests is another method used to analyse test results. Use of a _z_-test is possible when the observed data can be decided to follow a Normal distribution with _unknown mean_ and _known variance_. The output of a _z_-test is the _z_-statistic, which represents the number of standard deviations  and its corresponding _p_-value. It is defined as such: 
+The _z_-tests is another method used to analyse test results. Use of a _z_-test is possible when the observed data can be decided to follow a Normal distribution with _unknown mean_ and _known variance_. The output of a _z_-test is the _z_-statistic, which represents the number of standard deviations  and its corresponding _p_-value. It is defined as such:
 
 ![](./assets/images/ztest-formula.png)
 
@@ -178,22 +181,22 @@ Here are the four variants we would like to try:
 | Test 2  | Stars  | Data Science Immersive  |
 | Test 3  | Flowers  | Data Science Immersive  |
 
-This test would be set up the same as a typical A/B test, with each variant getting roughly 25% of the traffic. There is a clear downside to this, however, as it would take a higher amount of time and traffic to get statistically significant results. 
+This test would be set up the same as a typical A/B test, with each variant getting roughly 25% of the traffic. There is a clear downside to this, however, as it would take a higher amount of time and traffic to get statistically significant results.
 
-Another downside to Multi-Variate testing is that sometimes one of the variables has little effect on conversion rates, or other indicators of success. For example, if changing our toy site's Image has a noticeable effect on conversion, but the change on the Title does not, we would have been better off setting up the test as an A/B. The ineffective variable will only serve to cloud our results, possibly preventing us from rejecting the null hypothesis. 
+Another downside to Multi-Variate testing is that sometimes one of the variables has little effect on conversion rates, or other indicators of success. For example, if changing our toy site's Image has a noticeable effect on conversion, but the change on the Title does not, we would have been better off setting up the test as an A/B. The ineffective variable will only serve to cloud our results, possibly preventing us from rejecting the null hypothesis.
 
 Evaluating these tests can be done in multiple ways, and it's up to the analyst to determine the best fit. ANOVA is the most commonly used test, but results can also be analysed using an ensemble of _t_-tests.
 
 <a name="discussion1"></a>
 ## Discussion: A/B Test Case Study 1 - Obama's Fundraising Campaign (10 mins)
 
-One of the most popular case studies of A/B testing in recent memory was posted by [Optimizely](https://www.optimizely.com/) on their company blog. Optimizely is a 3rd party A/B testing tool which allows you to easily design, serve, and analyze website optimization tests. 
+One of the most popular case studies of A/B testing in recent memory was posted by [Optimizely](https://www.optimizely.com/) on their company blog. Optimizely is a 3rd party A/B testing tool which allows you to easily design, serve, and analyze website optimization tests.
 
 Go ahead and read the article [here](https://blog.optimizely.com/2010/11/29/how-obama-raised-60-million-by-running-a-simple-experiment/), and get ready to discuss afterwards.
 
-Now that we've read the article, let's discuss. 
+Now that we've read the article, let's discuss.
 
-> Instructor's Note: Here are a few prompts. 
+> Instructor's Note: Here are a few prompts.
 > - Why do you think this test worked?
 > - What were the risks taken? Were they worth taking?
 > - What next steps would you have taken if this test were still going?
@@ -206,9 +209,9 @@ A/B testing is a great way to continuously mine data about what people are inter
 
 Go ahead and read the article [here](https://vwo.com/blog/amd-3600-social-sharing-increase/), and get ready to discuss afterwards.
 
-Now that we've read the article, let's discuss. 
+Now that we've read the article, let's discuss.
 
-> Instructor's Note: Here are a few prompts. 
+> Instructor's Note: Here are a few prompts.
 > - Why do you think this test worked?
 > - What were the risks taken? Were they worth taking?
 > - What next steps would you have taken if this test were still going?
@@ -219,7 +222,7 @@ https://vwo.com/blog/amd-3600-social-sharing-increase/
 <a name="conclusion"></a>
 ## Conclusion (5 mins)
 
-A/B Testing is a key opportunity for Data Scientists to have a concrete effect on business outcomes. It requires more than just statistical formulas, as one must call on their business intuition and technical competency to full understand the results. The design, implementation, and analysis of an A/B test will typically be performed across functions, putting the Data Scientist in close contact with PM's, developers, and UX designers. If this kind of thing interests you, it would be a good idea to take some time and try out the third party tools that are available to you, such as Optimizely, Sitespect, VWO, etc. Many of them have demos on their sites, or if you're interested in web development, take the time to put together your own A/B testing tools. 
+A/B Testing is a key opportunity for Data Scientists to have a concrete effect on business outcomes. It requires more than just statistical formulas, as one must call on their business intuition and technical competency to full understand the results. The design, implementation, and analysis of an A/B test will typically be performed across functions, putting the Data Scientist in close contact with PM's, developers, and UX designers. If this kind of thing interests you, it would be a good idea to take some time and try out the third party tools that are available to you, such as Optimizely, Sitespect, VWO, etc. Many of them have demos on their sites, or if you're interested in web development, take the time to put together your own A/B testing tools.
 
 > Instructor's Note: Take this time to field any questions, and ensure students are prepared for the corresponding lab next session.
 

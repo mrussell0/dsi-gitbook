@@ -28,6 +28,9 @@ Week 3 | Lesson 2.3
 - Prepare any specific materials
 - Provide students with additional resources
 
+### STARTER CODE
+[Starter](./code/starter-code/Regularization-starter.ipynb)
+
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|

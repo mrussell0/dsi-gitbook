@@ -30,6 +30,10 @@ Week 4 | Lesson 1.1
 - Read through datasets and starter/solution code
 - Add to the "Additional Resources" section for this lesson
 
+### STARTER CODE
+[Demo](./code/starter-code/week4-1.1-starter.ipynb)
+
+[KNN](./code/Classification-with-KNN.ipynb)
 
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |

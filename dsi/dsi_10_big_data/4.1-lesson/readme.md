@@ -28,6 +28,9 @@ Week 10 | Lesson 4.1
 - Prepare any specific materials
 - Provide students with additional resources
 
+### STARTER CODE
+[Code Along](./assets/readme.ipynb)
+
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|

@@ -25,6 +25,9 @@ Week 3 | Lesson 4.2
 - Prepare any specific materials
 - Provide students with additional resources
 
+### STARTER CODE
+[Demo](./code/starter-code/Feature-Scaling-Starter.ipynb)
+
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|

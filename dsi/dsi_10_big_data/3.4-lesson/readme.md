@@ -28,6 +28,9 @@ Week 10 | Lesson 3.4
 - Prepare any specific materials
 - Provide students with additional resources
 
+### STARTER CODE
+[Code Along](./assets/readme.ipynb)
+
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|
@@ -111,5 +114,3 @@ It's time to present your findings to the rest of the class. Each groups gets a 
 
 - [Spark course](http://bigdatauniversity.com/courses/spark-fundamentals/)
 - [More case studies](https://databricks.com/resources/case-studies)
-
-

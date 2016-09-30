@@ -23,8 +23,6 @@ Week 1 | Lesson 4.1
 ### STARTER CODE
 [Demo](./code/w1-4.1-demo.ipynb)
 
-[Independent Practice](./code/starter-code/3.3-independent-practice.ipynb)
-
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|

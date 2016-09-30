@@ -22,6 +22,12 @@ Week 4 | Lesson 4.1
 - Visualize gridsearch function
 - Emphasize inverse relation between 'C' and penalty
 
+### STARTER CODE
+[Code Along](./code/starter-code/gridsearch-multinomial-logistic-starter.ipynb)
+[Code Along 2](./code/starter-code/week4-4.1-breast-cancer-coefficients.ipynb)
+[Code Along 3](./code/starter-code/week4-4.1-classification-report.ipynb)
+[Code Along 4](./code/starter-code/AUC-sacramento-housing-starter-code.ipynb)
+
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|

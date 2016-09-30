@@ -27,6 +27,9 @@ Week 10 | Lesson 5.1
 - Prepare any specific materials
 - Provide students with additional resources
 
+### STARTER CODE
+[Code Along](./assets/readme.ipynb)
+
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|
@@ -104,4 +107,3 @@ The group playing the audience role should look for similarities and differences
 
 - [NEXRAD](https://en.wikipedia.org/wiki/NEXRAD)
 - [Weatherpipe](https://github.com/stephenlienharrell/WeatherPipe)
-

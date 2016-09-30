@@ -29,6 +29,9 @@ Week 4 | Lesson 2.1
 - Send math and additional resources on odds and logit models for read-ahead
 - Complete prep work
 
+### STARTER CODE
+[Demo](./code/starter-code/week4-2.1-starter-code.ipynb)
+
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|

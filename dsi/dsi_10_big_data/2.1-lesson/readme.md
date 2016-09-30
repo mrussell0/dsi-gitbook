@@ -28,6 +28,9 @@ Week 10 | Lesson 2.1
 - Prepare any specific materials
 - Provide students with additional resources
 
+### STARTER CODE
+[Code Along](./assets/readme.ipynb)
+
 ### ADDITIONAL WEEK 10 PREP
 This week requires additional prep in order to successfully run all lessons and labs provided:
 
@@ -419,4 +422,3 @@ We have learned how to use them both from the web interface and from the command
 - [S3](https://aws.amazon.com/s3/?nc2=h_m1)
 - [Tutorials](https://aws.amazon.com/getting-started/tutorials/)
 - [AWS CLI Tutorial](http://www.joyofdata.de/blog/guide-to-aws-ec2-on-cli/)
-

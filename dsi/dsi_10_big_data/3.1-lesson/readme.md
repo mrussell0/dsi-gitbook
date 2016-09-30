@@ -29,6 +29,9 @@ Week 10 | Lesson 3.1
 - Prepare any specific materials
 - Provide students with additional resources
 
+### STARTER CODE
+[Code Along](./assets/readme.ipynb)
+
 ### ADDITIONAL WEEK 10 PREP
 This week requires additional prep in order to successfully run all lessons and labs provided:
 

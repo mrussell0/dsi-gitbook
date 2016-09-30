@@ -25,6 +25,10 @@ Week 9 | Lesson 2.2
 - Read through datasets and starter/solution code
 - Add to the "Additional Resources" section for this lesson
 
+### STARTER CODE
+[Code Along](./code/starter-code/autocorrelation.ipynb)
+[Code Along 2](./code/starter-code/trendline.ipynb)
+
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|
@@ -58,7 +62,7 @@ Specifically, we will focus on identifying problems that are related to time ser
 **QUESTION:** What constitutes a trend in data? Is Linearity required for Trend?
 
 > Answer:
-1. A trend exists when there is a long-term increase or decrease in the data. 
+1. A trend exists when there is a long-term increase or decrease in the data.
 2. No
 
 Trend may “change direction” when it goes from an increasing trend to a decreasing trend. Trend can only be measured in the scope of the data collected, though there may be trends that are unmeasureable if the data is not complete.

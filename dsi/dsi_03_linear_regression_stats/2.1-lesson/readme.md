@@ -26,6 +26,10 @@ Week 3 | Lesson 2.1
 - Prepare any specific materials
 - Provide students with additional resources
 
+### STARTER CODE
+[Plots](./code/w3-lesson2.1-plots.ipynb)
+[Bias Variance](./code/starter-code/Bias-Variance-starter.ipynb)
+
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|

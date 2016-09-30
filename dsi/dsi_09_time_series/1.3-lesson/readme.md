@@ -26,6 +26,10 @@ Week 9 | Lesson 1.3
 - Review the GOOG data set from week 2 for familiarity
 - Review both .ipynb notebooks. You will be live-coding the Introduction, Demo, and part of the Discussion sections in these notebooks. **Feel free to diverge from the provided solution code, these are just suggestions. Also, feel free to add more exercises. You know your students best!**
 
+### STARTER CODE
+[Code Along](./code/starter-code/datetime.ipynb)
+[Code Along 2](./code/starter-code/timeseries.ipynb)
+
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|

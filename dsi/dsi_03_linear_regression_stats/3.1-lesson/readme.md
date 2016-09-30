@@ -30,6 +30,9 @@ Week 3 | Lesson 3.1
 - Prepare any specific materials
 - Provide students with additional resources
 
+### STARTER CODE
+[Demo](./code/starter-code/Regression-Metrics-and-Loss-Functions-Starter.ipynb)
+
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|

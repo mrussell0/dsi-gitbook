@@ -29,8 +29,12 @@ Week 9 | Lesson 4.1
 - Provide students with additional resources
 - Read following note, decide student approach, prepare environment
 
+### STARTER CODE
+[Code Along](./code/mapper.py)
+[Code Along 2](./code/reducer.py)
+
 **IMPORTANT NOTE!**
-At the time of writing, SARIMAX is not included in the stable release of `statsmodels`. Students will need to install the development version of `statsmodels` (>= 0.7) in a `conda env` by entering the following commands in their terminal. Please do this at the beginning of class if you would like them to code along with you, or before they begin lab 4.2 if they will just be watching your live-coding. 
+At the time of writing, SARIMAX is not included in the stable release of `statsmodels`. Students will need to install the development version of `statsmodels` (>= 0.7) in a `conda env` by entering the following commands in their terminal. Please do this at the beginning of class if you would like them to code along with you, or before they begin lab 4.2 if they will just be watching your live-coding.
 
 ```bash
 conda create -n statsmodeldevenv python=2.7 pandas numpy scipy ipython jupyter patsy cython matplotlib
@@ -45,7 +49,7 @@ python setup.py install
 |:-:|---|---|
 | 10 min  | [Opening](#opening)  | Opening |
 | 15 min  | [Introduction](#seasonalarima)   | Seasonal ARIMA  |
-| 10 min  | [Discussion](#acf)   | ACF/PACF Usage  | 
+| 10 min  | [Discussion](#acf)   | ACF/PACF Usage  |
 | 15 min  | [Codealong](#eda)   | European Retail Trade Data EDA  |
 | 15 min  | [Codealong](#model)   | European Retail Trade Data Modeling  |
 | 10 min  | [Introduction](#intro-box)   | The Ljung-Box Test  |
@@ -68,7 +72,7 @@ Thus far we have investigated the Non-Seasonal ARIMA model. If you recall, at th
 
 Now we will introduce the Seasonal ARIMA model to address the Seasonal elements of Time Series Data.
 
-Before we begin, be sure to use the commands detailed above to install the dev package for `statsmodels`. 
+Before we begin, be sure to use the commands detailed above to install the dev package for `statsmodels`.
 
 <a name="seasonalarima"></a>
 ## Introduction: Seasonal ARIMA (10 mins)
@@ -111,9 +115,9 @@ Similarly, an **ARIMA(0,0,0)(1,0,0)12** model would show the following:
 - A spike at _k_ = 12 in the PACF, but no other significant spikes
 - Exponential decay in seasonal lags in the ACF
 
-If the data you are investigating displays a seasonal pattern that is both _strong_ and _stable over time_ (i.e. temperatures are higher in the Summer, lower in the Winter), then it is likely that your Seasonal Difference term _D_ should be set to 1. This will prevent the seasonal pattern from "dying out" in the long-term forecasts. 
+If the data you are investigating displays a seasonal pattern that is both _strong_ and _stable over time_ (i.e. temperatures are higher in the Summer, lower in the Winter), then it is likely that your Seasonal Difference term _D_ should be set to 1. This will prevent the seasonal pattern from "dying out" in the long-term forecasts.
 
-**NOTE:** NEVER use more than ONE order of Seasonal Differencing, or more than 2 orders of total differencing (Seasonal + Non-Seasonal). 
+**NOTE:** NEVER use more than ONE order of Seasonal Differencing, or more than 2 orders of total differencing (Seasonal + Non-Seasonal).
 
 In considering the appropriate seasonal orders for an ARIMA model, focus solely on the seasonal lags. The modeling procedure is almost the same as for non-seasonal data, except that we need to select seasonal AR and MA terms as well as the non-seasonal components of the model. This process can be best illustrated using examples, so let's walk through one now.
 
@@ -172,7 +176,7 @@ Now we have stationary data, and have a good idea of which values for _d_ and _D
 <a name="model"></a>
 ## Codealong: European Retail Trade Data Modeling (15 mins)
 
-The next step is to find appropriate AR, MA, Seasonal AR, and Seasonal MA terms for our model. We will do this using the ACF and PACF of the doubly difference data. Our ACF shows a significant spike at lags 1 and 4. The first spike suggests a _non-seasonal_ MA(1) component, while the second spike suggests a _seasonal_ MA(1) component. 
+The next step is to find appropriate AR, MA, Seasonal AR, and Seasonal MA terms for our model. We will do this using the ACF and PACF of the doubly difference data. Our ACF shows a significant spike at lags 1 and 4. The first spike suggests a _non-seasonal_ MA(1) component, while the second spike suggests a _seasonal_ MA(1) component.
 
 Therefore, we will start with an **ARIMA(0,1,1)(0,1,1)4** model.
 
@@ -199,7 +203,7 @@ plot_acf(residuals, lags=30)
 plot_pacf(residuals, lags=30)
 ```
 
-What do we see? There are significant spikes at lag 2 in both ACF and PACF, and an almost significant spike at lag 3. This indiactes that some _additional_ non-seasonal terms are needed. 
+What do we see? There are significant spikes at lag 2 in both ACF and PACF, and an almost significant spike at lag 3. This indiactes that some _additional_ non-seasonal terms are needed.
 
 > Instructor's Note: Now might be a good time to reinforce the difference between seasonal and non-seasonal terms, and how to detect which are necessary based on ACF/PACF readings
 
@@ -242,7 +246,7 @@ Some tips along the way:
 - For each model you try, add a comment as to the effect you think your tuning had
 - Try only altering one term at a time
 
-> Instructor's Note: After the guided practice, spend 5 minutes going over the results. 
+> Instructor's Note: After the guided practice, spend 5 minutes going over the results.
 > The best course of action is to increment the Non-Seasonal AR term, and then extract the AIC. i.e.:
 > ARIMA(0,1,2)(0,1,1)4 -> 73.618 AIC
 > ARIMA(0,1,3)(0,1,1)4 -> 67.946 AIC (I found this to be the best fit)

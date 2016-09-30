@@ -27,6 +27,9 @@ Week 4 | Lesson 1.2
 - Modify Demo Notebook w additional code snippets
 - Plan for web scraping examples with BeautifulSoup, Mechanize, Import.io
 
+### STARTER CODE
+[Demo](./code/starter-code/load-and-parse-importio-starter-code.ipynb)
+
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|
@@ -164,7 +167,7 @@ On your own, review the [Import.io documentation](www.import.io) and then practi
 ## Independent Practice: Scraping Sample Project 4 Data (20 minutes)
 
 - Create an account on import.io, as needed
-- Set up a new "magic" extractor for [USA Jobs](https://www.usajobs.gov) 
+- Set up a new "magic" extractor for [USA Jobs](https://www.usajobs.gov)
 - Search for "data science" and review results
 - Download results using [import.io](http://www.import.io)
 - Load the downloaded csv file into python using pandas

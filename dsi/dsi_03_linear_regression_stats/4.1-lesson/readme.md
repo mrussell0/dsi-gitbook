@@ -27,6 +27,9 @@ Week 3 | Lesson 4.1
 - Prepare any specific materials
 - Provide students with additional resources
 
+### STARTER CODE
+[Demo](./code/starter-code/Gradient-Descent-Starter.ipynb)
+
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|

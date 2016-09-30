@@ -28,6 +28,9 @@ Week 10 | Lesson 2.2
 - Prepare any specific materials
 - Provide students with additional resources
 
+### STARTER CODE
+[Code Along](./assets/readme.ipynb)
+
 ### AWS Credentials Required
 Note: This lab requiress additional prep in order to run successfully:
 
@@ -50,7 +53,7 @@ Note: This lab requiress additional prep in order to run successfully:
 <a name="opening"></a>
 ## Opening (5 min)
 
-In less 2.1 we have discovered 2 very important AWS services: EC2 and S3. Today we will see how to spin up a compute cluster on Amazon. 
+In less 2.1 we have discovered 2 very important AWS services: EC2 and S3. Today we will see how to spin up a compute cluster on Amazon.
 
 **Check:** What is a cluster?
 > Answer: a cluster is a set of several computers communicating with one another and working together to solve a problem.
@@ -198,27 +201,27 @@ The sample Hive script does the following:
 The Hive code that creates the table looks like the following:
 
 ```sql
-CREATE EXTERNAL TABLE IF NOT EXISTS cloudfront_logs ( 
-	Date Date, 
-	Time STRING, 
-	Location STRING, 
-	Bytes INT, 
-	RequestIP STRING, 
-	Method STRING, 
-	Host STRING, 
-	Uri STRING, 
-	Status INT, 
-	Referrer STRING, 
-	OS String, 
-	Browser String, 
-	BrowserVersion String 
+CREATE EXTERNAL TABLE IF NOT EXISTS cloudfront_logs (
+	Date Date,
+	Time STRING,
+	Location STRING,
+	Bytes INT,
+	RequestIP STRING,
+	Method STRING,
+	Host STRING,
+	Uri STRING,
+	Status INT,
+	Referrer STRING,
+	OS String,
+	Browser String,
+	BrowserVersion String
 )
 ```
 
 The Hive code that parses the log files using the RegEx SerDe looks like the following:
 
 ```sql
-ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.RegexSerDe' 
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.RegexSerDe'
 WITH SERDEPROPERTIES ( "input.regex" = "^(?!#)([^ ]+)\\s+([^ ]+)\\s+([^ ]+)\\s+([^ ]+)\\s+([^ ]+)\\s+([^ ]+)\\s+([^ ]+)\\s+([^ ]+)\\s+([^ ]+)\\s+([^ ]+)\\s+[^\(]+[\(]([^\;]+).*\%20([^\/]+)[\/](.*)$" ) LOCATION 's3://us-west-2.elasticmapreduce.samples/cloudfront/data/';
 ```
 
@@ -349,7 +352,7 @@ Note that you can progress to the `next` button to execute the next queries in t
 Finally, note that we can also explore the HDFS like we were doing on the local VM by pointing our browser to the 50070 port:
 
     http://<YOUR_MASTER_DNS>:50070/dfshealth.html#tab-overview
-    
+
 ![](./assets/images/hdfs.png)
 
 <a name="ind-practice"></a>

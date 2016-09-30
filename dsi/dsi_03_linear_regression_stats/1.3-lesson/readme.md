@@ -22,6 +22,8 @@ Week 3 | Lesson 1.3
 - Extract data from pandas DataFrames
 - Fit a linear regression for one variable
 
+### STARTER CODE
+[Solution Code](./code/starter-code/W3-L1.3-starter.ipynb)
 
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*

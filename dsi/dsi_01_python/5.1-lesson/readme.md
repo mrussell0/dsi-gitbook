@@ -24,7 +24,7 @@ Week 1 | Lesson 5.2
 - Ensure Tableau licenses that you requested earlier are available to use
 
 ### STARTER CODE
-[Demo](./code/w1-4.1-demo.ipynb)
+[Intro Actually Blank](./code/W1-5.1-intro-actually-blank.ipynb)
 
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
