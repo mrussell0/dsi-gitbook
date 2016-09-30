@@ -20,6 +20,8 @@ Week 2 | Lesson 2.1
 - Read in / Review any dataset(s) & starter/solution code
 - Generate a brief slide deck
 
+### STARTER CODE
+[Demo](./code/w2-2.1-demo.ipynb)
 
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |

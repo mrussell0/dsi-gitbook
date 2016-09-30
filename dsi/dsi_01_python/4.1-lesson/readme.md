@@ -20,6 +20,10 @@ Week 1 | Lesson 4.1
 *Before this lesson, you should already be able to:*
 - [intro to arrays] (https://www.khanacademy.org/computing/computer-programming/programming/arrays/p/intro-to-arrays#)
 
+### STARTER CODE
+[Demo](./code/w1-4.1-demo.ipynb)
+
+[Independent Practice](./code/starter-code/3.3-independent-practice.ipynb)
 
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |

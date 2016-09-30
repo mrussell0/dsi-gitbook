@@ -24,6 +24,8 @@ Week 1 | Lesson 5.3
 - python arrays and dictionaries
 - lambda functions
 
+### STARTER CODE
+[List Comprehension](./code/w1-5.1-list-comprehensions-demo.ipynb)
 
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |

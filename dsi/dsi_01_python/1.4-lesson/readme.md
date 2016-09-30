@@ -18,6 +18,13 @@ Week 1 | Lesson 1.4
 *Before this lesson, you should already be able to:*
 - Define/describe/explain a list and a dictionary
 
+### STARTER CODE
+[Code Along](./code/W1-L1.4-codealong.ipynb)
+
+[Dict Practice](./code/starter-code/W1-L1.4-dictionary-practice-starter.ipynb)
+[List Practice](./code/starter-code/W1-L1.4-list-practice-starter.ipynb)
+[Bonus Starter](./code/starter-code/w1-1.4-bonus-starter.ipynb)
+
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|

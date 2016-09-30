@@ -21,6 +21,11 @@ Week 1 | Lesson 3.3
 didn't watch it, please watch Lesson 3: Estimation
 [Intro to Stats](https://www.udacity.com/course/intro-to-statistics--st101)
 
+### STARTER CODE
+[Demo](./code/w1-3.3-demo.ipynb)
+[Dist Plots](./code/dist_plots.ipynb)
+
+[Independent Practice](./code/starter-code/3.3-independent-practice.ipynb)
 
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |

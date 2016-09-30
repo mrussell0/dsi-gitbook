@@ -19,6 +19,11 @@ Week 1 | Lesson 1.4
 *Before this lesson, you should already be able to:*
 - Have a cursory explanation/idea of if/else, if/elif/else, loops, and functions.
 
+### STARTER CODE
+[Code Along](./code/w1-2.1-demo.ipynb)
+
+[Bonus Starter](./code/starter-code/w1-2.1-bonus-starter.ipynb)
+
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
 |:-:|---|---|

@@ -19,6 +19,10 @@ Week 1 | Lesson 2.3
 - If you have time, watch a video on for and while loops so that you're familiar
   with the topic.
 
+### STARTER CODE
+[Code Along](./code/w1-2.3-demo.ipynb)
+
+[Bonus Starter](./code/starter-code/w1-1.2-bonus-starter.ipynb)
 
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |

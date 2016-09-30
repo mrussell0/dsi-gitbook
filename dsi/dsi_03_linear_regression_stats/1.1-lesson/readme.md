@@ -19,6 +19,9 @@ Week 3 | Lesson 1.1
 *Before this lesson, you should already be able to:*
 - Be able to use python for simple calculations
 
+### STARTER CODE
+[Solution Code](./code/solution-code/W3-L1-1.ipynb)
+
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
 - Read in / Review any dataset(s) & starter/solution code

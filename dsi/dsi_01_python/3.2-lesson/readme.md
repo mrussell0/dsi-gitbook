@@ -21,6 +21,9 @@ Week 1 | Lesson 3.2
 - Create an Anaconda environment with iPython Notebook installed
 - From iPython Notebook, install Jupyter
 
+### STARTER CODE
+[Demo](./code/w1-3.2-demo.ipynb)
+[Practice](./code/w1-3.2-jupyter-practice.ipynb)
 
 ### LESSON GUIDE
 | TIMING  | TYPE  | TOPIC  |
