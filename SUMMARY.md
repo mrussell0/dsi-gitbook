@@ -1,6 +1,8 @@
 * [i. Students](dsi/readme.md)
   * [a: Onboarding](dsi/dsi_student_onboarding/readme.md)
     * [1: Installfest](dsi/dsi_student_onboarding/installfest-lesson/readme.md)
+    * [2: Technical Guide](dsi/dsi_student_onboarding/student-tech-guide.md)
+    * [3: Precourse Onboarding Tasks](dsi/dsi_student_onboarding/pre-course-student-onboarding.md)
   * [b: Resources](dsi/dsi_resources/readme.md)
 * [ii. Projects](dsi/dsi_projects/readme.md)
   * [a: Weekly Projects](dsi/dsi_projects/01-projects-weekly/readme.md)

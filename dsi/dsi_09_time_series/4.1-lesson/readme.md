@@ -30,8 +30,7 @@ Week 9 | Lesson 4.1
 - Read following note, decide student approach, prepare environment
 
 ### STARTER CODE
-[Code Along](./code/mapper.py)
-[Code Along 2](./code/reducer.py)
+[Code Along](./assets/readme.ipynb)
 
 **IMPORTANT NOTE!**
 At the time of writing, SARIMAX is not included in the stable release of `statsmodels`. Students will need to install the development version of `statsmodels` (>= 0.7) in a `conda env` by entering the following commands in their terminal. Please do this at the beginning of class if you would like them to code along with you, or before they begin lab 4.2 if they will just be watching your live-coding.
