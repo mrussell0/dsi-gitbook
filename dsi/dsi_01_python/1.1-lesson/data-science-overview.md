@@ -382,3 +382,10 @@ By now, you should be able to answer the following questions with ease:
 - How can you have a successful learning experience at GA?
 
 ***
+
+<a name="resources"></a>
+## Resources
+* For a useful look at the different types of data scientists, read [Analyzing the Analyzers](http://cdn.oreillystatic.com/oreilly/radarreport/0636920029014/Analyzing_the_Analyzers.pdf) (32 pages).
+* For some thoughts on what it's like to be a data scientist, read these short posts from [Win-Vector](http://www.win-vector.com/blog/2012/09/on-being-a-data-scientist/) and [Datascope Analytics](http://datascopeanalytics.com/what-we-think/2014/07/31/six-qualities-of-a-great-data-scientist).
+* Quora has a [data science topic FAQ](https://www.quora.com/Data-Science) with lots of interesting Q&A.
+***
