@@ -171,7 +171,7 @@ Throughout the class - and for our projects - we will be following [the **data s
 
 **Note:** While this may appear to be a *linear* process, this is in fact a bit simplified. Realistically, at any point, you may need to **repeat** earlier steps in order to *iterate* through the workflow, depending on whether you change your goals, acquire new data, or are trying to fine-tune your model.
 
-Overall, the Data Science Workflow will serve as [a useful set of standards](../../dsi_resources/syllabus/standards-learning-goals.md) and as a reference for our [course projects](../../dsi_projects/).
+Overall, the Data Science Workflow will serve as [a useful set of standards](../../dsi_resources/syllabus/standards-learning-goals.md) and as a reference for our [course projects](../../dsi_projects/readme.md).
 
 Let's review these steps a bit further:
 
@@ -381,4 +381,11 @@ By now, you should be able to answer the following questions with ease:
 - What is the data science workflow?
 - How can you have a successful learning experience at GA?
 
+***
+
+<a name="resources"></a>
+## Resources
+* For a useful look at the different types of data scientists, read [Analyzing the Analyzers](http://cdn.oreillystatic.com/oreilly/radarreport/0636920029014/Analyzing_the_Analyzers.pdf) (32 pages).
+* For some thoughts on what it's like to be a data scientist, read these short posts from [Win-Vector](http://www.win-vector.com/blog/2012/09/on-being-a-data-scientist/) and [Datascope Analytics](http://datascopeanalytics.com/what-we-think/2014/07/31/six-qualities-of-a-great-data-scientist).
+* Quora has a [data science topic FAQ](https://www.quora.com/Data-Science) with lots of interesting Q&A.
 ***

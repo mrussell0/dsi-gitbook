@@ -92,7 +92,6 @@ Your work must:
 
 The [starter code](./starter-code/) has a loose outline for you to follow to explore the data and build your models. Make sure to consider strategies for your specific scenario. You will also address several of the items in Labs 3.3 and 3.4.
 
-> Instructors: Solution Code will basically combine the existing solution code for [Lab 3.3](./curriculum/04-lessons/week-03/3.3-lab/code/solution-code/3.3-Data-Workflow-Lab-1-Solution.ipynb) and [Lab 3.4](./curriculum/04-lessons/week-03/3.4-lab/code/solution-code/3.4-Data-Workflow-Lab-2-Solutions.ipynb), as plugged into the starter code for [Project 3](starter-code/Project 3 Starter Code.ipynb), with some
 simplifications and augmentations from Lessons 5.1 and 5.2 (about stakeholder analysis).
 
 > Since both scenarios are open ended, there are many valid approaches.

@@ -77,7 +77,6 @@ This extended bonus question is deliberately impossible! While we haven't covere
 
 [Open the starter code instructions in the Jupyter notebook provided.](./starter-code/) We will use Scikit-Learn, matplotlib, and numpy for our learning algorithms.
 
-> Instructors: [Sample solution code is provided here](./solution-code/)
 
 ### Dataset
 You will need to pull data from the Netflix API, while also scraping related sentiment data from the [IMDB.com](www.imdb.com) website. Once you have your datasets, you will need to join them in a local PostgreSQL database.
