@@ -54,7 +54,6 @@ In this project, we'll be using data on passengers from the Titanic disaster to 
 
 Go ahead and grab the [starter code](./code/starter-code/starter-code.ipynb) to get started.
 
-> Instructors: [Solution code is provided for you here](./solution-code/)
 
 ### Dataset
 

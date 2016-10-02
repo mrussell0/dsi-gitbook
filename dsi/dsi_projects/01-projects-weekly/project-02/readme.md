@@ -49,7 +49,6 @@ Your work must:
 
 - [Starter code has been provided](./starter-code/) in the form of a Jupyter notebook. Please complete all project work in this notebook.
 
-> Instructor Note: The [solution code is linked here](./solution-code/)
 
 ### Dataset
 

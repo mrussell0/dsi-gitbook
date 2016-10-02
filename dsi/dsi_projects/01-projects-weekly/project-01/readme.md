@@ -43,7 +43,6 @@ and quick data analysis. We will discuss more advanced data visualizations for d
 
 Open the [starter code instructions](./starter-code/) in a Jupyter notebook.
 
-> Instructor Note: The [solution code is linked here](./solution-code/)
 
 ### Dataset
 
