@@ -1,5 +1,5 @@
 ---
-title: Big Data Review: Case Study
+title: Big Data Review - Case Study
 duration: "1:25"
 creator:
   name: Francesco Mosconi

@@ -1,5 +1,5 @@
 ---
-title: Intro to Modeling: Linear Regression
+title: Intro to Modeling - Linear Regression
 duration: "1:25"
 creator:
     name: Marc Harper
